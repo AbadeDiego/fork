@@ -1,0 +1,519 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ BodeTech }}</title>
+
+  <!-- Bootstrap -->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />-->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <!-- Mensagem -->
+  {% if messages %}
+  {% for message in messages %}
+
+  <script>
+    alert("{{ message }}");
+  </script>
+
+  {% endfor %}
+  {% endif %}
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/header.css' %}">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Header -->
+    <nav class="header" id="inicio" class="navbar navbar-light bg-light">
+        <a class="img">
+          <img src="{% static 'images/header/logo.png' %}" class="d-inline-block align-top" alt="">
+        </a>
+        <h1> BodeTech</h1>
+     
+        <div class="navbar-nav">
+          <a class="app" class="nav-item nav-link" href="#app">Sobre o App </a>
+          <a class="vantagens" href="#vantagens">Vantagens </a>
+          <a class="depoimentos" href="#depoimentos">Depoimentos </a>
+          <a class="funcionalidades" href="#funcionalidades">Funcionalidades </a>
+          <a class="blog" href="#blog">Blog </a>  
+          <a class="contato" href="#contato">Contato </a>
+
+          <a class="button-download" href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
+            <h6>Baixe o App!</h6>
+          </a>
+        </div>
+
+
+    </nav>
+</head>
+<body>
+  
+  <section class="page-one" id="app">
+    
+    <img src="{% static 'images/body/bodyimage.png' %}" alt="fazenda"> 
+
+    <div class="text-title">
+      Maximize lucros com o nosso aplicativo!
+    </div>
+
+    <img class="bode-capa" src="{% static 'images/body/bode-1.png' %}" alt="fazenda"> 
+  
+    <div class="retangulo">
+
+      <div class="text-body">
+        Nosso aplicativo de gerenciamento simplifica e aprimora 
+        todas as etapas do seu negócio. Com acesso aos recursos de registro de dados,
+        controle de saúde e reprodução, alertas personalizados e análises
+        inteligentes você terá total controle e visão geral sobre o desempenho do seu rebanho.
+      </div>
+  
+
+      <a class="button-download-2" href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
+        <h6>Baixe o App!</h6>
+      </a>
+
+      <img class="celular" src="{% static 'images/body/celular.png' %}" alt="fazenda"> 
+    </div>
+
+  </section>
+
+  <section class="page-two" id="vantagens">
+
+    <div class="text-title">
+      Desfrute do controle total com nosso app de gerenciamento 
+    </div>
+
+    <div class="card-1">
+      <img class="ellipse" src="{% static 'images/body/Ellipse1.png' %}" alt="Ellipse">
+      <img class="icone" style="position: absolute; margin-top: 56px; margin-left: 41.5px;" 
+      src="{% static 'images/body/controle.png' %}" alt="Icone">
+      <h3>Controle simplificado</h3> 
+      <h4>
+        Nosso aplicativo oferece uma interface intuitiva e fácil de usar, permitindo que 
+        você controle todas as informações do seu rebanho com apenas alguns toques. 
+      </h4> 
+    </div>
+
+    <div class="card-2">
+      <img class="ellipse" src="{% static 'images/body/Ellipse1.png' %}" alt="Ellipse">
+      <img class="icone" style="position: absolute; margin-top: 56px; margin-left: 38.75px;" 
+      src="{% static 'images/body/registro.png' %}" alt="Icone">
+      <h3>Registro detalhado</h3>
+      <h4>
+        Mantenha um registro completo de cada animal, incluindo informações de saúde, reprodução, 
+        alimentação e histórico médico, facilitando a tomada de decisões informadas.
+      </h4>
+    </div>
+
+    <div class="card-3">
+      <img class="ellipse" src="{% static 'images/body/Ellipse1.png' %}" alt="Ellipse">
+      <img class="icone" style="position: absolute; margin-top: 56.7px; margin-left: 35.75px;"
+      src="{% static 'images/body/alerta.png' %}" alt="Icone"> 
+      <h3>Alertas personalizados</h3>
+      <h4>
+        Receba alertas em tempo real sobre datas importantes, como vacinações, desmama, 
+        cobertura e outros eventos relevantes para garantir o cuidado adequado e oportuno de seus bodes.
+      </h4>
+    </div>
+
+    <div class="card-4">
+      <img class="ellipse" src="{% static 'images/body/Ellipse1.png' %}" alt="Ellipse">
+      <img class="icone" style="position: absolute; margin-top: 56px; margin-left: 34px;"
+      src="{% static 'images/body/analise.png' %}" alt="Icone"> 
+      <h3>Análises inteligentes</h3>
+      <h4>
+        Obtenha análises inteligentes que destacam tendências, padrões de 
+        desempenho e oportunidades de melhoria, permitindo otimizar seus recursos e maximizar os lucros.
+      </h4>
+    </div>
+
+    <div class="card-5">
+      <img class="ellipse" src="{% static 'images/body/Ellipse1.png' %}" alt="Ellipse">
+      <img class="icone" style="position: absolute; margin-top: 56px; margin-left: 35px;"
+      src="{% static 'images/body/suporte.png' %}" alt="Icone"> 
+      <h3>Suporte técnico</h3>
+      <h4>
+        Conte com nosso suporte técnico para resolver suas dúvidas e problemas. Estamos comprometidos em 
+        garantir sua experiência positiva com o aplicativo.
+      </h4>
+    </div>
+
+    <div class="card-6">
+      <img class="ellipse" src="{% static 'images/body/Ellipse1.png' %}" alt="Ellipse">
+      <img class="icone" style="position: absolute; margin-top: 56px; margin-left: 35px;"
+      src="{% static 'images/body/acesso.png' %}" alt="Icone"> 
+      <h3>Acesso offline</h3>
+      <h4>
+        Tenha acesso aos dados do seu rebanho a qualquer momento e em qualquer lugar, através do seu smartphone 
+        ou tablet, facilitando o gerenciamento mesmo quando estiver em movimento
+      </h4>
+    </div>
+
+  </section>
+
+  <section class="page-three" id="depoimentos">
+
+    <img src="{% static 'images/body/bodes.png' %}" alt="bodes">
+
+    <h1>
+      O que nossos usuários estão dizendo... 
+    </h1>
+
+    <div class="comment-1">
+      <h5>
+        “Desde que comecei a usar o aplicativo, tenho total controle sobre 
+        o desempenho do meu rebanho, consigo acompanhar a saúde de cada animal
+         e tomar decisões estratégicas com base em dados precisos. 
+        É uma ferramenta indispensável para qualquer criador!" <br>
+      </h5>
+      <h6> - João, criador de bodes há 5 anos.</h6>
+
+    </div>
+
+    <div class="comment-2">
+      <h5>
+        "Eu não imaginava que um aplicativo poderia facilitar tanto a minha vida. 
+        Com apenas alguns cliques, consigo registrar todas as informações essenciais do meu rebanho, receber 
+        alertas importantes e até mesmo compartilhar dados com meu veterinário de confiança. Estou impressionada
+         com a praticidade e eficiência do aplicativo!" <br>
+      </h5>
+      <h6> - Maria, criadora de bodes há 6 anos.</h6>
+
+    </div>
+
+    <img style="position: absolute; top: 45.68%; left: 80px;"
+    src="{% static 'images/body/left-arrow.png' %}" alt="arrow-left">
+    <img style="position: absolute; top: 45.68%; right: 80px;"
+    src="{% static 'images/body/right-arrow.png' %}" alt="arrow-right">
+    <img style="position: absolute; bottom: 60px; left: 643px;"
+    src="{% static 'images/body/bar-scroll-1.png' %}" alt="bar-1">
+    <img style="position: absolute; bottom: 60px; left: 779px;"
+    src="{% static 'images/body/bar-scroll-2.png' %}" alt="bar-2">
+
+
+  </section>
+
+  <section class="page-four">
+
+    <img style="position: absolute; left: -2px; top: 2297px;"
+    src="{% static 'images/body/bode-peso.png' %}" alt="bode-peso">
+    <img style="position: absolute; left: 181px; top: 2310px;"
+    src="{% static 'images/body/maos-segurando-um-smartphone.png' %}" alt="maos-segurando-um-smartphone">
+
+    <h1> Pesagem automática: Facilitando a gestão de peso com BodeTech!</h1>
+    <h5> 
+      Com apenas uma foto, nossa tecnologia realiza uma estimativa precisa do peso do seu animal, 
+      assim você tem o poder de medir o peso dos seus animais de forma rápida e sem complicações. 
+      Simplifique sua rotina com a Pesagem Automática do BodeTech e desfrute de um manejo inteligente e eficiente.
+    </h5>
+
+    <a class="button-download" href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
+      <h6>Experimentar grátis</h6>
+    </a>
+
+  </section>
+
+  <section class="page-five" id="funcionalidades">
+
+    <h1>Potencialize sua produção com nossas funcionalidades</h1>
+
+    <div class="card-1">
+      <h2>Produção de ponta a ponta:</h2>
+
+      <img style="position: absolute; left: 32px; top: 115px;"
+      src="{% static 'images/body/check.png' %}" alt="bodes">
+
+      <h5 style="position: absolute; left: 76px; top: 115px; font-size: 18px;">
+        <span style="font-weight:600;">Sequência de Manejos:</span>
+        <span> Registre e acompanhe todas as etapas 
+          do manejo, desde alimentação até vacinação.</span>
+      </h5>
+
+      <img style="position: absolute; left: 32px; top: 240px;"
+      src="{% static 'images/body/check.png' %}" alt="bodes">
+      <h5 style="position: absolute; left: 76px; top: 240px; font-size: 18px;">
+        
+        <span style="font-weight:600;">Financeiro: </span>
+        <span> Controle completo dos custos e receitas para 
+        planejamento financeiro e análise de lucratividade.</span>
+      </h5>
+
+      <img style="position: absolute; left: 32px; top: 353px;"
+      src="{% static 'images/body/check.png' %}" alt="bodes">
+      <h5 style="position: absolute; left: 76px; top: 353px; font-size: 18px;">
+        <span style="font-weight:600;">Reprodução: </span>
+        <span>Registro de dados de cobertura, gestação e 
+        parto para monitorar desempenho reprodutivo.</span>
+      </h5>
+
+      <img style="position: absolute; left: 32px; top: 450px;"
+      src="{% static 'images/body/check.png' %}" alt="bodes">
+      <h5 style="position: absolute; left: 76px; top: 450px; font-size: 18px;">
+        <span style="font-weight:600;">Seleção de Rebanho:</span>
+        <span> Otimize seu programa de melhoramento
+        genético selecionando os melhores animais com critérios específicos.</span>
+      </h5>
+
+    </div>
+
+    <div class="card-2">
+      <h2>Gestão mais eficiente:</h2>
+
+      <img style="position: absolute; left: 32px; top: 115px;"
+      src="{% static 'images/body/check.png' %}" alt="bodes">
+      <h5 style="position: absolute; left: 76px; top: 115px; font-size: 18px;">
+        <span style="font-weight:600;">Formação de Lotes:</span>
+        <span> Organize e separe animais com base
+        em características específicas, como idade, sexo ou finalidade.</span>
+      </h5>
+
+      <img style="position: absolute; left: 32px; top: 240px;"
+      src="{% static 'images/body/check.png' %}" alt="bodes">
+      <h5 style="position: absolute; left: 76px; top: 240px; font-size: 18px;">
+        <span style="font-weight:600;">Fichas e Tabelas:</span>
+        <span> Registre e armazene dados importantes 
+        de forma organizada e acessível.</span>
+      </h5>
+
+      <img style="position: absolute; left: 32px; top: 353px;"
+      src="{% static 'images/body/check.png' %}" alt="bodes">
+      <h5 style="position: absolute; left: 76px; top: 353px; font-size: 18px;">
+        <span style="font-weight:600;">Ração personalizada:</span>
+        <span> Indicação de ração conforme 
+        as necessidades nutricionais do animal.</span>
+      </h5>
+
+      <img style="position: absolute; left: 32px; top: 450px;"
+      src="{% static 'images/body/check.png' %}" alt="bodes">
+      <h5 style="position: absolute; left: 76px; top: 450px; font-size: 18px;">
+        <span style="font-weight:600;">Desempenho do Rebanho:</span> 
+        <span> Monitore o desempenho do seu rebanho,
+        registrando indicadores-chave como ganho de peso, produção de leite e fertilidade.</span>
+      </h5>
+    </div>
+
+    <div class="card-3">
+      <h2>Informações detalhadas:</h2>
+
+      <img style="position: absolute; left: 32px; top: 115px;"
+      src="{% static 'images/body/check.png' %}" alt="bodes">
+      <h5 style="position: absolute; left: 76px; top: 115px; font-size: 18px;">
+        <span style="font-weight:600;">Acompanhamento de Custos:</span> 
+        <span> Controle e acompanhe os gastos com alimentação dos seus bodes de forma precisa.</span>
+      </h5>
+
+      <img style="position: absolute; left: 32px; top: 240px;"
+      src="{% static 'images/body/check.png' %}" alt="bodes">
+      <h5 style="position: absolute; left: 76px; top: 240px; font-size: 18px;">
+        <span style="font-weight:600;">Taxa de Conversão Alimentar:</span>
+        <span> Monitore a relação entre consumo de alimento e ganho de peso.</span>
+      </h5>
+
+      <img style="position: absolute; left: 32px; top: 353px;"
+      src="{% static 'images/body/check.png' %}" alt="bodes">
+      <h5 style="position: absolute; left: 76px; top: 353px; font-size: 18px;">
+        <span style="font-weight:600;">Informações em Tempo Real:</span>
+        <span> Acesse informações atualizadas do seu rebanho em tempo real.</span>
+      </h5>
+
+      <img style="position: absolute; left: 32px; top: 450px;"
+      src="{% static 'images/body/check.png' %}" alt="bodes">
+      <h5 style="position: absolute; left: 76px; top: 450px; font-size: 18px;">
+        <span style="font-weight:600;">Desempenho por lote:</span>
+        <span> Analise o desempenho dos seus animais de acordo com as diferentes áreas de alojamento. </span> 
+      </h5>
+      
+    </div>
+
+    <div>
+        <a  class="button-download" href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
+          <h6>Baixar App agora!</h6>
+        </a>
+    </div>
+
+  </section>
+
+  <section class="page-six" id="blog">
+
+    <h1>Confira os artigos do nosso Blog!</h1>
+
+    <h5>
+        Descubra dicas, informações atualizadas e melhores práticas para otimizar
+        a gestão do seu rebanho de bodes em nosso blog. Esteja um passo à frente no 
+        cuidado e obtenha resultados excepcionais. Leia agora!
+    </h5>
+
+    <img style="position: absolute; left: 0px; top: 8px;" class="ellipse2" src="{% static 'images/body/Ellipse2.png' %}" alt="ellipse2">
+    <img style="position: absolute; left: 0px; top: 0px;" class="bode-reader" src="{% static 'images/body/bode-reader.png' %}" alt="bode-reader">
+    
+    <div>
+      <a  class="button-download" href="#">
+        <h6>Conferir artigos no Blog</h6>
+      </a>
+    </div>
+
+  
+  </section>
+
+  <section class="page-seven" id="contato">
+
+    <h1>Entre em contato com nossa equipe</h1>
+    <h5>
+      Para obter mais informações sobre nosso aplicativo
+      de gerenciamento de rebanho de bodes e entrar em contato conosco, 
+      preencha o formulário ou utilize nossos dados de contato. 
+      Estamos prontos para ajudar no sucesso do seu negócio.
+    </h5>
+
+    <img style="position: absolute; left: 80px; top: 342px;" class="" src="{% static 'images/body/email.png' %}" alt="email">
+    <img style="position: absolute; left: 80px; top: 392px;" class="" src="{% static 'images/body/phone.png' %}" alt="phone">
+    
+    <h6 class="text" style="position: absolute; left: 108px; top: 342px;">riseit.is@gmail.com</h6>
+    <h6 class="text" style="position: absolute; left: 108px; top: 392px;">+55 (74) 99905-4622</h6>
+
+
+    <div class="container">
+      <form action="">
+          <div class="row">
+            <div style="position: absolute; left: 0px; top: 0px;">
+              <label class="label-email" for="name">Primeiro nome</label>
+              <input class="input-email" type="text" class="form-control" id="name" placeholder="Digite seu nome" name="name">
+            </div>
+            <div style="position: absolute; left: 295px; top:0px;">
+              <label class="label-whatsapp" for="sname">Sobrenome</label>
+              <input class="input-whatsapp" type="text" class="form-control" id="sname" placeholder="Digite seu sobrenome" name="sname">
+            </div>
+          </div>
+          <div class="row">
+            <div style="position: absolute; left: 0px; top:78px;">
+              <label class="label-email" for="email">Email</label>
+              <input class="input-email" type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
+            </div>
+            <div style="position: absolute; left: 295px; top:78px;">
+              <label class="label-whatsapp" for="what">Whatsapp</label>
+              <input class="input-whatsapp" type="text" class="form-control" id="what" placeholder="Digite seu número" name="what">
+            </div>
+            <div style="position: absolute; left: 0px; top:156px;">
+              <label class="label-whatsapp" for="msg">Mensagem</label>
+              <input class="input-mensagem" type="text" class="form-control" id="msg" placeholder="Digite sua mensagem" name="msg">
+            </div>
+          </div>
+        <button type="submit" class="submit">Enviar mensagem</button>
+      </form>
+    </div>
+    
+   
+  </section>
+  
+  <section class="page-eight">
+
+    <h3>Um pouco sobre nós</h3>
+
+    <h5>
+      BodeTech é uma equipe especializada em soluções de gerenciamento para 
+      rebanhos de bodes. Nosso aplicativo inovador visa impulsionar o sucesso 
+      dos criadores, fornecendo suporte personalizado e tecnologia avançada. 
+      Junte-se a nós para transformar sua ovinocultura em um negócio de alto 
+      desempenho com BodeTech.
+    </h5>
+
+    <div class="container" class="row">
+      <form action="">
+            <label class="label-email" for="email">Inscreva-se no site para receber as novidades</label>
+            <input class="input-email" type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
+        <button type="submit" class="submit">Inscreva-se</button>
+      </form>
+    </div>
+
+    <a href="#">
+      <img style="position: absolute; top: 5279.44px; left: 86px;"
+      src="{% static 'images/body/facebook.png' %}" alt="facebook">      
+    </a>
+
+
+    <a href="#">
+      <img style="position: absolute; top: 5279.44px; left: 126px;"
+      src="{% static 'images/body/instagram.png' %}" alt="instagram">
+    </a>
+
+
+    <a href="#">
+      <img style="position: absolute; top: 5279.44px; left: 166px;"
+      src="{% static 'images/body/linkedin.png' %}" alt="linkedin">
+    </a>
+
+
+    <h2 style="position: absolute; top: 5014px; left: 817px;">Menu </h2>
+
+    <a href="#app" style="position: absolute; top: 0px; left: 733px;"> 
+      <h5>Sobre o App</h5> 
+    </a>
+    <a href="#vantagens" style="position: absolute; top: 39px; left: 733px;"> 
+      <h5>Vantagens</h5> 
+    </a>
+    <a href="#depoimentos" style="position: absolute; top: 87px; left: 733px;"> 
+      <h5>Depoimentos</h5> 
+    </a>
+    <a href="#funcionalidades" style="position: absolute; top: 135px; left: 733px;"> 
+      <h5>Funcionalidades</h5> 
+    </a>
+    <a href="#blog" style="position: absolute; top: 183px; left: 733px;"> 
+      <h5>Blog</h5> 
+    </a>
+    <a href="#contado" style="position: absolute; top: 231px; left: 733px;"> 
+      <h5>Contado</h5> 
+    </a>
+
+    <h2 style="position: absolute; top: 5014px; left: 997px;">Contato </h2>
+
+    <a style="position: absolute; top: 0px; left: 913px;"> 
+      <h5>+55 (74) 99905-4622</h5> 
+    </a>
+    <a  style="position: absolute; top: 39px; left: 913px;"> 
+      <h5>riseit.is@gmail.com</h5> 
+    </a>
+
+
+    <h2 style="position: absolute; top: 5014px; left: 1224px;">Baixe o App </h2>
+
+    <a style="position: absolute; top: 5068px; left: 1224px;" href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
+      <img src="{% static 'images/body/googleplay.png' %}" alt="googleplay">
+    </a>
+
+    <a  style="position: absolute; top: 5132px; left: 1224px;" href="#">
+      <img src="{% static 'images/body/applestore.png' %}" alt="applestore">
+    </a>
+
+    <a href="#inicio">
+      <h4>Voltar ao topo</h4>
+      <img  style="position: absolute; top: 5267px; left: 1310px;" src="{% static 'images/body/up-arrow.png' %}" alt="applestore">
+    </a>
+
+  </section>
+
+
+
+  <div class="footer">
+    <img src="{% static 'images/header/logo.png' %}" class="d-inline-block align-top" alt="">
+    <h2> BodeTech</h2>
+    <hr>
+    <p>© 2023 BodeTech. Todos os direitos reservados.</p>
+  </div>
+
+  <script src="{% static 'js/header.js' %}"></script>
+  
+</body>
+</html>

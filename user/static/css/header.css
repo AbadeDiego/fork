@@ -1,0 +1,1261 @@
+/* Navbar */
+
+.header {
+
+  position: absolute;
+  width: 1440px;
+  height: 108px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+}
+
+.header .img{
+  
+  position: absolute;
+  width: 40px;
+  height: 34px;
+  left: 80px;
+  top: 37px;
+}
+
+.header h1{
+  
+  position: absolute;
+  left: 135px;
+  top: 37px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+
+  color: #252940;
+  }
+
+.header .navbar-nav{
+  position: absolute;
+  left: 273px;
+  top: 35.5px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.header .navbar-nav .app{
+
+  margin: 0 31px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138.4%;
+  text-decoration: none;
+
+    
+  color: rgba(37, 41, 64, 0.97);
+}
+
+.header .navbar-nav .vantagens{
+
+  margin: 0 31px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138.4%;
+  text-decoration: none;
+
+    
+  color: rgba(37, 41, 64, 0.97);
+  }
+
+.header .navbar-nav .funcionalidades{
+
+  margin: 0 31px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138.4%;
+  text-decoration: none;
+
+    
+  color: rgba(37, 41, 64, 0.97);
+}
+
+.header .navbar-nav .depoimentos{
+
+  margin: 0 31px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138.4%;
+  text-decoration: none;
+
+    
+  color: rgba(37, 41, 64, 0.97);
+}
+
+.header .navbar-nav .blog{
+
+  margin: 0 31px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138.4%;
+  text-decoration: none;
+
+    
+  color: rgba(37, 41, 64, 0.97);
+}
+
+.header .navbar-nav .contato{
+
+  margin: 0 31px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138.4%;
+  text-decoration: none;
+    
+  color: rgba(37, 41, 64, 0.97);
+  
+}
+
+
+.header .navbar-nav .button-download{
+   /* Auto layout */
+  display: flex;
+
+  margin: 0 31px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  width: 185px;
+  height: 40px;
+
+  background: rgba(242, 175, 92, 0.97);
+  border-radius: 5px;
+}
+
+.header .navbar-nav .button-download h6{
+  
+  /* BodeTech/Body semibold 2 */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+
+
+  /* identical to box height, or 129% */
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  /* BodeTech/Text/Primary */
+  color: #252940;
+}
+
+/* ------------------------ Page One --------------------------*/
+
+
+body .page-one{
+  left: 0px;
+  top: 106px;
+
+  position: absolute;
+  width: 1440px;
+  height: 645px;
+  background: linear-gradient(180deg, rgba(242, 175, 92, 0.9506) 0%, rgba(255, 255, 255, 0.98) 81.77%);
+}
+
+body .page-one .text-title{
+  position: absolute;
+  width: 640px;
+  height: 165px;
+  left: 80px;
+  top: 106px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 55px;
+  
+  /* or 125% */
+  letter-spacing: 0.1px;
+  
+  color: #252940;
+}
+
+
+body .page-one .text-body{
+  position: absolute;
+  width: 640px;
+  height: 148px;
+  left: 80px;
+  top: 237px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  
+  /* or 156% */
+  letter-spacing: 0.1px;
+  
+  color: #252940;
+}
+
+body .page-one .button-download-2{
+  /* Auto layout */
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+
+  position: absolute;
+  width: 325px;
+  height: 40px;
+  left: 80px;
+  top: 377px;;
+
+  /* BodeTech/Primary color/Laranja */
+  background: #F2AF5C;
+  border-radius: 5px;
+}
+
+body .page-one .button-download-2 h6{
+ 
+ /* BodeTech/Body semibold 2 */
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 600;
+ font-size: 14px;
+ line-height: 18px;
+ text-decoration: none;
+
+
+ /* identical to box height, or 129% */
+ text-align: center;
+ letter-spacing: 0.2px;
+
+ /* BodeTech/Text/Primary */
+ color: #252940;
+}
+
+body .page-one .celular{
+  position: absolute;
+  width: 372px;
+  height: 632px;
+  right: 360px;
+  top: 50px;
+}
+
+body .page-one .bode-capa{
+  position: absolute;
+  width: 590px;
+  height: 666px;
+  right: 0px;
+  top: -16px;
+}
+
+body .page-one .retangulo{
+  position: absolute;
+  width: 1440px;
+  height: 652px;
+  left: 0px;
+  top: 6px;
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40.95%, #ffffff 100%);
+}
+
+/* ------------------------ Page Two --------------------------*/
+
+body .page-two .text-title {
+  position: absolute;
+  width: 721px;
+  height: 136px;
+  left: calc(721px/2 + 0.5px);
+  top: 802px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+
+  /* or 125% */
+  text-align: center;
+  letter-spacing: 0.1px;
+
+  color: #252940;
+}
+
+body .page-two .card-1{
+  position: absolute;
+  width: 413px;
+  height: 285px;
+  left: 80px;
+  top: 993px;
+  
+  background: rgba(242, 175, 92, 0.15);
+  border-radius: 10px;
+}
+
+
+body .page-two .card-2{
+  position: absolute;
+  width: 413px;
+  height: 285px;
+  left: 515px;
+  top: 993px;
+  
+  background: rgba(242, 175, 92, 0.15);
+  border-radius: 10px;
+}
+
+
+body .page-two .card-3{
+  position: absolute;
+  width: 413px;
+  height: 285px;
+  left: 950px;
+  top: 993px;
+  
+  background: rgba(242, 175, 92, 0.15);
+  border-radius: 10px;
+}
+
+body .page-two .card-4{
+  position: absolute;
+  width: 413px;
+  height: 285px;
+  left: 80px;
+  top: 1301px;
+  
+  background: rgba(242, 175, 92, 0.15);
+  border-radius: 10px;
+}
+
+
+body .page-two .card-5{
+  position: absolute;
+  width: 413px;
+  height: 285px;
+  left: 515px;
+  top: 1301px;
+  
+  background: rgba(242, 175, 92, 0.15);
+  border-radius: 10px;
+}
+
+
+body .page-two .card-6{
+  position: absolute;
+  width: 413px;
+  height: 285px;
+  left: 950px;
+  top: 1301px;
+  
+  background: rgba(242, 175, 92, 0.15);
+  border-radius: 10px;
+}
+
+body .page-two h3{
+  margin-top: 38px;
+  margin-left: 108px;
+  width: 272px;
+  height: 28px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 45px;
+  
+  /* or 225% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1px;
+  
+  color: #252940;
+}
+
+body .page-two h4{
+  margin-top: 8px;
+  margin-left: 108px;
+  width: 272px;
+  height: 174px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+
+  /* or 156% */
+  letter-spacing: 0.1px;
+
+  color: #252940;
+}
+
+body .page-two .ellipse{
+  position: absolute;
+  margin-top: 38px;
+  margin-left: 17px;
+}
+
+
+/* ------------------------ Page Three --------------------------*/
+
+body .page-three{
+  position: absolute;
+  width: 1440px;
+  height: 651px;
+  left: 0px;
+  top: 1646px;
+  
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(34, 27, 19, 0.79) 88.09%, rgba(242, 175, 92, 0.7663) 122.6%);
+}
+
+body .page-three h1{
+  position: absolute;
+  width: 512px;
+  height: 88px;
+  left: calc(50% - 512px/2);
+  margin-top: -600px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+
+  /* or 125% */
+  text-align: center;
+  letter-spacing: 0.1px;
+
+  color: #ffffff;  
+}
+
+body .page-three .comment-1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 42px;
+  gap: 10px;
+
+  position: absolute;
+  width: 522px;
+  height: 331px;
+  left: 168px;
+  top: 210px;
+
+  background: #FDF3E7;
+  border-radius: 10px;
+}
+
+body .page-three .comment-2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 42px;
+  gap: 10px;
+
+  position: absolute;
+  width: 522px;
+  height: 331px;
+  left: 750px;
+  top: 210px;
+
+  background: #FDF3E7;
+  border-radius: 10px;
+}
+
+body .page-three h5{
+  width: 438px;
+  height: 226px;
+
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+
+  /* or 156% */
+  text-align: center;
+  letter-spacing: 0.1px;
+
+  color: #252940;
+}
+
+body .page-three h6{
+  width: 438px;
+  height: 226px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 17px;
+
+
+  /* or 156% */
+  text-align: center;
+  letter-spacing: 0.1px;
+
+  color: #252940;
+}
+
+/* ------------------------ Page Four --------------------------*/
+
+body .page-four h1{
+  position: absolute;
+  width: 640px;
+  height: 165px;
+  left: 720px;
+  top: 2358px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 55px;
+  
+  /* or 125% */
+  letter-spacing: 0.1px;
+  
+  color: #252940;  
+}
+
+body .page-four h5{
+  position: absolute;
+  width: 640px;
+  height: 124px;
+  left: 720px;
+  top: 2549px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  
+  /* or 156% */
+  letter-spacing: 0.1px;
+  
+  color: #252940;
+}
+
+
+
+body .page-four .button-download{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  position: absolute;
+  width: 325px;
+  height: 40px;
+  left: 715px;
+  top: 2699px;
+
+  background: rgba(242, 175, 92, 0.97);
+  border-radius: 5px;}
+
+  body .page-four .button-download h6{
+ 
+  /* BodeTech/Body semibold 2 */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+
+  /* identical to box height, or 129% */
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  /* BodeTech/Text/Primary */
+  color: #252940;
+}
+
+/* ------------------------ Page Five --------------------------*/
+
+body .page-five{
+  position: absolute;
+  width: 1440px;
+  height: 1012px;
+  left: 0px;
+  top: 2868px;
+  
+  background: rgba(253, 243, 231, 0.97);
+}
+
+body .page-five h1{
+  position: absolute;
+  width: 721px;
+  height: 91px;
+  left: calc(50% - 721px/2 + 11.5px);
+  top: 106px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+
+  /* or 125% */
+  text-align: center;
+  letter-spacing: 0.1px;
+
+  color: #252940;
+}
+
+body .page-five h2{
+  position: absolute;
+  width: 380px;
+  top: 38px;
+  left: 33px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+
+  /* or 125% */
+  letter-spacing: 0.1px;
+  color: #252940;
+}
+
+body .page-five h5{
+  width: 305px;
+  height: 121px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  
+  /* or 156% */
+  letter-spacing: 0.1px;
+  
+  color: #252940;
+}
+
+body .page-five .card-1{
+  position: absolute;
+  width: 413px;
+  height: 642px;
+  left: 80px;
+  top: 242px;;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+body .page-five .card-2{
+  position: absolute;
+  width: 413px;
+  height: 642px;
+  left: 514px;
+  top: 242px;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+
+body .page-five .card-3{
+  position: absolute;
+  width: 413px;
+  height: 642px;
+  left: 947px;
+  top: 242px;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+body .page-five .button-download{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  
+  position: absolute;
+  width: 325px;
+  height: 40px;
+  left: 558px;
+  margin-top: 929px;
+  
+  background: rgba(242, 175, 92, 0.97);
+  border-radius: 5px;
+}
+
+body .page-five .button-download h6{
+ 
+  /* BodeTech/Body semibold 2 */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+
+  /* identical to box height, or 129% */
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  /* BodeTech/Text/Primary */
+  color: #252940;
+}
+
+/* ------------------------ Page Six --------------------------*/
+
+body .page-six {
+  position: absolute;
+  width: 1104px;
+  height: 402px;
+  left: 168px;
+  top: 3925px;
+
+  background: rgba(242, 175, 92, 0.97);
+  border-radius: 10px;
+}
+
+body .page-six h1{
+  position: absolute;
+  width: 481px;
+  height: 116px;
+  left: calc(730px - 168px);
+  top: calc(3972px - 3925px);
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 56px;
+
+  /* or 112% */
+  letter-spacing: 0.1px;
+
+  color: #252940;
+}
+
+
+body .page-six h5{
+  position: absolute;
+  width: 481px;
+  height: 99px;
+  left: calc(730px - 168px);
+  top: calc(4114px - 3925px); 
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+
+  /* or 156% */
+  letter-spacing: 0.1px;
+
+  color: #252940;
+}
+
+body .page-six .button-download{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  
+  position: absolute;
+  width: 325px;
+  height: 40px;
+  left: 558px;
+  top: calc(4239px - 3925px);
+  
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+body .page-six .button-download h6{
+ 
+  /* BodeTech/Body semibold 2 */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+
+  /* identical to box height, or 129% */
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  /* BodeTech/Text/Primary */
+  color: #252940;
+}
+
+/* ------------------------ Page Seven --------------------------*/
+
+body .page-seven {
+  position: absolute;
+  width: 1440px;
+  height: 559px;
+  left: 0px;
+  top: 4378px;
+
+  background: #F9F9F9;
+}
+
+body .page-seven h1{
+  position: absolute;
+  width: 492px;
+  height: 165px;
+  left: 80px;
+  top: calc(4450px - 4378px);
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 55px;
+
+  /* or 125% */
+  letter-spacing: 0.1px;
+
+  color: #252940;
+}
+
+body .page-seven h5{
+  position: absolute;
+  width: 650px;
+  height: 102px;
+  left: 80px;
+  top: calc(4590px - 4378px);
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+
+  /* or 156% */
+  letter-spacing: 0.1px;
+
+  color: #252940;
+  }
+
+body .page-seven .text-email{
+  position: absolute;
+  width: 211px;
+  height: 26px;
+  left: 108px;
+  top: 4720px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+
+  /* or 156% */
+  letter-spacing: 0.1px;
+
+  color: #252940;
+  }
+
+  body .page-seven .container {
+    position: absolute;
+    flex-direction: column;
+    left: 748px;
+    top: 72px;
+  }
+  
+  body .page-seven .input-email {
+  
+    box-sizing: border-box;
+  
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 9px 16px;
+    gap: 10px;
+  
+    width: 263px;
+    height: 40px;
+  
+    background: #FFFFFF;
+  
+    /* BodeTech/Background/Dividers & Borders */
+    border: 1px solid #ECECED;
+    border-radius: 5px;
+  }
+  
+  body .page-seven .label-email{
+    width: 267px;
+    height: 16px;
+  
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  
+    /* identical to box height, or 114% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+  
+    /* BodeTech/Text/Primary */
+    color: #252940;
+  }
+  
+  body .page-seven .input-whatsapp {
+  
+    box-sizing: border-box;
+  
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 9px 16px;
+    gap: 10px;
+  
+    width: 263px;
+    height: 40px;
+  
+    background: #FFFFFF;
+  
+    /* BodeTech/Background/Dividers & Borders */
+    border: 1px solid #ECECED;
+    border-radius: 5px;
+  }
+  
+  body .page-seven .label-whatsapp{
+    width: 267px;
+    height: 16px;
+  
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  
+    /* identical to box height, or 114% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+  
+    /* BodeTech/Text/Primary */
+    color: #252940;
+  }
+
+  body .page-seven .input-mensagem {
+  
+    box-sizing: border-box;
+  
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 9px 16px;
+    gap: 10px;
+  
+    width: 558px;
+    height: 155px;
+  
+    background: #FFFFFF;
+  
+    /* BodeTech/Background/Dividers & Borders */
+    border: 1px solid #ECECED;
+    border-radius: 5px;
+  }
+  
+  ::placeholder {
+    width: 167px;
+    height: 21px;
+  
+    /* BodeTech/Body 2 */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  
+    /* or 129% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.3px;
+  
+    /* BodeTech/Text/Default */
+    color: #D3D4D7;
+  }
+
+body .page-seven .submit{
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    /* BodeTech/Body semibold 2 */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+    /* identical to box height, or 129% */
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* BodeTech/Text/Primary */
+    color: #252940;
+
+    position: absolute;
+    width: 325px;
+    height: 40px;
+    left: 0px;
+    top: 373px;
+
+    background: rgba(242, 175, 92, 0.97);
+    border-radius: 5px;
+  }
+
+/* ------------------------ Page Eight --------------------------*/
+
+body .page-eight h3{
+
+  position: absolute;
+  width: 235px;
+  height: 30px;
+  left: 84px;
+  top: 5014px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  
+  /* identical to box height */
+  
+  color: #252940;
+  
+  
+}
+
+body .page-eight h5{
+  position: absolute;
+  width: 626px;
+  height: 86px;
+  left: 84px;
+  top: 5070px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #252940;
+}
+
+body .page-eight .container {
+  position: absolute;
+  flex-direction: column;
+  left: 80px;
+  top: 5203px;
+}
+
+body .page-eight .label-email{
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 6px;
+
+  /* or 114% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1px;
+
+  /* BodeTech/Text/Primary */
+  color: #252940;
+}
+
+body .page-eight .submit{
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  /* BodeTech/Body semibold 2 */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+
+  /* identical to box height, or 129% */
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  /* BodeTech/Text/Primary */
+  color: #252940;
+  left: 347px;
+  top: 22px;
+
+  position: absolute;
+  width: 185px;
+  height: 40px;
+ 
+  background: rgba(242, 175, 92, 0.97);
+  border-radius: 5px;
+}
+
+body .page-eight .input-email{
+  
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 9px 16px;
+  gap: 10px;
+
+  width: 325px;
+  height: 40px;
+
+  background: #FFFFFF;
+
+  /* BodeTech/Background/Dividers & Borders */
+  border: 1px solid #ECECED;
+  border-radius: 5px;
+}
+
+body .page-eight h2{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+
+  /* identical to box height */
+  color: #252940;
+}
+
+body .page-eight h4{
+  position: absolute;
+  width: 105px;
+  height: 14px;
+  left: 1192px;
+  top: 5285px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  text-decoration-line: underline;
+
+  color: #4AA6E1;
+}
+
+
+body .footer{ 
+  position: absolute;
+  width: 1440px;
+  height: 195.51px;
+  left: 0px;
+  top: 5395px;
+  background: rgba(242, 175, 92, 0.97);
+}
+
+body .footer p{ 
+  position: absolute;
+  width: 324px;
+  height: 17px;
+  left: calc(50% - 324px/2);
+  bottom: 29px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  
+  color: #252940;  
+}
+
+body .footer hr{
+  position: absolute;
+  width: 1272px;
+  height: 1px;
+  left: 84px;
+  bottom: 69px;
+  border: none;
+  background-color: #252940;
+}
+
+body .footer img{
+  position: absolute;
+  width: 40px;
+  height: 34px;
+  left: 636px;
+  bottom: 106px;
+}
+
+body .footer h2{
+  position: absolute;
+  left: 684px;
+  bottom: 106px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  
+  color: #252940;
+}
+/* ------------------------ Others Screens --------------------------*/
