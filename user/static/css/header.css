@@ -3,7 +3,8 @@
 .header {
 
   position: absolute;
-  width: 1440px;
+  width: 100vw;
+  max-width: 100%;
   height: 108px;
   left: 0px;
   top: 0px;
@@ -15,14 +16,14 @@
   position: absolute;
   width: 40px;
   height: 34px;
-  left: 80px;
+  left: 60px;
   top: 37px;
 }
 
 .header h1{
   
   position: absolute;
-  left: 135px;
+  left: 115px;
   top: 37px;
 
   font-family: 'Poppins';
@@ -40,7 +41,7 @@
 
 .header .navbar-nav{
   position: absolute;
-  left: 273px;
+  left: 323px;
   top: 35.5px;
 
   display: flex;
@@ -50,7 +51,7 @@
 
 .header .navbar-nav .app{
 
-  margin: 0 31px;
+  margin: 0 20px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -64,7 +65,7 @@
 
 .header .navbar-nav .vantagens{
 
-  margin: 0 31px;
+  margin: 0 20px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -78,7 +79,7 @@
 
 .header .navbar-nav .funcionalidades{
 
-  margin: 0 31px;
+  margin: 0 20px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -92,7 +93,7 @@
 
 .header .navbar-nav .depoimentos{
 
-  margin: 0 31px;
+  margin: 0 20px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -106,7 +107,7 @@
 
 .header .navbar-nav .blog{
 
-  margin: 0 31px;
+  margin: 0 20px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -120,7 +121,7 @@
 
 .header .navbar-nav .contato{
 
-  margin: 0 31px;
+  margin: 0 20px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -137,14 +138,15 @@
    /* Auto layout */
   display: flex;
 
-  margin: 0 31px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 
+  margin: 0 20px;
   width: 185px;
   height: 40px;
+
 
   background: rgba(242, 175, 92, 0.97);
   border-radius: 5px;
@@ -171,13 +173,19 @@
 
 /* ------------------------ Page One --------------------------*/
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 body .page-one{
   left: 0px;
   top: 106px;
 
   position: absolute;
-  width: 1440px;
+  width: 100vw;
+  max-width: 100%;
   height: 645px;
   background: linear-gradient(180deg, rgba(242, 175, 92, 0.9506) 0%, rgba(255, 255, 255, 0.98) 81.77%);
 }
@@ -279,12 +287,13 @@ body .page-one .bode-capa{
 
 body .page-one .retangulo{
   position: absolute;
-  width: 1440px;
+  width: 100vw;
+  max-width: 100%;
   height: 652px;
   left: 0px;
   top: 6px;
 
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40.95%, #ffffff 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40.95%, #ffffff 100vw);
 }
 
 /* ------------------------ Page Two --------------------------*/
@@ -293,7 +302,7 @@ body .page-two .text-title {
   position: absolute;
   width: 721px;
   height: 136px;
-  left: calc(721px/2 + 0.5px);
+  left: calc(50% - 721px/2 + 0.5px);
   top: 802px;
 
   font-family: 'Poppins';
@@ -311,10 +320,10 @@ body .page-two .text-title {
 
 body .page-two .card-1{
   position: absolute;
-  width: 413px;
-  height: 285px;
-  left: 80px;
-  top: 993px;
+  width: 403px;
+  height: 265px;
+  left: 60px;
+  top: 980px;
   
   background: rgba(242, 175, 92, 0.15);
   border-radius: 10px;
@@ -323,10 +332,10 @@ body .page-two .card-1{
 
 body .page-two .card-2{
   position: absolute;
-  width: 413px;
-  height: 285px;
-  left: 515px;
-  top: 993px;
+  width: 403px;
+  height: 265px;
+  left: 485px;
+  top: 980px;
   
   background: rgba(242, 175, 92, 0.15);
   border-radius: 10px;
@@ -335,10 +344,10 @@ body .page-two .card-2{
 
 body .page-two .card-3{
   position: absolute;
-  width: 413px;
-  height: 285px;
-  left: 950px;
-  top: 993px;
+  width: 403px;
+  height: 265px;
+  left: 910px;
+  top: 980px;
   
   background: rgba(242, 175, 92, 0.15);
   border-radius: 10px;
@@ -346,10 +355,10 @@ body .page-two .card-3{
 
 body .page-two .card-4{
   position: absolute;
-  width: 413px;
-  height: 285px;
-  left: 80px;
-  top: 1301px;
+  width: 403px;
+  height: 265px;
+  left: 60px;
+  top: 1268px;
   
   background: rgba(242, 175, 92, 0.15);
   border-radius: 10px;
@@ -358,10 +367,10 @@ body .page-two .card-4{
 
 body .page-two .card-5{
   position: absolute;
-  width: 413px;
-  height: 285px;
-  left: 515px;
-  top: 1301px;
+  width: 403px;
+  height: 265px;
+  left: 485px;
+  top: 1268px;
   
   background: rgba(242, 175, 92, 0.15);
   border-radius: 10px;
@@ -370,10 +379,10 @@ body .page-two .card-5{
 
 body .page-two .card-6{
   position: absolute;
-  width: 413px;
-  height: 285px;
-  left: 950px;
-  top: 1301px;
+  width: 403px;
+  height: 265px;
+  left: 910px;
+  top: 1268px;
   
   background: rgba(242, 175, 92, 0.15);
   border-radius: 10px;
@@ -428,13 +437,11 @@ body .page-two .ellipse{
 
 body .page-three{
   position: absolute;
-  width: 1440px;
+  width: 100vw;
   height: 651px;
   left: 0px;
   top: 1646px;
-  
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(34, 27, 19, 0.79) 88.09%, rgba(242, 175, 92, 0.7663) 122.6%);
-}
+  }
 
 body .page-three h1{
   position: absolute;
@@ -460,12 +467,12 @@ body .page-three .comment-1{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 40px 42px;
-  gap: 10px;
+  padding: 50px 20px;
+  gap: 40px;
 
   position: absolute;
-  width: 522px;
-  height: 331px;
+  width: calc(522px*0.90);
+  height: calc(331px*0.90);
   left: 168px;
   top: 210px;
 
@@ -477,13 +484,13 @@ body .page-three .comment-2{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 40px 42px;
-  gap: 10px;
+  padding: 50px 20px;
+  gap: 40px;
 
   position: absolute;
-  width: 522px;
-  height: 331px;
-  left: 750px;
+  width: calc(522px*0.90);
+  height: calc(331px*0.90);
+  left: 730px;
   top: 210px;
 
   background: #FDF3E7;
@@ -497,7 +504,7 @@ body .page-three h5{
   font-family: 'Poppins';
   font-style: italic;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 25px;
 
   /* or 156% */
@@ -513,8 +520,8 @@ body .page-three h6{
 
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 15px;
   line-height: 25px;
   margin-top: 17px;
 
@@ -549,7 +556,7 @@ body .page-four h1{
 
 body .page-four h5{
   position: absolute;
-  width: 640px;
+  width: 600px;
   height: 124px;
   left: 720px;
   top: 2549px;
@@ -605,7 +612,7 @@ body .page-four .button-download{
 
 body .page-five{
   position: absolute;
-  width: 1440px;
+  width: 100vw;
   height: 1012px;
   left: 0px;
   top: 2868px;
@@ -668,7 +675,7 @@ body .page-five h5{
 
 body .page-five .card-1{
   position: absolute;
-  width: 413px;
+  width: 400px;
   height: 642px;
   left: 80px;
   top: 242px;;
@@ -679,9 +686,9 @@ body .page-five .card-1{
 
 body .page-five .card-2{
   position: absolute;
-  width: 413px;
+  width: 400px;
   height: 642px;
-  left: 514px;
+  left: 494px;
   top: 242px;
 
   background: #FFFFFF;
@@ -691,9 +698,9 @@ body .page-five .card-2{
 
 body .page-five .card-3{
   position: absolute;
-  width: 413px;
+  width: 400px;
   height: 642px;
-  left: 947px;
+  left: 907px;
   top: 242px;
 
   background: #FFFFFF;
@@ -824,7 +831,7 @@ body .page-six .button-download h6{
 
 body .page-seven {
   position: absolute;
-  width: 1440px;
+  width: 100vw;
   height: 559px;
   left: 0px;
   top: 4378px;
@@ -853,7 +860,7 @@ body .page-seven h1{
 
 body .page-seven h5{
   position: absolute;
-  width: 650px;
+  width: 600px;
   height: 102px;
   left: 80px;
   top: calc(4590px - 4378px);
@@ -1073,7 +1080,7 @@ body .page-eight h3{
 
 body .page-eight h5{
   position: absolute;
-  width: 626px;
+  width: 570px;
   height: 86px;
   left: 84px;
   top: 5070px;
@@ -1179,7 +1186,7 @@ body .page-eight h4{
   position: absolute;
   width: 105px;
   height: 14px;
-  left: 1192px;
+  left: 1214px;
   top: 5285px;
 
   font-family: 'Poppins';
@@ -1198,7 +1205,7 @@ body .page-eight h4{
 
 body .footer{ 
   position: absolute;
-  width: 1440px;
+  width: 100vw;
   height: 195.51px;
   left: 0px;
   top: 5395px;
@@ -1225,9 +1232,10 @@ body .footer p{
 
 body .footer hr{
   position: absolute;
-  width: 1272px;
+  width: 1200px;
   height: 1px;
-  left: 84px;
+  left: 80px;
+  right: 80px;
   bottom: 69px;
   border: none;
   background-color: #252940;
