@@ -39,24 +39,25 @@
     <!-- Header -->
     <nav class="header" id="inicio" class="navbar navbar-light bg-light">
         <a class="img">
-          <img src="{% static 'images/header/logo.png' %}" class="d-inline-block align-top" alt="">
+          <img src="{% static 'images/header/logo.png' %}" class="d-inline-block align-top" alt="logo">
         </a>
         <h1> BodeTech</h1>
      
-        <div class="navbar-nav">
-          <a class="app" class="nav-item nav-link" href="#app">Sobre o App </a>
-          <a class="vantagens" href="#vantagens">Vantagens </a>
-          <a class="depoimentos" href="#depoimentos">Depoimentos </a>
-          <a class="funcionalidades" href="#funcionalidades">Funcionalidades </a>
-          <a class="blog" href="#blog">Blog </a>  
-          <a class="contato" href="#contato">Contato </a>
-
+        <div class="navbar-nav" id="menuList">
+          <ul>
+              <li><a class="app" class="nav-item nav-link" href="#app">Sobre o App </a></li>
+              <li><a class="vantagens" href="#vantagens">Vantagens </a></li>
+              <li><a class="depoimentos" href="#depoimentos">Depoimentos </a></li>
+              <li><a class="funcionalidades" href="#funcionalidades">Funcionalidades </a></li>
+              <li><a class="blog" href="#blog">Blog </a></li>
+              <li><a class="contato" href="#contato">Contato </a></li>
+          </ul>
           <a class="button-download" href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
             <h6>Baixe o App!</h6>
           </a>
         </div>
 
-
+        <img src="{% static 'images/header/menu.png' %}" class="menu-icon" onclick="togglemenu()">
     </nav>
 </head>
 <body>
@@ -74,10 +75,10 @@
     <div class="retangulo">
 
       <div class="text-body">
-        Nosso aplicativo de gerenciamento simplifica e aprimora 
+        Nosso aplicativo simplifica e aprimora 
         todas as etapas do seu negócio. Com acesso aos recursos de registro de dados,
-        controle de saúde e reprodução, alertas personalizados e análises
-        inteligentes você terá total controle e visão geral sobre o desempenho do seu rebanho.
+        controle financeiro, alertas personalizados e análises
+        inteligentes você terá total controle e visão geral sobre o desempenho da sua criação.
       </div>
   
 
@@ -103,7 +104,7 @@
       <h3>Controle simplificado</h3> 
       <h4>
         Nosso aplicativo oferece uma interface intuitiva e fácil de usar, permitindo que 
-        você controle todas as informações do seu rebanho com apenas alguns toques. 
+        você controle todas as informações do seu rebanho com apenas alguns cliques. 
       </h4> 
     </div>
 
@@ -125,7 +126,7 @@
       <h3>Alertas personalizados</h3>
       <h4>
         Receba alertas de datas importantes, como vacinações, desmama, 
-        cobertura e outros eventos relevantes para garantir o cuidado adequado e oportuno de seus bodes.
+        cobertura e outros eventos relevantes para garantir o cuidado adequado de seus animais.
       </h4>
     </div>
 
@@ -166,7 +167,7 @@
 
   <section class="page-three" id="depoimentos">
 
-    <img style="width: 100%; height: 100%;" src="{% static 'images/body/bodes.png' %}" alt="bodes">
+    <img class="img-bodes" src="{% static 'images/body/bodes.png' %}" alt="bodes">
 
     <h1>
       O que nossos usuários estão dizendo... 
@@ -179,7 +180,7 @@
          e tomar decisões estratégicas com base em dados precisos. 
         É uma ferramenta indispensável para qualquer criador!" <br>
       </h5>
-      <h6> - João, criador de bodes há 5 anos.</h6>
+      <h6> - João, criador de caprinos há 5 anos.</h6>
 
     </div>
 
@@ -189,28 +190,22 @@
         Com apenas alguns cliques, consigo registrar todas as informações essenciais do meu rebanho, receber 
         alertas importantes e até mesmo compartilhar dados com meu veterinário de confiança." <br>
       </h5>
-      <h6> - Maria, criadora de bodes há 6 anos.</h6>
+      <h6> - Maria, criadora de caprinos há 6 anos.</h6>
 
     </div>
 
-    <img style="position: absolute; top: 50%; left: 80px;"
-    src="{% static 'images/body/left-arrow.png' %}" alt="arrow-left">
-    <img style="position: absolute; top: 50%; right: 80px;"
-    src="{% static 'images/body/right-arrow.png' %}" alt="arrow-right">
-    <img style="position: absolute; bottom: 60px; left: 643px;"
-    src="{% static 'images/body/bar-scroll-1.png' %}" alt="bar-1">
-    <img style="position: absolute; bottom: 60px; left: 779px;"
-    src="{% static 'images/body/bar-scroll-2.png' %}" alt="bar-2">
+    <img class="arrow-left" src="{% static 'images/body/left-arrow.png' %}" alt="arrow-left">
+    <img class="arrow-right" src="{% static 'images/body/right-arrow.png' %}" alt="arrow-right">
+    <img class="bar-scroll-1" src="{% static 'images/body/bar-scroll-1.png' %}" alt="bar-1">
+    <img class="bar-scroll-2" src="{% static 'images/body/bar-scroll-2.png' %}" alt="bar-2">
 
 
   </section>
 
   <section class="page-four">
 
-    <img style="position: absolute; left: -2px; top: 2297px;"
-    src="{% static 'images/body/bode-peso.png' %}" alt="bode-peso">
-    <img style="position: absolute; left: 181px; top: 2310px;"
-    src="{% static 'images/body/maos-segurando-um-smartphone.png' %}" alt="maos-segurando-um-smartphone">
+    <img class="bode-peso" src="{% static 'images/body/bode-peso.png' %}" alt="bode-peso">
+    <img class="pesando-bode" src="{% static 'images/body/maos-segurando-um-smartphone.png' %}" alt="pesando-bode">
 
     <h1> Pesagem automática: Facilitando a gestão de peso com BodeTech!</h1>
     <h5> 
@@ -229,115 +224,139 @@
 
     <h1>Potencialize sua produção com nossas funcionalidades</h1>
 
+    <img class="arrow-left" src="{% static 'images/body/left-arrow-2.png' %}" alt="arrow-left">
+
     <div class="card-1">
       <h2>Produção de ponta a ponta:</h2>
 
-      <img style="position: absolute; left: 32px; top: 115px;"
-      src="{% static 'images/body/check.png' %}" alt="bodes">
+      <ul>
+          <li>
+            <h5>
+              <img src="{% static 'images/body/check.png' %}" alt="bodes">
+              <span style="font-weight:600;">&ensp; Sequência de Manejos:</span>
+              <span> Registre e acompanhe todas as etapas 
+                do manejo, desde alimentação até vacinação.</span>
+            </h5>
+          </li>
+          
+          <li>
+            <h5>
+              <img src="{% static 'images/body/check.png' %}" alt="bodes">
+              <span style="font-weight:600;">&ensp; Financeiro: </span>
+              <span> Controle completo dos custos e receitas para 
+              planejamento financeiro e análise de lucratividade.</span>
+            </h5>
+          </li>
 
-      <h5 style="position: absolute; left: 76px; top: 115px; font-size: 18px;">
-        <span style="font-weight:600;">Sequência de Manejos:</span>
-        <span> Registre e acompanhe todas as etapas 
-          do manejo, desde alimentação até vacinação.</span>
-      </h5>
+          <li>
+            <h5>
+              <img src="{% static 'images/body/check.png' %}" alt="bodes">
+              <span style="font-weight:600;">&ensp; Reprodução: </span>
+              <span>Registro de dados de cobertura, gestação e 
+              parto para monitorar desempenho reprodutivo.</span>
+            </h5>
+          </li>
 
-      <img style="position: absolute; left: 32px; top: 240px;"
-      src="{% static 'images/body/check.png' %}" alt="bodes">
-      <h5 style="position: absolute; left: 76px; top: 240px; font-size: 18px;">
-        
-        <span style="font-weight:600;">Financeiro: </span>
-        <span> Controle completo dos custos e receitas para 
-        planejamento financeiro e análise de lucratividade.</span>
-      </h5>
-
-      <img style="position: absolute; left: 32px; top: 353px;"
-      src="{% static 'images/body/check.png' %}" alt="bodes">
-      <h5 style="position: absolute; left: 76px; top: 353px; font-size: 18px;">
-        <span style="font-weight:600;">Reprodução: </span>
-        <span>Registro de dados de cobertura, gestação e 
-        parto para monitorar desempenho reprodutivo.</span>
-      </h5>
-
-      <img style="position: absolute; left: 32px; top: 450px;"
-      src="{% static 'images/body/check.png' %}" alt="bodes">
-      <h5 style="position: absolute; left: 76px; top: 450px; font-size: 18px;">
-        <span style="font-weight:600;">Seleção de Rebanho:</span>
-        <span> Otimize seu programa de melhoramento
-        genético selecionando os melhores animais com critérios específicos.</span>
-      </h5>
-
+          <li>
+            <h5>
+              <img src="{% static 'images/body/check.png' %}" alt="bodes">
+              <span style="font-weight:600;">&ensp; Seleção de Rebanho:</span>
+              <span> Melhore seu plantel selecionando animais com critérios específicos.</span>
+            </h5>
+          </li>
+        </ul>
     </div>
 
     <div class="card-2">
       <h2>Gestão mais eficiente:</h2>
+        <ul>
+          <li>
+            <h5>
+              <img src="{% static 'images/body/check.png' %}" alt="bodes">
+              <span style="font-weight:600;">&ensp; Formação de Lotes:</span>
+              <span> Organize e separe animais com base
+              em características específicas, como idade, sexo ou finalidade.</span>
+            </h5>
+          </li>
+          
+          <li>
+            <h5>
+              <img src="{% static 'images/body/check.png' %}" alt="bodes">
+              <span style="font-weight:600;">&ensp; Ração personalizada:</span>
+              <span> Indicação de ração conforme 
+              as necessidades nutricionais do animal.</span>
+            </h5>
+          </li>
 
-      <img style="position: absolute; left: 32px; top: 115px;"
-      src="{% static 'images/body/check.png' %}" alt="bodes">
-      <h5 style="position: absolute; left: 76px; top: 115px; font-size: 18px;">
-        <span style="font-weight:600;">Formação de Lotes:</span>
-        <span> Organize e separe animais com base
-        em características específicas, como idade, sexo ou finalidade.</span>
-      </h5>
+          <li>
+            <h5>
+              <img src="{% static 'images/body/check.png' %}" alt="bodes">
+              <span style="font-weight:600;">&ensp; Ração personalizada:</span>
+              <span> Indicação de ração conforme 
+              as necessidades nutricionais do animal.</span>
+            </h5>
+          </li>
 
-      <img style="position: absolute; left: 32px; top: 240px;"
-      src="{% static 'images/body/check.png' %}" alt="bodes">
-      <h5 style="position: absolute; left: 76px; top: 240px; font-size: 18px;">
-        <span style="font-weight:600;">Fichas e Tabelas:</span>
-        <span> Registre e armazene dados importantes 
-        de forma organizada e acessível.</span>
-      </h5>
+          <li>
+            <h5>
+              <img src="{% static 'images/body/check.png' %}" alt="bodes">
+              <span style="font-weight:600;">&ensp; Desempenho do Rebanho:</span> 
+              <span> Monitore o desempenho do seu rebanho,
+              registrando indicadores-chave como ganho de peso, produção de leite e fertilidade.</span>
+            </h5>
+            </h5>
+          </li>
 
-      <img style="position: absolute; left: 32px; top: 353px;"
-      src="{% static 'images/body/check.png' %}" alt="bodes">
-      <h5 style="position: absolute; left: 76px; top: 353px; font-size: 18px;">
-        <span style="font-weight:600;">Ração personalizada:</span>
-        <span> Indicação de ração conforme 
-        as necessidades nutricionais do animal.</span>
-      </h5>
-
-      <img style="position: absolute; left: 32px; top: 450px;"
-      src="{% static 'images/body/check.png' %}" alt="bodes">
-      <h5 style="position: absolute; left: 76px; top: 450px; font-size: 18px;">
-        <span style="font-weight:600;">Desempenho do Rebanho:</span> 
-        <span> Monitore o desempenho do seu rebanho,
-        registrando indicadores-chave como ganho de peso, produção de leite e fertilidade.</span>
-      </h5>
+        </ul>
+      
     </div>
 
     <div class="card-3">
       <h2>Informações detalhadas:</h2>
+      <ul>
+        <li>
+          <h5>
+            <img src="{% static 'images/body/check.png' %}" alt="bodes">
+            <span style="font-weight:600;">&ensp; Acompanhamento de Custos:</span> 
+            <span> Controle e acompanhe os gastos com alimentação dos seus bodes de forma precisa.</span>
+          </h5>
+        </li>
+        
+        <li>
+          <h5>
+            <img src="{% static 'images/body/check.png' %}" alt="bodes">
+            <span style="font-weight:600;">&ensp; Taxa de Conversão Alimentar:</span>
+            <span> Monitore a relação entre consumo de alimento e ganho de peso.</span>
+          </h5>
+        </li>
 
-      <img style="position: absolute; left: 32px; top: 115px;"
-      src="{% static 'images/body/check.png' %}" alt="bodes">
-      <h5 style="position: absolute; left: 76px; top: 115px; font-size: 18px;">
-        <span style="font-weight:600;">Acompanhamento de Custos:</span> 
-        <span> Controle e acompanhe os gastos com alimentação dos seus bodes de forma precisa.</span>
-      </h5>
+        <li>
+          <h5>
+            <img src="{% static 'images/body/check.png' %}" alt="bodes">
+            <span style="font-weight:600;">&ensp; Informações em Tempo Real:</span>
+            <span> Acesse informações atualizadas do seu rebanho em tempo real.</span>
+          </h5>
+          </h5>
+        </li>
 
-      <img style="position: absolute; left: 32px; top: 240px;"
-      src="{% static 'images/body/check.png' %}" alt="bodes">
-      <h5 style="position: absolute; left: 76px; top: 240px; font-size: 18px;">
-        <span style="font-weight:600;">Taxa de Conversão Alimentar:</span>
-        <span> Monitore a relação entre consumo de alimento e ganho de peso.</span>
-      </h5>
-
-      <img style="position: absolute; left: 32px; top: 353px;"
-      src="{% static 'images/body/check.png' %}" alt="bodes">
-      <h5 style="position: absolute; left: 76px; top: 353px; font-size: 18px;">
-        <span style="font-weight:600;">Informações em Tempo Real:</span>
-        <span> Acesse informações atualizadas do seu rebanho em tempo real.</span>
-      </h5>
-
-      <img style="position: absolute; left: 32px; top: 450px;"
-      src="{% static 'images/body/check.png' %}" alt="bodes">
-      <h5 style="position: absolute; left: 76px; top: 450px; font-size: 18px;">
-        <span style="font-weight:600;">Desempenho por lote:</span>
-        <span> Analise o desempenho dos seus animais de acordo com as diferentes áreas de alojamento. </span> 
-      </h5>
-      
+        <li>
+          <h5>
+            <img src="{% static 'images/body/check.png' %}" alt="bodes">
+            <span style="font-weight:600;">&ensp; Desempenho por lote:</span>
+            <span> Analise o desempenho dos seus animais de acordo com as diferentes áreas de alojamento. </span> 
+          </h5>
+        </li>
+      </ul>
     </div>
 
+
+
     <div>
+        <img class="bar-scroll-1" src="{% static 'images/body/bar-scroll-1.png' %}" alt="bar-1">
+        <img class="bar-scroll-3" src="{% static 'images/body/bar-scroll-3.png' %}" alt="bar-2">
+        <img class="bar-scroll-4" src="{% static 'images/body/bar-scroll-3.png' %}" alt="bar-2">
+        <img class="arrow-right" src="{% static 'images/body/right-arrow.png' %}" alt="arrow-right">
+        
         <a  class="button-download" href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
           <h6>Baixar App agora!</h6>
         </a>
@@ -355,8 +374,8 @@
         cuidado e obtenha resultados excepcionais. Leia agora!
     </h5>
 
-    <img style="position: absolute; left: 0px; top: 8px;" class="ellipse2" src="{% static 'images/body/Ellipse2.png' %}" alt="ellipse2">
-    <img style="position: absolute; left: 0px; top: 0px;" class="bode-reader" src="{% static 'images/body/bode-reader.png' %}" alt="bode-reader">
+    <img class="ellipse" src="{% static 'images/body/Ellipse2.png' %}" alt="ellipse2">
+    <img class="bode-reader" src="{% static 'images/body/bode-reader.png' %}" alt="bode-reader">
     
     <div>
       <a  class="button-download" href="#">
@@ -377,12 +396,15 @@
       ajudar a potencializar o seu negócio.
     </h5>
 
-    <img style="position: absolute; left: 80px; top: 332px;" class="" src="{% static 'images/body/email.png' %}" alt="email">
-    <img style="position: absolute; left: 80px; top: 382px;" class="" src="{% static 'images/body/phone.png' %}" alt="phone">
-    
-    <h6 class="text" style="position: absolute; left: 108px; top: 342px;">riseit.is@gmail.com</h6>
-    <h6 class="text" style="position: absolute; left: 108px; top: 392px;">+55 (74) 98117-4622</h6>
+    <div class="email">
+      <img src="{% static 'images/body/email.png' %}" alt="email">
+      <h6>&ensp; riseit.is@gmail.com</h6>
+    </div>
 
+    <div class="phone">
+      <img src="{% static 'images/body/phone.png' %}" alt="phone">
+      <h6>&ensp; +55 (74) 98117-4622</h6>
+    </div>
 
     <div class="container">
       <form action="">
@@ -423,9 +445,9 @@
 
     <h5>
       A BodeTech é uma equipe especializada em soluções para caprinocultura.
-      Nosso aplicativo visa impulsionar o sucesso dos criadores, fornecendo
-      suporte personalizado e tecnologia avançada. Junte-se a BodeTech e veja 
-      como a caprinocultura é lucrativa.
+      Nosso aplicativo facilita o dia-a-dia do criador, com
+      suporte personalizado e tecnologia para manejo. Junte-se agora a BodeTech e impulsione 
+      a sua produção.
     </h5>
 
     <div class="container" class="row">
@@ -436,73 +458,59 @@
       </form>
     </div>
 
-    <a href="#">
-      <img style="position: absolute; top: 5279.44px; left: 86px;"
-      src="{% static 'images/body/facebook.png' %}" alt="facebook">      
-    </a>
+    <div class="contatos">
+        <a href="https://www.facebook.com/bodetechh">
+          <img src="{% static 'images/body/facebook.png' %}" alt="facebook">      
+        </a>
 
+        <a href="https://www.instagram.com/bodetechh/">
+          <img src="{% static 'images/body/instagram.png' %}" alt="instagram">
+        </a>
 
-    <a href="#">
-      <img style="position: absolute; top: 5279.44px; left: 126px;"
-      src="{% static 'images/body/instagram.png' %}" alt="instagram">
-    </a>
+        <a href="#">
+          <img src="{% static 'images/body/linkedin.png' %}" alt="linkedin">
+        </a>
+    </div>
 
+    <h2 class="menu-title">Menu </h2>
 
-    <a href="#">
-      <img style="position: absolute; top: 5279.44px; left: 166px;"
-      src="{% static 'images/body/linkedin.png' %}" alt="linkedin">
-    </a>
+    <div class="menu">
+      <a href="#app">Sobre o App </a>
 
+      <a href="#vantagens"> Vantagens </a>
 
-    <h2 style="position: absolute; top: 5014px; left: 750px;">Menu </h2>
+      <a href="#depoimentos"> Depoimentos </a>
+      
+      <a href="#funcionalidades"> Funcionalidades </a>
+      
+      <a href="#blog"> Blog </a>
 
-    <a href="#app" style="position: absolute; top: 0px; left: 666px;"> 
-      <h5>Sobre o App</h5> 
-    </a>
-    <a href="#vantagens" style="position: absolute; top: 39px; left: 666px;"> 
-      <h5>Vantagens</h5> 
-    </a>
-    <a href="#depoimentos" style="position: absolute; top: 87px; left: 666px;"> 
-      <h5>Depoimentos</h5> 
-    </a>
-    <a href="#funcionalidades" style="position: absolute; top: 135px; left: 666px;"> 
-      <h5>Funcionalidades</h5> 
-    </a>
-    <a href="#blog" style="position: absolute; top: 183px; left: 666px;"> 
-      <h5>Blog</h5> 
-    </a>
-    <a href="#contado" style="position: absolute; top: 231px; left: 666px;"> 
-      <h5>Contado</h5> 
-    </a>
+      <a href="#contado"> Contado </a>
+    </div>
 
-    <h2 style="position: absolute; top: 5014px; left: 927px;">Contato </h2>
+    <h2 class="contato-title">Contato </h2>
 
-    <a style="position: absolute; top: 0px; left: 843px;"> 
-      <h5>+55 (74) 98117-4622</h5> 
-    </a>
-    <a  style="position: absolute; top: 39px; left: 843px;"> 
-      <h5>riseit.is@gmail.com</h5> 
-    </a>
+    <div class="contato2">
+      <a>+55 (74) 98117-4622 </a>
+      <a> riseit.is@gmail.com </a>
+    </div>
 
+    <h2 class="baixe-app-title">Baixe o App </h2>
 
-    <h2 style="position: absolute; top: 5014px; left: 1154px;">Baixe o App </h2>
-
-    <a style="position: absolute; top: 5068px; left: 1154px;" href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
+    <a class="google-play" href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
       <img src="{% static 'images/body/googleplay.png' %}" alt="googleplay">
     </a>
 
-    <a  style="position: absolute; top: 5132px; left: 1154px;" href="#">
+    <a  class="apple-store" href="#">
       <img src="{% static 'images/body/applestore.png' %}" alt="applestore">
     </a>
 
     <a href="#inicio">
       <h4>Voltar</h4>
-      <img  style="position: absolute; top: 5267px; left: 1154px;" src="{% static 'images/body/up-arrow.png' %}" alt="applestore">
+      <img  class="topo" src="{% static 'images/body/up-arrow.png' %}" alt="applestore">
     </a>
 
   </section>
-
-
 
   <div class="footer">
     <img src="{% static 'images/header/logo.png' %}" class="d-inline-block align-top" alt="">
@@ -512,6 +520,24 @@
   </div>
 
   <script src="{% static 'js/header.js' %}"></script>
+
+  <script>
+
+    var menuList = document.getElementById("menuList");
+
+    menuList.style.maxHeight = "400px";
+
+    function togglemenu(){
+      if(menuList.style.maxHeight == "0px")
+      {
+        menuList.style.maxHeight = "400px";
+      }
+      else
+      {
+        menuList.style.maxHeight = "0px";
+      }
+    }
+  </script>
   
 </body>
 </html>

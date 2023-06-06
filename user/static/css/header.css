@@ -1,4 +1,8 @@
-/* Navbar */
+/* ------------------------ Navbar Desktop --------------------------*/
+*{
+  font-family: 'Poppins';
+  font-style: normal;  
+}
 
 .header {
 
@@ -20,14 +24,20 @@
   top: 37px;
 }
 
+.header .menu-icon{
+  position: absolute;
+  right: 32px;
+  top: 37px;
+  display: none;
+}
+
 .header h1{
   
   position: absolute;
   left: 115px;
   top: 37px;
 
-  font-family: 'Poppins';
-  font-style: normal;
+  
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
@@ -39,6 +49,7 @@
   color: #252940;
   }
 
+
 .header .navbar-nav{
   position: absolute;
   left: 323px;
@@ -49,90 +60,25 @@
   text-align: center;
 }
 
-.header .navbar-nav .app{
-
-  margin: 0 20px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 138.4%;
-  text-decoration: none;
-
-    
-  color: rgba(37, 41, 64, 0.97);
+.header .navbar-nav ul li{
+  list-style: none;
+  display: inline-block;
 }
 
-.header .navbar-nav .vantagens{
-
+.header .navbar-nav ul li a{
   margin: 0 20px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 138.4%;
-  text-decoration: none;
-
-    
-  color: rgba(37, 41, 64, 0.97);
-  }
-
-.header .navbar-nav .funcionalidades{
-
-  margin: 0 20px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 138.4%;
-  text-decoration: none;
-
-    
-  color: rgba(37, 41, 64, 0.97);
-}
-
-.header .navbar-nav .depoimentos{
-
-  margin: 0 20px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 138.4%;
-  text-decoration: none;
-
-    
-  color: rgba(37, 41, 64, 0.97);
-}
-
-.header .navbar-nav .blog{
-
-  margin: 0 20px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 138.4%;
-  text-decoration: none;
-
-    
-  color: rgba(37, 41, 64, 0.97);
-}
-
-.header .navbar-nav .contato{
-
-  margin: 0 20px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 138.4%;
-  text-decoration: none;
-    
-  color: rgba(37, 41, 64, 0.97);
+ 
   
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138.4%;
+  text-decoration: none;
+  color: rgba(37, 41, 64, 0.97);
 }
 
+.header .navbar-nav a:hover{
+  color: rgba(242, 175, 92, 0.97);
+}
 
 .header .navbar-nav .button-download{
    /* Auto layout */
@@ -152,18 +98,18 @@
   border-radius: 5px;
 }
 
+.header .navbar-nav .button-download:hover{
+  background: rgba(242, 175, 92, 0.82);
+
+}
+
 .header .navbar-nav .button-download h6{
-  
-  /* BodeTech/Body semibold 2 */
-  font-family: 'Poppins';
-  font-style: normal;
+
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
 
-
-  /* identical to box height, or 129% */
   text-align: center;
   letter-spacing: 0.2px;
 
@@ -171,12 +117,106 @@
   color: #252940;
 }
 
-/* ------------------------ Page One --------------------------*/
+/* ------------------------ Navbar iPad --------------------------*/
+
+@media only screen and (max-width: 744px){
+  .header .navbar-nav{
+    position: absolute;
+    width: 283px;
+    height: 400px;
+    left: 461px;
+    top: 75px;
+    z-index: 3;
+    align-items: start;
+    background: #ffffff;
+
+  }
+  .header .navbar-nav ul li{
+    display: block;
+    
+    text-align: left;
+
+    margin-left: 6px;
+    margin-top: 40px;
+  }
+  .header .navbar-nav ul li a{
+
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+        
+    color: rgba(37, 41, 64, 0.97);
+  }
+  .header .navbar-nav ul li a::after{
+    content: '';
+    
+    position: absolute;
+    width: 283px;
+    height: 0px;
+    left: 0px;
+    margin-top: 40px;
+    /* BodeTech/Background/Dividers & Borders */
+    border: 1px solid #ECECED;
+
+  }
+  .header .menu-icon{
+    cursor: pointer;
+    display: block;
+  }
+  .header .menu-icon:hover{
+    opacity: 0.5;
+  }
+  .header .navbar-nav .button-download{
+    display: none;
+  }
+  #menuList{
+    overflow: hidden;
+    transition: 0.6s;
+  }
+}
+
+/* ------------------------ Navbar celular --------------------------*/
+
+@media only screen and (max-width: 360px){
+
+
+}
+
+/* ------------------------ Page One Desktop ------------------------*/
 
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+/* width Scrollbar*/
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar:hover{
+  width: 40px;
+}
+
+/* Track Scrollbar */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle Scrollbar*/
+::-webkit-scrollbar-thumb {
+  background:  rgba(242, 175, 92, 0.72);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  rgba(242, 175, 92);
+
 }
 
 body .page-one{
@@ -196,9 +236,8 @@ body .page-one .text-title{
   height: 165px;
   left: 80px;
   top: 106px;
+ 
   
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 600;
   font-size: 44px;
   line-height: 55px;
@@ -217,8 +256,7 @@ body .page-one .text-body{
   left: 80px;
   top: 237px;
   
-  font-family: 'Poppins';
-  font-style: normal;
+  
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -238,7 +276,6 @@ body .page-one .button-download-2{
   align-items: center;
   text-decoration: none;
 
-
   position: absolute;
   width: 325px;
   height: 40px;
@@ -250,22 +287,20 @@ body .page-one .button-download-2{
   border-radius: 5px;
 }
 
+body .page-one .button-download-2:hover{
+  background: rgba(242, 175, 92, 0.82);
+}
+
 body .page-one .button-download-2 h6{
  
- /* BodeTech/Body semibold 2 */
- font-family: 'Poppins';
- font-style: normal;
  font-weight: 600;
  font-size: 14px;
  line-height: 18px;
  text-decoration: none;
 
-
- /* identical to box height, or 129% */
  text-align: center;
  letter-spacing: 0.2px;
 
- /* BodeTech/Text/Primary */
  color: #252940;
 }
 
@@ -294,9 +329,70 @@ body .page-one .retangulo{
   top: 6px;
 
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40.95%, #ffffff 100vw);
+  
 }
 
-/* ------------------------ Page Two --------------------------*/
+/* ------------------------ Page One iPad --------------------------*/
+
+@media only screen and (max-width: 744px){
+
+  body .page-one{
+    height: 400px;
+  }
+  body .page-one .text-title{
+    width: 381px;
+    height: 96px;
+    left: 32px;
+    top: 54px;
+
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  body .page-one .text-body{
+    width: 365px;
+    height: 178px;
+    left: 31px;
+    top: 130px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  body .page-one .button-download-2{
+    /* Button */
+    padding: 8px 117px;
+    gap: 10px;
+
+    width: 328px;
+    height: 40px;
+    left: 32px;
+    top: 285px;
+  }
+  body .page-one .bode-capa{
+    width: 319.09px;
+    height: auto;
+    right: 0px;
+  }
+  body .page-one .celular{
+    width: 160px;
+    height: auto;
+    left: 403px;
+    top: 90px;
+  }
+  body .page-one .retangulo{
+    height: 360px;
+  }
+}
+
+/* ------------------------ Page One celular --------------------------*/
+
+@media only screen and (max-width: 360px){
+
+
+}
+
+/* ------------------------ Page Two Desktop --------------------------*/
 
 body .page-two .text-title {
   position: absolute;
@@ -305,8 +401,7 @@ body .page-two .text-title {
   left: calc(50% - 721px/2 + 0.5px);
   top: 802px;
 
-  font-family: 'Poppins';
-  font-style: normal;
+  
   font-weight: 600;
   font-size: 36px;
   line-height: 45px;
@@ -393,9 +488,7 @@ body .page-two h3{
   margin-left: 108px;
   width: 272px;
   height: 28px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
+
   font-weight: 600;
   font-size: 20px;
   line-height: 45px;
@@ -413,9 +506,8 @@ body .page-two h4{
   margin-left: 108px;
   width: 272px;
   height: 174px;
-
-  font-family: 'Poppins';
-  font-style: normal;
+ 
+  
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
@@ -432,8 +524,84 @@ body .page-two .ellipse{
   margin-left: 17px;
 }
 
+/* ------------------------ Page Two iPad --------------------------*/
 
-/* ------------------------ Page Three --------------------------*/
+@media only screen and (max-width: 744px){
+  body .page-two .text-title {
+    width: 380px;
+    height: 76px;
+    left: calc(50% - 380px/2);
+    top: 520px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+  body .page-two .card-1{
+    width: 330px;
+    height: 191px;
+    left: 32px;
+    top: 629px;
+  }
+  body .page-two .card-2{
+    width: 330px;
+    height: 191px;
+    left: 382px;
+    top: 629px;
+  }
+  body .page-two .card-3{
+    width: 330px;
+    height: 191px;
+    left: 32px;
+    top: 840px;
+  }
+  body .page-two .card-4{
+    width: 330px;
+    height: 191px;
+    left: 382px;
+    top: 840px;
+  }
+  body .page-two .card-5{
+    width: 330px;
+    height: 191px;
+    left: 32px;
+    top: 1051px;
+  }
+  body .page-two .card-6{
+    width: 330px;
+    height: 191px;
+    left: 382px;
+    top: 1051px;
+  }
+  body .page-two h3{
+    margin-top: 38px;
+    margin-left: 108px;
+    width: 222px;
+    height: 28px;
+    
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  body .page-two h4{
+    margin-top: 8px;
+    margin-left: 108px;
+    width: 214px;
+    height: 80px;
+    
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+/* ------------------------ Page Two celular --------------------------*/
+
+@media only screen and (max-width: 360px){
+
+
+}
+
+/* ----------------------- Page Three Desktop -------------------------*/
 
 body .page-three{
   position: absolute;
@@ -443,6 +611,11 @@ body .page-three{
   top: 1646px;
   }
 
+body .img-bodes{
+  width: 100%; 
+  height: 100%;
+}
+
 body .page-three h1{
   position: absolute;
   width: 512px;
@@ -450,8 +623,6 @@ body .page-three h1{
   left: calc(50% - 512px/2);
   margin-top: -600px;
 
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 45px;
@@ -501,7 +672,6 @@ body .page-three h5{
   width: 438px;
   height: 226px;
 
-  font-family: 'Poppins';
   font-style: italic;
   font-weight: 500;
   font-size: 15px;
@@ -518,13 +688,10 @@ body .page-three h6{
   width: 438px;
   height: 226px;
 
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
   margin-top: 17px;
-
 
   /* or 156% */
   text-align: center;
@@ -533,7 +700,109 @@ body .page-three h6{
   color: #252940;
 }
 
-/* ------------------------ Page Four --------------------------*/
+body .page-three .arrow-left{
+  position: absolute;
+  top: 50%; 
+  left: 80px;
+  cursor: pointer;
+}
+
+body .page-three .arrow-left:hover{
+  opacity: 0.5;
+}
+
+body .page-three .arrow-right{
+  position: absolute; 
+  top: 50%; 
+  right: 80px;
+  cursor: pointer;
+}
+
+body .page-three .arrow-right:hover{
+  opacity: 0.5;
+}
+
+body .page-three .bar-scroll-1{
+  position: absolute; 
+  bottom: 60px; 
+  left: 643px;
+}
+body .page-three .bar-scroll-2{
+  position: absolute; 
+  bottom: 60px; 
+  left: 779px;
+}
+
+/* ------------------------ Page Three iPad --------------------------*/
+@media only screen and (max-width: 744px){
+  body .page-three{
+    height: 497px;
+    top: 1320px;
+  }
+  body .page-three h1{
+    width: 288px;
+    height: 51px;
+    left: calc(50% - 288px/2);
+    margin-top: -450px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  body .page-three .comment-1{
+    padding: 50px 30px;
+    width: 506px;
+    height: 280px;
+    top: 140px;
+    left: calc(50% - 506px/2);
+  }
+  body .page-three h5{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  body .page-three h6{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  body .page-three .comment-2{
+    display: none;
+  }
+  body .page-three .arrow-left{
+    left: 32px;
+  }
+  body .page-three .arrow-right{
+    right: 32px;
+  }
+  body .page-three .bar-scroll-1{
+    left: 281px;
+    bottom: 45px; 
+  }
+  body .page-three .bar-scroll-2{
+    left: 417px;
+    bottom: 45px; 
+  }
+}
+
+/* ------------------------ Page Three celular --------------------------*/
+
+@media only screen and (max-width: 360px){
+
+
+}
+
+/* ------------------------ Page Four Desktop ---------------------------*/
+
+body .page-four .bode-peso{
+  position: absolute;
+  left: -2px; 
+  top: 2297px;
+}
+
+body .page-four .pesando-bode{
+  position: absolute; 
+  left: 181px; 
+  top: 2310px;
+}
 
 body .page-four h1{
   position: absolute;
@@ -541,9 +810,7 @@ body .page-four h1{
   height: 165px;
   left: 720px;
   top: 2358px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
+
   font-weight: 600;
   font-size: 44px;
   line-height: 55px;
@@ -560,9 +827,7 @@ body .page-four h5{
   height: 124px;
   left: 720px;
   top: 2549px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
@@ -572,8 +837,6 @@ body .page-four h5{
   
   color: #252940;
 }
-
-
 
 body .page-four .button-download{
   display: flex;
@@ -591,24 +854,71 @@ body .page-four .button-download{
   background: rgba(242, 175, 92, 0.97);
   border-radius: 5px;}
 
+  body .page-four .button-download:hover{
+    background: rgba(242, 175, 92, 0.82);
+  }
+
   body .page-four .button-download h6{
  
-  /* BodeTech/Body semibold 2 */
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
 
-  /* identical to box height, or 129% */
   text-align: center;
   letter-spacing: 0.2px;
 
   /* BodeTech/Text/Primary */
   color: #252940;
 }
+/* ------------------------ Page Four iPad --------------------------*/
+@media only screen and (max-width: 744px){
+  body .page-four h1{
+    width: 370px;
+    height: 96px;
+    left: 341px;
+    top: 1860px;
 
-/* ------------------------ Page Five --------------------------*/
+    font-size: 26px;
+    line-height: 32px;
+  }
+  body .page-four h5{
+    width: 373px;
+    height: 140px;
+    left: 340px;
+    top: 1985px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  body .page-four .button-download{
+    width: 328px;
+    height: 40px;
+    left: 341px;
+    top: 2134px;
+  }
+  body .page-four .bode-peso{
+    width: 379px;
+    height: 405px;
+    left: -6px;
+    top: 1817px;
+  }
+  body .page-four .pesando-bode{
+    width: 278px;
+    height: auto;
+    left: 33px;
+    top: 1970px;
+  }
+}
+
+/* ------------------------ Page Four celular --------------------------*/
+
+@media only screen and (max-width: 360px){
+
+
+}
+
+/* ------------------------ Page Five Desktop --------------------------*/
 
 body .page-five{
   position: absolute;
@@ -627,13 +937,10 @@ body .page-five h1{
   left: calc(50% - 721px/2 + 11.5px);
   top: 106px;
 
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 45px;
 
-  /* or 125% */
   text-align: center;
   letter-spacing: 0.1px;
 
@@ -646,13 +953,10 @@ body .page-five h2{
   top: 38px;
   left: 33px;
 
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
 
-  /* or 125% */
   letter-spacing: 0.1px;
   color: #252940;
 }
@@ -660,14 +964,10 @@ body .page-five h2{
 body .page-five h5{
   width: 305px;
   height: 121px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
-  
-  /* or 156% */
   letter-spacing: 0.1px;
   
   color: #252940;
@@ -694,7 +994,6 @@ body .page-five .card-2{
   background: #FFFFFF;
   border-radius: 10px;
 }
-
 
 body .page-five .card-3{
   position: absolute;
@@ -724,24 +1023,149 @@ body .page-five .button-download{
   border-radius: 5px;
 }
 
+body .page-five .button-download:hover{
+  background: rgba(242, 175, 92, 0.82);
+}
+
 body .page-five .button-download h6{
  
-  /* BodeTech/Body semibold 2 */
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
 
-  /* identical to box height, or 129% */
   text-align: center;
   letter-spacing: 0.2px;
 
-  /* BodeTech/Text/Primary */
   color: #252940;
 }
 
-/* ------------------------ Page Six --------------------------*/
+body .page-five ul {
+  margin-top: 90px;
+  margin-left: 36px;
+}
+
+body .page-five ul li img {
+  vertical-align: middle;
+}
+
+body .page-five ul li {
+  list-style-type: none;
+  text-indent: -2.8em;
+
+  display: block;
+  text-align: left;
+  margin-left: 36px;
+}
+
+body .page-five .arrow-left, body .page-five .arrow-right, body .page-five .bar-scroll-1, body .page-five .bar-scroll-3,
+body .page-five .bar-scroll-4 {
+  display: none;
+}
+
+/* ------------------------ Page Five iPad --------------------------*/
+@media only screen and (max-width: 744px){
+
+  body .page-five{
+    width: 745px;
+    height: 879px;
+    left: 0px;
+    top: 2222px;
+  }
+  body .page-five h1{
+    width: 380px;
+    height: 76px;
+    left: calc(50% - 380px/2);
+    top: calc(2334px - 2262px);
+
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  body .page-five .arrow-left{
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    left: 70px;
+    top: 50%;
+  }
+
+  body .page-five .arrow-left:hover{
+    opacity: 0.5;
+  }
+  
+  body .page-five .arrow-right{
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    right: 70px;
+    top: 50%;
+  }
+
+  body .page-five .arrow-right:hover{
+    opacity: 0.5;
+  }
+
+  body .page-five h2{
+    width: 337px;
+    height: 30px;
+    left: 33px;
+    top: 38px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  body .page-five h5{
+    width: 294px;
+    height: 80px;
+
+    font-size: 14px;
+    line-height: 20px;
+    
+  }
+  body .page-five .card-1{
+    width: 413px;
+    height: 459px;
+    left: 166px;
+    top: calc(2455px - 2265px);
+  }
+  body .page-five .card-2, body .page-five .card-3{
+    display: none;
+  }
+  body .page-five .button-download{
+    gap: 10px;
+
+    width: 328px;
+    height: 40px;
+    left: 208px;
+    top: calc(-160px);
+  }
+  body .page-five .bar-scroll-1{
+    position: absolute;
+    left: 281px;
+    display: block;
+    top: 711px;
+  }
+  body .page-five .bar-scroll-3{
+    position: absolute;
+    left: 417px;
+    display: block;
+    top: 711px;
+  }
+  body .page-five .bar-scroll-4{
+    position: absolute;
+    left: 445px;
+    display: block;
+    top: 711px;
+  }
+}
+
+/* ----------------------- Page Five celular -------------------------*/
+
+@media only screen and (max-width: 360px){
+
+
+}
+
+/* ------------------------ Page Six Desktop --------------------------*/
 
 body .page-six {
   position: absolute;
@@ -761,15 +1185,11 @@ body .page-six h1{
   left: calc(730px - 168px);
   top: calc(3972px - 3925px);
 
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 600;
   font-size: 50px;
   line-height: 56px;
 
-  /* or 112% */
   letter-spacing: 0.1px;
-
   color: #252940;
 }
 
@@ -781,15 +1201,11 @@ body .page-six h5{
   left: calc(730px - 168px);
   top: calc(4114px - 3925px); 
 
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
 
-  /* or 156% */
   letter-spacing: 0.1px;
-
   color: #252940;
 }
 
@@ -812,22 +1228,91 @@ body .page-six .button-download{
 
 body .page-six .button-download h6{
  
-  /* BodeTech/Body semibold 2 */
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
 
-  /* identical to box height, or 129% */
   text-align: center;
   letter-spacing: 0.2px;
 
-  /* BodeTech/Text/Primary */
   color: #252940;
 }
 
-/* ------------------------ Page Seven --------------------------*/
+body .page-six .button-download h6:hover{
+  color: rgba(242, 175, 92, 0.97);
+}
+
+body .page-six .ellipse{
+  position: absolute; 
+  left: 0px; 
+  top: 8px;
+}
+body .page-six .bode-reader{
+  position: absolute; 
+  left: 0px; 
+  top: 0px;
+}
+
+/* ------------------------ Page Six iPad --------------------------*/
+@media only screen and (max-width: 744px){
+  body .page-six {
+    width: 677px;
+    height: 279px;
+    left: 32px;
+    top: 3170px;
+  }
+  body .page-six h1{
+    width: 274px;
+    height: 63px;
+    left: calc(396px - 32px);
+    top: calc(3246px -  3210px);
+
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  body .page-six h5{
+    position: absolute;
+    width: 289px;
+    height: 80px;
+    left: calc(396px - 32px);
+    top: calc(3325px -  3210px);
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  body .page-six .button-download{
+    position: absolute;
+    width: 274px;
+    height: 40px;
+    left: calc(396px - 32px);
+    top: calc(3422px -  3210px);
+  }
+  body .page-six .ellipse{
+    position: absolute; 
+    width: 317.19px;
+    height: auto;
+    top: 36px;
+  }
+  body .page-six .bode-reader{
+    position: absolute; 
+    width: 324px;
+    height: auto;
+    left: 0px; 
+    top: 29px;
+  }
+  
+}
+
+/* ------------------------ Page Six celular ---------------------------*/
+
+@media only screen and (max-width: 360px){
+
+
+}
+
+/* ------------------------ Page Seven Desktop --------------------------*/
 
 body .page-seven {
   position: absolute;
@@ -846,8 +1331,6 @@ body .page-seven h1{
   left: 80px;
   top: calc(4450px - 4378px);
 
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 600;
   font-size: 44px;
   line-height: 55px;
@@ -865,8 +1348,6 @@ body .page-seven h5{
   left: 80px;
   top: calc(4590px - 4378px);
 
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
@@ -884,8 +1365,6 @@ body .page-seven .text-email{
   left: 108px;
   top: 4720px;
 
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
@@ -927,9 +1406,7 @@ body .page-seven .text-email{
   body .page-seven .label-email{
     width: 267px;
     height: 16px;
-  
-    font-family: 'Poppins';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -967,9 +1444,7 @@ body .page-seven .text-email{
   body .page-seven .label-whatsapp{
     width: 267px;
     height: 16px;
-  
-    font-family: 'Poppins';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -1007,10 +1482,7 @@ body .page-seven .text-email{
   ::placeholder {
     width: 167px;
     height: 21px;
-  
-    /* BodeTech/Body 2 */
-    font-family: 'Poppins';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -1031,9 +1503,7 @@ body .page-seven .submit{
     justify-content: center;
     align-items: center;
     border: none;
-    /* BodeTech/Body semibold 2 */
-    font-family: 'Poppins';
-    font-style: normal;
+
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
@@ -1055,7 +1525,89 @@ body .page-seven .submit{
     border-radius: 5px;
   }
 
-/* ------------------------ Page Eight --------------------------*/
+  body .page-seven .submit:hover{
+    background: rgba(242, 175, 92, 0.82);
+  }
+
+  body .page-seven .email{
+    position: absolute; 
+    left: 108px; 
+    top: 342px;
+    display: flex;
+    align-items: center;
+  }
+
+  body .page-seven .phone{
+    position: absolute; 
+    left: 108px; 
+    top: 392px;
+    display: flex;
+    align-items: center;
+  }
+
+/* ------------------------ Page Seven iPad --------------------------*/
+@media only screen and (max-width: 744px){
+  body .page-seven {
+    width: 745px;
+    height: 816px;
+    left: calc(50% - 745px/2 + 0.5px);
+    top: 3471px;
+  }
+  body .page-seven h1{
+    width: 365px;
+    height: 62px;
+    left: calc(745px/2 - 365px/2);
+    top: calc(3512px - 3471px);
+
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+  }
+  body .page-seven h5{
+    width: 542px;
+    height: 81px;
+    left: calc(745px/2 - 0.5px - 542px/2);
+    top: calc(3654px - 3514px);
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+  body .page-seven .container{
+    left: 101px;
+    top: 267px;
+  }
+  body .page-seven .submit{
+    left: 109px;
+  }
+  body .page-seven .email{
+    left: 161px;
+    top: 723px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  body .page-seven .phone{
+    left: 407px;
+    top: 723px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+/* ------------------------ Page Seven celular -------------------------*/
+
+@media only screen and (max-width: 360px){
+
+
+}
+
+/* ------------------------ Page Eight Desktop --------------------------*/
 
 body .page-eight h3{
 
@@ -1064,18 +1616,12 @@ body .page-eight h3{
   height: 30px;
   left: 84px;
   top: 5014px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
+
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
-  
-  /* identical to box height */
-  
+
   color: #252940;
-  
-  
 }
 
 body .page-eight h5{
@@ -1085,8 +1631,6 @@ body .page-eight h5{
   left: 84px;
   top: 5070px;
 
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -1101,10 +1645,98 @@ body .page-eight .container {
   top: 5203px;
 }
 
+body .page-eight .contatos{
+  position: absolute; 
+  display: flex;
+  top: 5279.44px; 
+  left: 66px;
+}
+
+body .page-eight .contatos a{
+  margin-left: 20px;
+}
+
+body .page-eight .menu-title{
+  position: absolute; 
+  top: 5014px; 
+  left: 750px;
+}
+
+body .page-eight .contato-title{
+  position: absolute; 
+  top: 5014px; 
+  left: 927px;
+}
+
+body .page-eight .baixe-app-title{
+  position: absolute; 
+  top: 5014px; 
+  left: 1154px;
+}
+
+body .page-eight .google-play{
+  position: absolute; 
+  top: 5068px; 
+  left: 1154px;
+}
+
+body .page-eight .apple-store{
+  position: absolute; 
+  top: 5132px; 
+  left: 1154px;
+}
+
+body .page-eight .topo{
+  position: absolute; 
+  top: 5267px; 
+  left: 1154px;
+}
+
+body .page-eight .contatos a:hover, body .page-eight .apple-store:hover, 
+body .page-eight .google-play:hover, body .page-eight .topo:hover{
+  opacity: 0.8;
+}
+
+body .page-eight .menu{
+  position: absolute;
+  flex-direction: column;
+  text-align: left;
+  display: grid;
+  top: 5048px;
+  left: 750px;
+}
+
+body .page-eight .menu a, body .page-eight .contato2 a{
+  margin-top: 23px;
+
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #252940;
+}
+
+body .page-eight .menu a:hover{
+  color: rgba(242, 175, 92, 0.97);
+}
+
+body .page-eight .contato2{
+  position: absolute;
+  flex-direction: column;
+  text-align: left;
+  display: grid;
+  top: 5048px;
+  left: 927px;
+}
+
+body .page-eight .contatos a:hover{
+  color: rgba(242, 175, 92, 0.97);
+}
+
+
 body .page-eight .label-email{
 
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
@@ -1115,7 +1747,6 @@ body .page-eight .label-email{
   align-items: center;
   letter-spacing: 0.1px;
 
-  /* BodeTech/Text/Primary */
   color: #252940;
 }
 
@@ -1126,9 +1757,7 @@ body .page-eight .submit{
   justify-content: center;
   align-items: center;
   border: none;
-  /* BodeTech/Body semibold 2 */
-  font-family: 'Poppins';
-  font-style: normal;
+
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
@@ -1148,6 +1777,10 @@ body .page-eight .submit{
  
   background: rgba(242, 175, 92, 0.97);
   border-radius: 5px;
+}
+
+body .page-eight .submit:hover{
+  background: rgba(242, 175, 92, 0.82);
 }
 
 body .page-eight .input-email{
@@ -1172,8 +1805,8 @@ body .page-eight .input-email{
 }
 
 body .page-eight h2{
-  font-family: 'Poppins';
-  font-style: normal;
+ 
+  
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
@@ -1189,19 +1822,33 @@ body .page-eight h4{
   left: 1214px;
   top: 5285px;
 
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   display: flex;
   align-items: center;
   text-align: right;
-  text-decoration-line: underline;
+  text-decoration-line: none;
 
+  padding-bottom: 0.25rem;
   color: #4AA6E1;
 }
 
+body .page-eight h4::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  transition: width 0.25s ease-out;
+  background-color: #4AA6E1;
+}
+  
+body .page-eight h4:hover::before{
+  width: 40%;
+}
+  
 
 body .footer{ 
   position: absolute;
@@ -1219,8 +1866,6 @@ body .footer p{
   left: calc(50% - 324px/2);
   bottom: 29px;
   
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -1253,9 +1898,7 @@ body .footer h2{
   position: absolute;
   left: 684px;
   bottom: 106px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
@@ -1266,4 +1909,105 @@ body .footer h2{
   
   color: #252940;
 }
-/* ------------------------ Others Screens --------------------------*/
+
+/* ------------------------ Page Eight iPad --------------------------*/
+@media only screen and (max-width: 744px){
+  body .page-eight h3{
+    left: 257px;
+    top: 4330px;
+    text-align: center;
+  }
+  body .page-eight h5{
+    width: 676px;
+    top: 4370px;
+    left: 32px;
+    text-align: center;
+  }
+
+  body .page-eight h2{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px
+  }
+
+  body .page-eight .container {
+    left: 111px;
+    top: 4470px;
+  }
+  body .page-eight .contatos{
+    top: 4551px; 
+    left: 304px;
+  }
+
+  body .page-eight .menu-title{
+    top: 4630px;
+    left: 100px;
+  }
+  
+  body .page-eight .contato-title{
+    top: 4630px;
+    left: 280px;
+  }
+
+  body .page-eight .baixe-app-title{
+    top: 4630px; 
+    left: 507px;
+  }
+
+  body .page-eight .menu{
+    top: 4650px;
+    left: 100px;
+  }
+
+  body .page-eight .contato2{
+    top: 4650px; 
+    left: 280px;
+  }
+
+  body .page-eight .google-play{
+    top: 4675px; 
+    left: 507px;
+  }
+
+  body .page-eight .apple-store{
+    top: 4739px; 
+    left: 507px;
+  }
+
+  body .page-eight .topo{
+    top: 4880px; 
+    left: 507px;
+  }
+
+  body .page-eight h4{
+    top: 4900px; 
+    left: 567px;
+  }
+
+  body .footer{ 
+    width: 745px;
+    left: 0px;
+    height: 196px;
+    top: 5000px;
+  }
+
+  body .footer img{
+    left: 288px;
+    bottom: 100px;
+  }
+  body .footer h2{
+    left: 336px;
+    bottom: 100px;
+  }
+  body .footer hr{
+    width: 680px;
+    left: 32px;
+  }
+}
+
+/* -------------------- Page Eight celular ----------------------*/
+
+@media only screen and (max-width: 360px){
+
+
+}
