@@ -64,7 +64,7 @@
   
   <section class="page-one" id="app">
     
-    <img style="width:100%;" src="{% static 'images/body/bodyimage.png' %}" alt="fazenda"> 
+    <img style="width:100%; height: 100%;" src="{% static 'images/body/bodyimage.png' %}" alt="fazenda"> 
 
     <div class="text-title">
       Maximize lucros com o nosso aplicativo!
@@ -86,7 +86,9 @@
         <h6>Baixe o App!</h6>
       </a>
 
-      <img class="celular" src="{% static 'images/body/celular.png' %}" alt="fazenda"> 
+      <img class="celular" src="{% static 'images/body/celular.png' %}" alt="celular"> 
+      <img class="celular-2" src="{% static 'images/body/celular-2.png' %}" alt="celular"> 
+
     </div>
 
   </section>
@@ -168,6 +170,9 @@
   <section class="page-three" id="depoimentos">
 
     <img class="img-bodes" src="{% static 'images/body/bodes.png' %}" alt="bodes">
+    <img class="img-bodes-2" src="{% static 'images/body/bodes-2.png' %}" alt="bodes">
+    <img class="img-bodes-3" src="{% static 'images/body/bodes-3.png' %}" alt="bodes">
+
 
     <h1>
       O que nossos usuários estão dizendo... 
@@ -375,6 +380,7 @@
     </h5>
 
     <img class="ellipse" src="{% static 'images/body/Ellipse2.png' %}" alt="ellipse2">
+    <img class="ellipse3" src="{% static 'images/body/Ellipse3.png' %}" alt="ellipse2">
     <img class="bode-reader" src="{% static 'images/body/bode-reader.png' %}" alt="bode-reader">
     
     <div>
@@ -409,25 +415,25 @@
     <div class="container">
       <form action="">
           <div class="row">
-            <div style="position: absolute; left: 0px; top: 0px;">
+            <div class="first-name">
               <label class="label-email" for="name">Primeiro nome</label>
               <input class="input-email" type="text" class="form-control" id="name" placeholder="Digite seu nome" name="name">
             </div>
-            <div style="position: absolute; left: 295px; top:0px;">
+            <div class="second-name">
               <label class="label-whatsapp" for="sname">Sobrenome</label>
               <input class="input-whatsapp" type="text" class="form-control" id="sname" placeholder="Digite seu sobrenome" name="sname">
             </div>
           </div>
           <div class="row">
-            <div style="position: absolute; left: 0px; top:78px;">
+            <div class="email2">
               <label class="label-email" for="email">Email</label>
               <input class="input-email" type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
             </div>
-            <div style="position: absolute; left: 295px; top:78px;">
+            <div class="whatsapp">
               <label class="label-whatsapp" for="what">Whatsapp</label>
               <input class="input-whatsapp" type="text" class="form-control" id="what" placeholder="Digite seu número" name="what">
             </div>
-            <div style="position: absolute; left: 0px; top:156px;">
+            <div class="mensage">
               <label class="label-whatsapp" for="msg">Mensagem</label>
               <input class="input-mensagem" type="text" class="form-control" id="msg" placeholder="Digite sua mensagem" name="msg">
             </div>
