@@ -118,7 +118,7 @@
 
 /* ------------------------ Navbar iPad --------------------------*/
 
-@media only screen and (max-width: 744px){
+@media screen and (max-width: 744px){
   .header .navbar-nav{
     position: absolute;
     width: 293px;
@@ -178,12 +178,12 @@
 
 /* ------------------------ Navbar celular --------------------------*/
 
-@media only screen and (max-width: 375px){
+@media screen and (max-width: 375px){
   .header .navbar-nav{
-    left: 194px;
+    left: 178px;
     width: 181px;
     top: 105px;
-    height: 223.5px;
+    height: 224px;
     background: #FDF3E7F7;
   }
   .header .navbar-nav ul li{
@@ -351,7 +351,7 @@ body .page-one .retangulo{
 
 /* ------------------------ Page One iPad --------------------------*/
 
-@media only screen and (max-width: 744px){
+@media screen and (max-width: 744px){
 
   body .page-one{
     height: 400px;
@@ -406,7 +406,7 @@ body .page-one .retangulo{
 
 /* ------------------------ Page One celular --------------------------*/
 
-@media only screen and (max-width: 375px){
+@media screen and (max-width: 375px){
   body .page-one{
     height: 500px;
   }
@@ -594,7 +594,7 @@ body .page-two .ellipse{
 
 /* ------------------------ Page Two iPad --------------------------*/
 
-@media only screen and (max-width: 744px){
+@media screen and (max-width: 744px){
   body .page-two .text-title {
     width: 380px;
     height: 76px;
@@ -664,7 +664,7 @@ body .page-two .ellipse{
 
 /* ------------------------ Page Two celular --------------------------*/
 
-@media only screen and (max-width: 375px){
+@media screen and (max-width: 375px){
 
   body .page-two .text-title {
     width: 327px;
@@ -858,7 +858,7 @@ body .page-three .bar-scroll-2{
 }
 
 /* ------------------------ Page Three iPad --------------------------*/
-@media only screen and (max-width: 744px){
+@media screen and (max-width: 744px){
   body .page-three{
     height: 497px;
     top: 1320px;
@@ -915,7 +915,7 @@ body .page-three .bar-scroll-2{
 
 /* ------------------------ Page Three celular --------------------------*/
 
-@media only screen and (max-width: 375px){
+@media screen and (max-width: 375px){
 
   body .page-three{
     width: 362px;
@@ -1058,7 +1058,7 @@ body .page-four .button-download{
   color: #252940;
 }
 /* ------------------------ Page Four iPad --------------------------*/
-@media only screen and (max-width: 744px){
+@media screen and (max-width: 744px){
   body .page-four h1{
     width: 370px;
     height: 96px;
@@ -1100,7 +1100,7 @@ body .page-four .button-download{
 
 /* ------------------------ Page Four celular --------------------------*/
 
-@media only screen and (max-width: 375px){
+@media screen and (max-width: 375px){
   body .page-four h1{
     width: 340px;
     left: 17px;
@@ -1282,7 +1282,7 @@ body .page-five .bar-scroll-4 {
 }
 
 /* ------------------------ Page Five iPad --------------------------*/
-@media only screen and (max-width: 744px){
+@media screen and (max-width: 744px){
 
   body .page-five{
     width: 745px;
@@ -1379,7 +1379,7 @@ body .page-five .bar-scroll-4 {
 
 /* ----------------------- Page Five celular -------------------------*/
 
-@media only screen and (max-width: 375px){
+@media screen and (max-width: 375px){
   body .page-five{
     width: 375px;
     height: 884px;
@@ -1547,7 +1547,7 @@ body .page-six .bode-reader{
 }
 
 /* ------------------------ Page Six iPad --------------------------*/
-@media only screen and (max-width: 744px){
+@media screen and (max-width: 744px){
   body .page-six {
     width: 677px;
     height: 279px;
@@ -1600,7 +1600,7 @@ body .page-six .bode-reader{
 
 /* ------------------------ Page Six celular ---------------------------*/
 
-@media only screen and (max-width: 375px){
+@media screen and (max-width: 375px){
   body .page-six {
     width: 327px;
     height: 574px;
@@ -1915,7 +1915,7 @@ body .page-seven .submit{
   }
 
 /* ------------------------ Page Seven iPad --------------------------*/
-@media only screen and (max-width: 744px){
+@media screen and (max-width: 744px){
   body .page-seven {
     width: 745px;
     height: 816px;
@@ -1971,7 +1971,7 @@ body .page-seven .submit{
 
 /* ------------------------ Page Seven celular -------------------------*/
 
-@media only screen and (max-width: 375px){
+@media screen and (max-width: 375px){
   body .page-seven {
     width: 359px;
     height: 925px;
@@ -2348,7 +2348,7 @@ body .footer h2{
 }
 
 /* ------------------------ Page Eight iPad --------------------------*/
-@media only screen and (max-width: 744px){
+@media screen and (max-width: 744px){
   body .page-eight h3{
     left: 257px;
     top: 4330px;
@@ -2438,7 +2438,7 @@ body .footer h2{
 
 /* -------------------- Page Eight celular ----------------------*/
 
-@media only screen and (max-width: 375px){
+@media screen and (max-width: 375px){
   body .page-eight h3{
     left: 62px;
     top: 5820px;
