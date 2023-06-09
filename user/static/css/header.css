@@ -180,7 +180,7 @@
 
 @media screen and (max-width: 414px){
   .header .navbar-nav{
-    left: 233px;
+    left: 221px;
     width: 181px;
     top: 105px;
     height: 224.5px;
@@ -211,7 +211,7 @@ body {
 
 /* width Scrollbar*/
 ::-webkit-scrollbar {
-  width: 3px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar:hover{
@@ -408,7 +408,6 @@ body .page-one .retangulo{
 
 @media screen and (max-width: 414px){
   body .page-one{
-    width: 414px;
     height: 500px;
   }
   body .page-one .text-title{
@@ -424,7 +423,7 @@ body .page-one .retangulo{
   body .page-one .text-body{
     width: 327px;
     height: 121px;
-    left: 16px;
+    left: 42px;
     top: -240px;
   }
   body .page-one .button-download-2{
@@ -676,37 +675,37 @@ body .page-two .ellipse{
   body .page-two .card-1{
     width: 327px;
     height: 191px;
-    left: 16px;
+    left: 42px;
     top: 854px;
   }
   body .page-two .card-2{
     width: 327px;
     height: 176px;
-    left: 16px;
+    left: 42px;
     top: 1065px;
   }
   body .page-two .card-3{
     width: 327.09px;
     height: 191px;
-    left: 16px;
+    left: 42px;
     top: 1261px;
   }
   body .page-two .card-4{
     width: 327.09px;
     height: 191px;
-    left: 16px;
+    left: 42px;
     top: 1472px;
   }
   body .page-two .card-5{
     width: 327.09px;
     height: 191px;
-    left: 16px;
+    left: 42px;
     top: 1683px;
   }
   body .page-two .card-6{
     width: 327.09px;
     height: 191px;
-    left: 16px;
+    left: 42px;
     top: 1894px;
   }
   body .page-two h3{
@@ -919,9 +918,8 @@ body .page-three .bar-scroll-2{
 @media screen and (max-width: 414px){
 
   body .page-three{
-    width: 362px;
     height: 563px;
-    left: calc(50% - 362px/2 - 1px);
+    left: 0px;
     top: 2125px;
     z-index: 2;
   }
@@ -941,7 +939,7 @@ body .page-three .bar-scroll-2{
     width: 326px;
     padding: 40px 20px 20px 15px;
     height: 261px;
-    left: calc(50% - 326px/2);
+    left: calc(50% - 326px/2 + 6px);
     top: calc(2361px - 2195px);
   }
   body .page-three h5{
@@ -960,19 +958,19 @@ body .page-three .bar-scroll-2{
     display: none;
   }
   body .page-three .arrow-left{
-    left: 19px;
+    left: 10%;
     top: 85%; 
   }
   body .page-three .arrow-right{
-    right: 19px;
+    right: 10%;
     top: 85%; 
   }
   body .page-three .bar-scroll-1{
-    left: 100px;
+    left: 30%;
     bottom: 10%; 
   }
   body .page-three .bar-scroll-2{
-    left: 232px;
+    left: 65%;
     bottom: 10%;
   }
 
@@ -1104,22 +1102,22 @@ body .page-four .button-download{
 @media screen and (max-width: 414px){
   body .page-four h1{
     width: 340px;
-    left: 17px;
+    left: 42px;
     top: 2715px;
 
     font-size: 19px;
     line-height: 25px;
   }
   body .page-four h5{
-    width: 327px;
+    width: 350px;
     height: 160px;
-    left: 17px;
+    left: 42px;
     top: 2785px;
   }
   body .page-four .button-download{
     width: 327px;
     height: 40px;
-    left: 17px;
+    left: 42px;
     top: 2950px;
   }
   body .page-four .bode-peso{
@@ -1286,7 +1284,6 @@ body .page-five .bar-scroll-4 {
 @media screen and (max-width: 744px){
 
   body .page-five{
-    width: 745px;
     height: 879px;
     left: 0px;
     top: 2222px;
@@ -1382,7 +1379,6 @@ body .page-five .bar-scroll-4 {
 
 @media screen and (max-width: 414px){
   body .page-five{
-    width: 414px;
     height: 884px;
     left: 0;
     top: 3362px;
@@ -1423,33 +1419,33 @@ body .page-five .bar-scroll-4 {
   body .page-five .card-1{
     width: 327px;
     height: 571px;
-    left: 16px;
+    left: 42px;
     top: calc(3563px - 3442px);
   }
   body .page-five .arrow-left{
-    left: 16px;
+    left: 10%;
     top: 82%;
   }
   body .page-five .arrow-right{
-    right: 16px;
+    right: 10%;
     top: 82%;
   }
   body .page-five .bar-scroll-1{
-    left: 104px;
+    left: 31%;
     top: 745px;
   }
   body .page-five .bar-scroll-3{
     display: none;
   }
   body .page-five .bar-scroll-4{
-    left: 236px;
+    left: 65%;
     top: 745px;
   }
 
   body .page-five .button-download{
     width: 328px;
     height: 40px;
-    left: 16px;
+    left: 42px;
     top: calc(-120px);
   }
 }
@@ -1605,7 +1601,7 @@ body .page-six .bode-reader{
   body .page-six {
     width: 327px;
     height: 574px;
-    left: 16px;
+    left: 42px;
     top: 4270px;
   }
   body .page-six h1{
@@ -1974,9 +1970,9 @@ body .page-seven .submit{
 
 @media screen and (max-width: 414px){
   body .page-seven {
-    width: 359px;
+    width: 415px;
     height: 925px;
-    left: calc(50% - 359px/2 - 1.5px);
+    left: calc(50% - 415px/2 - 1.5px);
     top: 4867px;
   }
   body .page-seven h1{
@@ -1993,12 +1989,12 @@ body .page-seven .submit{
   body .page-seven h5{
     width: 327px;
     height: 118px;
-    left: calc(359px/2 + 1.0px - 327px/2);
+    left: calc(414px/2 + 1.0px - 327px/2);
     top: 109px;
   }
   body .page-seven .container{
     width: 328px;
-    left: 16px;
+    left: 42px;
     top: 258px;
   }
 
@@ -2035,14 +2031,14 @@ body .page-seven .submit{
     width: 326px;
   }
   body .page-seven .email{
-    left: 96px;
+    left: 122px;
     top: 843px;
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
   }
   body .page-seven .phone{
-    left: 96px;
+    left: 122px;
     top: 873px;
     font-weight: 400;
     font-size: 18px;
@@ -2414,7 +2410,6 @@ body .footer h2{
     left: 567px;
   }
   body .footer{ 
-    width: 745px;
     left: 0px;
     height: 196px;
     top: 5000px;
@@ -2441,13 +2436,13 @@ body .footer h2{
 
 @media screen and (max-width: 414px){
   body .page-eight h3{
-    left: 62px;
+    left: 80px;
     top: 5820px;
   }
   body .page-eight h5{
     width: 328px;
     top: 5860px;
-    left: 16px;
+    left: 42px;
   }
 
   body .page-eight h2{
@@ -2458,7 +2453,7 @@ body .footer h2{
   }
 
   body .page-eight .container {
-    left: 16px;
+    left: 42px;
     top: 6020px;
   }
   body .page-eight .submit{
@@ -2468,62 +2463,61 @@ body .footer h2{
   }
   body .page-eight .contatos{
     top: 6200px; 
-    left: 108px;
+    left: 134px;
   }
   body .page-eight .menu-title{
     top: 6269px;
-    left: 16px;
+    left: 42px;
   }
   body .page-eight .contato-title{
     top: 6269px;
-    left: 177px;
+    left: 203px;
   }
 
   body .page-eight .baixe-app-title{
     top: 6398px;
-    left: 177px;
+    left: 203px;
   }
   body .page-eight .menu{
     top: 6290px;
-    left: 16px;
+    left: 42px;
   }
   body .page-eight .contato2{
     top: 6290px; 
-    left: 177px;
+    left: 203px;
   }
   body .page-eight .google-play{
     top: 6452px; 
-    left: 177px;
+    left: 203px;
   }
   body .page-eight .apple-store{
     top: 6522px; 
-    left: 177px;
+    left: 203px;
   }
   body .page-eight .topo{
     top: 6605px; 
-    left: 200px;
+    left: 226px;
   }
   body .page-eight h4{
     top: 6625px; 
-    left: 147px;
+    left: 173px;
   }
   body .footer{ 
-    width: 375px;
     left: 0px;
     height: 196px;
     top: 6700px;
   }
   body .footer img{
-    left: 97px;
+    left: 123px;
     bottom: 110px;
   }
   body .footer h2{
-    left: 152px;
+    left: 178px;
     bottom: 110px;
   }
   body .footer hr{
     width: 328px;
-    left: 16px;
+    left: 42px;
     bottom: 70px;
   }
   body .footer p{ 
