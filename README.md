@@ -3,9 +3,9 @@
 echo "# 4211" >> README.md
 git init
 git add README.md
-git commit -m "first commit"
+git commit -m "third commit"
 git branch -M main
-git remote add origin https://github.com/AbadeDiego/bodetech.blog.git
+git remote add origin https://github.com/AbadeDiego/blog.git
 git push -u origin main
 
 …or push an existing repository from the command line
