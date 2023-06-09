@@ -178,12 +178,12 @@
 
 /* ------------------------ Navbar celular --------------------------*/
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 414px){
   .header .navbar-nav{
-    left: 178px;
+    left: 233px;
     width: 181px;
     top: 105px;
-    height: 224px;
+    height: 224.5px;
     background: #FDF3E7F7;
   }
   .header .navbar-nav ul li{
@@ -406,8 +406,9 @@ body .page-one .retangulo{
 
 /* ------------------------ Page One celular --------------------------*/
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 414px){
   body .page-one{
+    width: 414px;
     height: 500px;
   }
   body .page-one .text-title{
@@ -664,7 +665,7 @@ body .page-two .ellipse{
 
 /* ------------------------ Page Two celular --------------------------*/
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 414px){
 
   body .page-two .text-title {
     width: 327px;
@@ -915,7 +916,7 @@ body .page-three .bar-scroll-2{
 
 /* ------------------------ Page Three celular --------------------------*/
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 414px){
 
   body .page-three{
     width: 362px;
@@ -1100,7 +1101,7 @@ body .page-four .button-download{
 
 /* ------------------------ Page Four celular --------------------------*/
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 414px){
   body .page-four h1{
     width: 340px;
     left: 17px;
@@ -1379,9 +1380,9 @@ body .page-five .bar-scroll-4 {
 
 /* ----------------------- Page Five celular -------------------------*/
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 414px){
   body .page-five{
-    width: 375px;
+    width: 414px;
     height: 884px;
     left: 0;
     top: 3362px;
@@ -1600,7 +1601,7 @@ body .page-six .bode-reader{
 
 /* ------------------------ Page Six celular ---------------------------*/
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 414px){
   body .page-six {
     width: 327px;
     height: 574px;
@@ -1971,7 +1972,7 @@ body .page-seven .submit{
 
 /* ------------------------ Page Seven celular -------------------------*/
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 414px){
   body .page-seven {
     width: 359px;
     height: 925px;
@@ -2438,7 +2439,7 @@ body .footer h2{
 
 /* -------------------- Page Eight celular ----------------------*/
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 414px){
   body .page-eight h3{
     left: 62px;
     top: 5820px;
