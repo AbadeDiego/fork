@@ -76,7 +76,7 @@
 
       <div class="text-body">
         Nosso aplicativo simplifica e aprimora 
-        todas as etapas do seu negócio. Com acesso aos recursos de registro de dados,
+        todas as etapas na criação de caprinos. Com acesso aos recursos de registro de dados,
         controle financeiro, alertas personalizados e análises
         inteligentes você terá total controle e visão geral sobre o desempenho da sua criação.
       </div>
@@ -178,29 +178,52 @@
       O que nossos usuários estão dizendo... 
     </h1>
 
-    <div class="comment-1">
-      <h5>
-        “Desde que comecei a usar o aplicativo, tenho total controle sobre 
-        o desempenho do meu rebanho, consigo acompanhar a saúde de cada animal
-         e tomar decisões estratégicas com base em dados precisos. 
-        É uma ferramenta indispensável para qualquer criador!" <br>
-      </h5>
-      <h6> - João, criador de caprinos há 5 anos.</h6>
-
+    <div class="container">
+      <div id="div1" class="transition-div">
+        <h5>
+          “Desde que comecei a usar o aplicativo, tenho total controle sobre 
+          o desempenho do meu rebanho, consigo acompanhar a saúde de cada animal
+           e tomar decisões estratégicas com base em dados precisos. 
+          É uma ferramenta indispensável para qualquer criador!" 
+        </h5>
+        <h6> - João, criador de caprinos há 5 anos.</h6>
+      </div>
+      <div id="div2" class="transition-div">
+        <h5>
+          "Eu não imaginava que um aplicativo poderia facilitar tanto a minha vida. 
+          Com apenas alguns cliques, consigo registrar todas as informações essenciais do meu rebanho, receber 
+          alertas importantes e até mesmo compartilhar dados com meu veterinário de confiança."
+        </h5>
+        <h6> - Maria, criadora de caprinos há 6 anos.</h6>
+      </div>
+      <div id="div3" class="transition-div">
+        <h5>
+          "O aplicativo da BodeTech é simplesmente incrível! Com ele, consigo gerenciar 
+          meu rebanho de ovelhas de forma fácil e eficiente. Estou muito satisfeito com
+          as funcionalidades e a interface amigável. Parabéns à equipe da BodeTech pelo
+          excelente trabalho!"
+        </h5>
+        <h6> - Miguel, criador de caprinos há 3 anos.</h6>
+        
+      </div>
+      <div id="div4" class="transition-div">
+         <h5>
+          "A BodeTech revolucionou a forma como cuido do meu rebanho de ovelhas. 
+          Com o aplicativo, tenho todas as informações importantes na palma da minha mão. 
+          É um verdadeiro aliado para melhorar a produtividade e o bem-estar dos animais. 
+          Recomendo a todos os criadores."
+         </h5>
+        <h6> - José, criador de caprinos há 4 anos.</h6>
+      </div>
     </div>
 
-    <div class="comment-2">
-      <h5>
-        "Eu não imaginava que um aplicativo poderia facilitar tanto a minha vida. 
-        Com apenas alguns cliques, consigo registrar todas as informações essenciais do meu rebanho, receber 
-        alertas importantes e até mesmo compartilhar dados com meu veterinário de confiança." <br>
-      </h5>
-      <h6> - Maria, criadora de caprinos há 6 anos.</h6>
+    <button onclick="prevDiv()">
+      <img class="arrow-left" src="{% static 'images/body/left-arrow.png' %}" alt="arrow-left">
+    </button>
+    <button onclick="nextDiv()">
+      <img class="arrow-right" src="{% static 'images/body/right-arrow.png' %}" alt="arrow-right">
+    </button>
 
-    </div>
-
-    <img class="arrow-left" src="{% static 'images/body/left-arrow.png' %}" alt="arrow-left">
-    <img class="arrow-right" src="{% static 'images/body/right-arrow.png' %}" alt="arrow-right">
     <img class="bar-scroll-1" src="{% static 'images/body/bar-scroll-1.png' %}" alt="bar-1">
     <img class="bar-scroll-2" src="{% static 'images/body/bar-scroll-2.png' %}" alt="bar-2">
 
@@ -228,140 +251,148 @@
   <section class="page-five" id="funcionalidades">
 
     <h1>Potencialize sua produção com nossas funcionalidades</h1>
+  
+    <div class="cards">
 
-    <img class="arrow-left" src="{% static 'images/body/left-arrow-2.png' %}" alt="arrow-left">
+      <div id="card1" class="transition-card">
+        <h2>Produção de ponta a ponta:</h2>
 
-    <div class="card-1">
-      <h2>Produção de ponta a ponta:</h2>
+        <ul>
+            <li>
+              <h5>
+                <img src="{% static 'images/body/check.png' %}" alt="check">
+                <span style="font-weight:600;">&ensp; Sequência de Manejos:</span>
+                <span> Registre e acompanhe todas as etapas 
+                  do manejo, desde alimentação até vacinação.</span>
+              </h5>
+            </li>
+            
+            <li>
+              <h5>
+                <img src="{% static 'images/body/check.png' %}" alt="check">
+                <span style="font-weight:600;">&ensp; Financeiro: </span>
+                <span> Controle completo dos custos e receitas para 
+                planejamento financeiro e análise de lucratividade.</span>
+              </h5>
+            </li>
 
-      <ul>
-          <li>
-            <h5>
-              <img src="{% static 'images/body/check.png' %}" alt="bodes">
-              <span style="font-weight:600;">&ensp; Sequência de Manejos:</span>
-              <span> Registre e acompanhe todas as etapas 
-                do manejo, desde alimentação até vacinação.</span>
-            </h5>
-          </li>
-          
-          <li>
-            <h5>
-              <img src="{% static 'images/body/check.png' %}" alt="bodes">
-              <span style="font-weight:600;">&ensp; Financeiro: </span>
-              <span> Controle completo dos custos e receitas para 
-              planejamento financeiro e análise de lucratividade.</span>
-            </h5>
-          </li>
+            <li>
+              <h5>
+                <img src="{% static 'images/body/check.png' %}" alt="check">
+                <span style="font-weight:600;">&ensp; Reprodução: </span>
+                <span>Registro de dados de cobertura, gestação e 
+                parto para monitorar desempenho reprodutivo.</span>
+              </h5>
+            </li>
 
-          <li>
-            <h5>
-              <img src="{% static 'images/body/check.png' %}" alt="bodes">
-              <span style="font-weight:600;">&ensp; Reprodução: </span>
-              <span>Registro de dados de cobertura, gestação e 
-              parto para monitorar desempenho reprodutivo.</span>
-            </h5>
-          </li>
+            <li>
+              <h5>
+                <img src="{% static 'images/body/check.png' %}" alt="check">
+                <span style="font-weight:600;">&ensp; Seleção de Rebanho:</span>
+                <span> Melhore seu plantel selecionando animais com critérios específicos.</span>
+              </h5>
+            </li>
+          </ul>
+      </div>
 
-          <li>
-            <h5>
-              <img src="{% static 'images/body/check.png' %}" alt="bodes">
-              <span style="font-weight:600;">&ensp; Seleção de Rebanho:</span>
-              <span> Melhore seu plantel selecionando animais com critérios específicos.</span>
-            </h5>
-          </li>
-        </ul>
-    </div>
+      <div id="card2" class="transition-card" class="card">
+        <h2>Gestão mais eficiente:</h2>
+          <ul>
+            <li>
+              <h5>
+                <img src="{% static 'images/body/check.png' %}" alt="check">
+                <span style="font-weight:600;">&ensp; Formação de Lotes:</span>
+                <span> Organize e separe animais com base
+                em características específicas, como idade, sexo ou finalidade.</span>
+              </h5>
+            </li>
+            
+            <li>
+              <h5>
+                <img src="{% static 'images/body/check.png' %}" alt="check">
+                <span style="font-weight:600;">&ensp; Ração personalizada:</span>
+                <span> Indicação de ração conforme 
+                as necessidades nutricionais do animal.</span>
+              </h5>
+            </li>
 
-    <div class="card-2">
-      <h2>Gestão mais eficiente:</h2>
+            <li>
+              <h5>
+                <img src="{% static 'images/body/check.png' %}" alt="check">
+                <span style="font-weight:600;">&ensp; Ração personalizada:</span>
+                <span> Indicação de ração conforme 
+                as necessidades nutricionais do animal.</span>
+              </h5>
+            </li>
+
+            <li>
+              <h5>
+                <img src="{% static 'images/body/check.png' %}" alt="check">
+                <span style="font-weight:600;">&ensp; Desempenho do Rebanho:</span> 
+                <span> Monitore o desempenho do seu rebanho,
+                registrando indicadores como ganho de peso, produção de leite e fertilidade.</span>
+              </h5>
+              </h5>
+            </li>
+
+          </ul>
+        
+      </div>
+
+      <div id="card3" class="transition-card" class="card">
+        <h2>Informações detalhadas:</h2>
         <ul>
           <li>
             <h5>
-              <img src="{% static 'images/body/check.png' %}" alt="bodes">
-              <span style="font-weight:600;">&ensp; Formação de Lotes:</span>
-              <span> Organize e separe animais com base
-              em características específicas, como idade, sexo ou finalidade.</span>
+              <img src="{% static 'images/body/check.png' %}" alt="check">
+              <span style="font-weight:600;">&ensp; Acompanhamento de Custos:</span> 
+              <span> Controle e acompanhe os gastos com alimentação dos seus bodes de forma precisa.</span>
             </h5>
           </li>
           
           <li>
             <h5>
-              <img src="{% static 'images/body/check.png' %}" alt="bodes">
-              <span style="font-weight:600;">&ensp; Ração personalizada:</span>
-              <span> Indicação de ração conforme 
-              as necessidades nutricionais do animal.</span>
+              <img src="{% static 'images/body/check.png' %}" alt="check">
+              <span style="font-weight:600;">&ensp; Taxa de Conversão Alimentar:</span>
+              <span> Monitore a relação entre consumo de alimento e ganho de peso.</span>
             </h5>
           </li>
 
           <li>
             <h5>
-              <img src="{% static 'images/body/check.png' %}" alt="bodes">
-              <span style="font-weight:600;">&ensp; Ração personalizada:</span>
-              <span> Indicação de ração conforme 
-              as necessidades nutricionais do animal.</span>
+              <img src="{% static 'images/body/check.png' %}" alt="check">
+              <span style="font-weight:600;">&ensp; Informações em Tempo Real:</span>
+              <span> Acesse informações atualizadas do seu rebanho em tempo real.</span>
+            </h5>
             </h5>
           </li>
 
           <li>
             <h5>
-              <img src="{% static 'images/body/check.png' %}" alt="bodes">
-              <span style="font-weight:600;">&ensp; Desempenho do Rebanho:</span> 
-              <span> Monitore o desempenho do seu rebanho,
-              registrando indicadores-chave como ganho de peso, produção de leite e fertilidade.</span>
-            </h5>
+              <img src="{% static 'images/body/check.png' %}" alt="check">
+              <span style="font-weight:600;">&ensp; Desempenho por lote:</span>
+              <span> Analise o desempenho dos seus animais de acordo com as diferentes áreas de alojamento. </span> 
             </h5>
           </li>
-
         </ul>
-      
+      </div>
+
     </div>
-
-    <div class="card-3">
-      <h2>Informações detalhadas:</h2>
-      <ul>
-        <li>
-          <h5>
-            <img src="{% static 'images/body/check.png' %}" alt="bodes">
-            <span style="font-weight:600;">&ensp; Acompanhamento de Custos:</span> 
-            <span> Controle e acompanhe os gastos com alimentação dos seus bodes de forma precisa.</span>
-          </h5>
-        </li>
-        
-        <li>
-          <h5>
-            <img src="{% static 'images/body/check.png' %}" alt="bodes">
-            <span style="font-weight:600;">&ensp; Taxa de Conversão Alimentar:</span>
-            <span> Monitore a relação entre consumo de alimento e ganho de peso.</span>
-          </h5>
-        </li>
-
-        <li>
-          <h5>
-            <img src="{% static 'images/body/check.png' %}" alt="bodes">
-            <span style="font-weight:600;">&ensp; Informações em Tempo Real:</span>
-            <span> Acesse informações atualizadas do seu rebanho em tempo real.</span>
-          </h5>
-          </h5>
-        </li>
-
-        <li>
-          <h5>
-            <img src="{% static 'images/body/check.png' %}" alt="bodes">
-            <span style="font-weight:600;">&ensp; Desempenho por lote:</span>
-            <span> Analise o desempenho dos seus animais de acordo com as diferentes áreas de alojamento. </span> 
-          </h5>
-        </li>
-      </ul>
-    </div>
-
 
 
     <div>
         <img class="bar-scroll-1" src="{% static 'images/body/bar-scroll-1.png' %}" alt="bar-1">
         <img class="bar-scroll-3" src="{% static 'images/body/bar-scroll-3.png' %}" alt="bar-2">
         <img class="bar-scroll-4" src="{% static 'images/body/bar-scroll-3.png' %}" alt="bar-2">
-        <img class="arrow-right" src="{% static 'images/body/right-arrow.png' %}" alt="arrow-right">
+
+        <button onclick="prevCard()">
+          <img class="arrow-left" src="{% static 'images/body/left-arrow-2.png' %}" alt="arrow-left">
+        </button>
         
+        <button onclick="nextCard()">
+          <img class="arrow-right" src="{% static 'images/body/right-arrow.png' %}" alt="arrow-right">
+        </button>
+
         <a  class="button-download" href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
           <h6>Baixar App agora!</h6>
         </a>
@@ -409,7 +440,7 @@
 
     <div class="phone">
       <img src="{% static 'images/body/phone.png' %}" alt="phone">
-      <h6>&ensp; +55 (74) 98117-4622</h6>
+      <h6>&ensp; +55 (87) 98805-8875</h6>
     </div>
 
     <div class="container">
@@ -497,7 +528,7 @@
     <h2 class="contato-title">Contato </h2>
 
     <div class="contato2">
-      <a>+55 (74) 98117-4622 </a>
+      <a>+55 (87) 98875-8805 </a>
       <a> riseit.is@gmail.com </a>
     </div>
 
@@ -527,23 +558,5 @@
 
   <script src="{% static 'js/header.js' %}"></script>
 
-  <script>
-
-    var menuList = document.getElementById("menuList");
-
-    menuList.style.maxHeight = "400px";
-
-    function togglemenu(){
-      if(menuList.style.maxHeight == "0px")
-      {
-        menuList.style.maxHeight = "400px";
-      }
-      else
-      {
-        menuList.style.maxHeight = "0px";
-      }
-    }
-  </script>
-  
 </body>
 </html>
