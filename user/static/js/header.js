@@ -126,12 +126,15 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   xhr.open('POST', '/enviar-mensagem/');
   xhr.setRequestHeader('X-CSRFToken', getCookie('csrftoken')); // Inclui o token CSRF
 
-  setTimeout(function() {
-    // Ocultar formulário
-    document.getElementById('contact-form').style.display = 'none';
-    document.getElementById('success-message').style.display = 'block';
-  }, 1000);
-
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+        var response = JSON.parse(xhr.responseText);
+        if (response.success) {
+            document.getElementById('contact-form').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+        }
+    }
+  };
 
   xhr.send(new FormData(this));
 });
