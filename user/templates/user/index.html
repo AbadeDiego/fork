@@ -217,16 +217,19 @@
       </div>
     </div>
 
-    <button onclick="prevDiv()">
+    <button id="scroll-left-btn" onclick="prevDiv()">
       <img class="arrow-left" src="{% static 'images/body/left-arrow.png' %}" alt="arrow-left">
     </button>
-    <button onclick="nextDiv()">
+    <button id="scroll-right-btn" onclick="nextDiv()">
       <img class="arrow-right" src="{% static 'images/body/right-arrow.png' %}" alt="arrow-right">
     </button>
 
-    <img class="bar-scroll-1" src="{% static 'images/body/bar-scroll-1.png' %}" alt="bar-1">
-    <img class="bar-scroll-2" src="{% static 'images/body/bar-scroll-2.png' %}" alt="bar-2">
-
+    <div class="scrollable-content">
+      <img id="image1" class="bar-scroll-1" src="{% static 'images/body/bar-scroll-1.png' %}" alt="bar-1">
+      <img id="image2" class="bar-scroll-2" src="{% static 'images/body/bar-scroll-2.png' %}" alt="bar-2">
+      <img id="image3" class="bar-scroll-2" src="{% static 'images/body/bar-scroll-2.png' %}" alt="bar-2">
+      <img id="image4" class="bar-scroll-2" src="{% static 'images/body/bar-scroll-2.png' %}" alt="bar-2">
+    </div>
 
   </section>
 
@@ -381,15 +384,17 @@
 
 
     <div>
-        <img class="bar-scroll-1" src="{% static 'images/body/bar-scroll-1.png' %}" alt="bar-1">
-        <img class="bar-scroll-3" src="{% static 'images/body/bar-scroll-3.png' %}" alt="bar-2">
-        <img class="bar-scroll-4" src="{% static 'images/body/bar-scroll-3.png' %}" alt="bar-2">
+      <div class="scrollable-content-2">
+        <img id="bar1" class="bar-scroll-1" src="{% static 'images/body/bar-scroll-1.png' %}" alt="bar-1">
+        <img id="bar2" class="bar-scroll-3" src="{% static 'images/body/bar-scroll-3.png' %}" alt="bar-2">
+        <img id="bar3" class="bar-scroll-4" src="{% static 'images/body/bar-scroll-3.png' %}" alt="bar-2">
+      </div>
 
-        <button onclick="prevCard()">
+        <button id="scroll-left-btn-2" onclick="prevCard()">
           <img class="arrow-left" src="{% static 'images/body/left-arrow-2.png' %}" alt="arrow-left">
         </button>
         
-        <button onclick="nextCard()">
+        <button id="scroll-right-btn-2" onclick="nextCard()">
           <img class="arrow-right" src="{% static 'images/body/right-arrow.png' %}" alt="arrow-right">
         </button>
 
@@ -444,29 +449,36 @@
     </div>
 
     <div class="container">
-      <form action="">
+
+      <div class="success" id="success-message" style="display: none; font-weight: 400;
+      font-size: 18px; line-height: 20px; color: #252940; margin-top: 150px; margin-right: 8%; text-align: center;">
+        <h3>Mensagem enviada com sucesso! Em breve entraremos em contato.</h3>
+      </div>
+
+      <form id="contact-form" action="/enviar-mensagem/" method="POST">
+        {% csrf_token %}
           <div class="row">
             <div class="first-name">
-              <label class="label-email" for="name">Primeiro nome</label>
-              <input class="input-email" type="text" class="form-control" id="name" placeholder="Digite seu nome" name="name">
+              <label class="label-email" for="first_name">Primeiro nome</label>
+              <input class="input-email" type="text" class="form-control" id="first_name" placeholder="Digite seu nome" name="first_name" required>
             </div>
             <div class="second-name">
-              <label class="label-whatsapp" for="sname">Sobrenome</label>
-              <input class="input-whatsapp" type="text" class="form-control" id="sname" placeholder="Digite seu sobrenome" name="sname">
+              <label class="label-whatsapp" for="last_name">Sobrenome</label>
+              <input class="input-whatsapp" type="text" class="form-control" id="last_name" placeholder="Digite seu sobrenome" name="last_name" required>
             </div>
           </div>
           <div class="row">
             <div class="email2">
               <label class="label-email" for="email">Email</label>
-              <input class="input-email" type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
+              <input class="input-email" type="email" class="form-control" id="email" placeholder="Digite seu email" name="email" required>
             </div>
             <div class="whatsapp">
-              <label class="label-whatsapp" for="what">Whatsapp</label>
-              <input class="input-whatsapp" type="text" class="form-control" id="what" placeholder="Digite seu número" name="what">
+              <label class="label-whatsapp" for="phone">Whatsapp</label>
+              <input class="input-whatsapp" type="tel" class="form-control" id="phone" placeholder="Digite seu número" name="phone" required>
             </div>
             <div class="mensage">
-              <label class="label-whatsapp" for="msg">Mensagem</label>
-              <input class="input-mensagem" type="text" class="form-control" id="msg" placeholder="Digite sua mensagem" name="msg">
+              <label class="label-whatsapp" for="message">Mensagem</label>
+              <input class="input-mensagem" type="text" class="form-control" id="message" placeholder="Digite sua mensagem" name="message" required>
             </div>
           </div>
         <button type="submit" class="submit">Enviar mensagem</button>
@@ -488,11 +500,24 @@
     </h5>
 
     <div class="container" class="row">
-      <form action="">
-            <label class="label-email" for="email">Inscreva-se no site para receber as novidades</label>
-            <input class="input-email" type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
-        <button type="submit" class="submit">Inscreva-se</button>
-      </form>
+      {% if success_message %}
+      <div id="success">
+        <h2>{{ success_message }}</h2>
+      </div>
+      <script>
+        // Rolar a página para a seção de sucesso
+        window.location.hash = 'success';
+      </script>
+      {% else %}
+
+
+        <form method="POST" action="{% url 'index' %}">
+          {% csrf_token %}
+                  <label class="label-email" for="email">Inscreva-se no site para receber as novidades</label>
+                  <input class="input-email" type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
+              <button type="submit" class="submit">Inscreva-se</button>
+        </form>
+      {% endif %}
     </div>
 
     <div class="contatos">

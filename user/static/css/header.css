@@ -52,7 +52,7 @@
 .header .navbar-nav{
   position: absolute;
   left: 323px;
-  top: 35.5px;
+  top: 58.5px;
 
   display: flex;
   align-items: center;
@@ -519,15 +519,18 @@ body .page-three .arrow-right:hover{
   opacity: 0.5;
 }
 
-body .page-three .bar-scroll-1{
+body .page-three .scrollable-content {
   position: absolute; 
   bottom: 60px; 
-  left: 643px;
+  left: 590px;
+  width: 800px; /* Largura ajustável conforme sua necessidade */
+  white-space: nowrap;
 }
-body .page-three .bar-scroll-2{
-  position: absolute; 
-  bottom: 60px; 
-  left: 779px;
+
+body .page-three .scrollable-content img {
+  margin: 2px;
+  height: auto;
+  display: inline-block;
 }
 
 /* ------------------------ Page Four Desktop ---------------------------*/
@@ -805,16 +808,10 @@ body .page-five .bar-scroll-4 {
     right: 10% !important;
     top: 82% !important;
   }
-  body .page-five .bar-scroll-1{
-    left: 31% !important;
-    top: 745px !important;
-  }
-  body .page-five .bar-scroll-3{
-    display: none !important;
-  }
-  body .page-five .bar-scroll-4{
-    left: 65% !important;
-    top: 745px !important;
+
+  body .page-five .scrollable-content-2 {
+    left: 28% !important;
+    top: 735px !important;
   }
 
   body .page-five .button-download{
@@ -987,6 +984,8 @@ body .page-seven .text-email{
     left: 748px;
     top: 72px;
   }
+
+  
   
   body .page-seven .container .first-name{
     position: absolute; 
@@ -1851,13 +1850,19 @@ body .footer h2{
   body .page-three .arrow-right{
     right: 32px;
   }
-  body .page-three .bar-scroll-1{
-    left: 281px;
+
+  body .page-three .scrollable-content {
+    position: absolute; 
     bottom: 45px; 
+    left: 260px;
+    width: 400px; /* Largura ajustável conforme sua necessidade */
+    white-space: nowrap;
   }
-  body .page-three .bar-scroll-2{
-    left: 417px;
-    bottom: 45px; 
+  
+  body .page-three .scrollable-content img {
+    margin: 2px;
+    height: auto;
+    display: inline-block;
   }
 }
 
@@ -1919,15 +1924,20 @@ body .footer h2{
     right: 10%;
     top: 85%; 
   }
-  body .page-three .bar-scroll-1{
-    left: 30%;
-    bottom: 10%; 
-  }
-  body .page-three .bar-scroll-2{
-    left: 65%;
-    bottom: 10%;
-  }
 
+  body .page-three .scrollable-content {
+    position: absolute; 
+    left: 23.5%;
+    bottom: 9%; 
+    width: 800px; /* Largura ajustável conforme sua necessidade */
+    white-space: nowrap;
+  }
+  
+  body .page-three .scrollable-content img {
+    margin: 2px;
+    height: auto;
+    display: inline-block;
+  }
 }
 
 /* ------------------------ Page Four iPad --------------------------*/
@@ -2094,23 +2104,19 @@ body .footer h2{
     left: 208px;
     top: calc(-160px);
   }
-  body .page-five .bar-scroll-1{
-    position: absolute;
+
+  body .page-five .scrollable-content-2 {
+    position: absolute; 
     left: 281px;
-    display: block;
     top: 711px;
+    width: 800px; /* Largura ajustável conforme sua necessidade */
+    white-space: nowrap;
   }
-  body .page-five .bar-scroll-3{
-    position: absolute;
-    left: 417px;
-    display: block;
-    top: 711px;
-  }
-  body .page-five .bar-scroll-4{
-    position: absolute;
-    left: 445px;
-    display: block;
-    top: 711px;
+  
+  body .page-five .scrollable-content-2 img {
+    margin: 2px;
+    height: auto;
+    display: inline-block;
   }
 }
 
