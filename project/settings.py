@@ -28,6 +28,7 @@ SECRET_KEY = 'django-insecure-fv9@cv&b0toqy0ujxy$zl!7t$xssq#w*gs^ee5!8gmx)d)299&
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['bodetech.blog.br']
 
 
 # Application definition
@@ -145,17 +146,7 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-"""
-STATIC_URL = '/static/'
-
-EMAIL_USE_TLS = EMAIL_USE_TLS
-EMAIL_HOST = EMAIL_HOST
-EMAIL_HOST_USER = EMAIL_HOST_USER
-EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD
-EMAIL_PORT = EMAIL_PORT
-"""
 
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
