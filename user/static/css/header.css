@@ -1,123 +1,8 @@
 /* ------------------------ Navbar Desktop --------------------------*/
 *{
-  font-family: 'Poppins';
+  font-family: 'Montserrat';
   font-style: normal;  
 }
-
-.header {
-
-  position: absolute;
-  width: 100vw;
-  max-width: 100%;
-  height: 108px;
-  left: 0px;
-  top: 0px;
-  background: #FFFFFF;
-}
-
-.header .img{
-  
-  position: absolute;
-  width: 40px;
-  height: 34px;
-  left: 60px;
-  top: 37px;
-}
-
-.header .menu-icon{
-  position: absolute;
-  right: 32px;
-  top: 37px;
-  display: none;
-}
-
-.header h1{
-  
-  position: absolute;
-  left: 115px;
-  top: 42px;
-
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-
-  color: #252940;
-  }
-
-
-.header .navbar-nav{
-  position: absolute;
-  left: 323px;
-  top: 58.5px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.header .navbar-nav ul li{
-  list-style: none;
-  display: inline-block;
-}
-
-.header .navbar-nav ul li a{
-  margin: 0 20px;
- 
-  
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 138.4%;
-  text-decoration: none;
-  color: rgba(37, 41, 64, 0.97);
-}
-
-.header .navbar-nav a:hover{
-  color: rgba(242, 175, 92, 0.97);
-}
-
-.header .navbar-nav .button-download{
-   /* Auto layout */
-  display: flex;
-
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-
-  margin: 0 20px;
-  width: 185px;
-  height: 40px;
-
-
-  background: rgba(242, 175, 92, 0.97);
-  border-radius: 5px;
-}
-
-.header .navbar-nav .button-download:hover{
-  background: rgba(242, 175, 92, 0.82);
-
-}
-
-.header .navbar-nav .button-download h6{
-
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-  text-decoration: none;
-
-  text-align: center;
-  letter-spacing: 0.2px;
-
-  /* BodeTech/Text/Primary */
-  color: #252940;
-}
-
-
-/* ------------------------ Page One Desktop ------------------------*/
 
 body {
   margin: 0;
@@ -142,61 +27,170 @@ body {
  
 /* Handle Scrollbar*/
 ::-webkit-scrollbar-thumb {
-  background:  rgba(242, 175, 92, 0.72);
+  background:  #B7E49F;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background:  rgba(242, 175, 92);
+  background: #B7E49F;
 
 }
+
+/* ------------------------ Navbar Desktop ------------------------*/
 
 body .page-one{
-  left: 0px;
-  top: 106px;
-
   position: absolute;
-  width: 100vw;
-  max-width: 100%;
-  height: 645px;
-  background: linear-gradient(180deg, rgba(242, 175, 92, 0.9506) 0%, rgba(255, 255, 255, 0.98) 81.77%);
+  left: 0px;
+  top: 0px;
+  width: 100%; 
+  height: 100%;
+
+  background-image: url('capa.svg');
+  background-size: cover;
 }
+
+
+/* Estilo para o navbar fixo */
+body .page-one .navbar.fixed {
+  position: fixed;
+  background: #000326;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+
+  width: 100%;
+  height: 100px;
+  flex-shrink: 0;
+  top: 0;
+  z-index: 3;
+
+}
+
+body .page-one .navbar {
+  position: absolute;
+  background-color: transparent;
+  padding: 20px;
+  transition: color 0.3s ease; /* Transição suave de cor de fundo */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+body .page-one .navbar .logo{
+  position: absolute;
+  width: 40px;
+  height: 34px;
+  left: 80px;
+  top: 19px;
+}
+
+body .page-one .navbar .navbar-nav{
+  position: absolute;
+  left: 400px;
+  top: 48px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+body .page-one .navbar .navbar-nav-2{
+  position: absolute;
+  left: 1139px;
+  top: 36px;
+
+  display: flex;
+  align-items: center;
+}
+
+body .page-one .navbar .navbar-nav ul li, .navbar .navbar-nav-2 ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+body .page-one .navbar .navbar-nav ul li a{
+  margin: 0 25px;
+ 
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #FFF; 
+}
+
+body .page-one .navbar .navbar-nav-2 ul li{
+  margin: 0 10px;
+}
+
+body .page-one .navbar .navbar-nav a:hover{
+  color: #B7E49F;
+}
+
+body .page-one .navbar .navbar-nav-2 a:hover{
+  opacity: 0.5;
+}
+
+  body .page-one .navbar .menu-icon, body .page-one .navbar .fechar-menu{
+    position: absolute;
+    right: 32px;
+    top: 37px;
+    display: none;
+    z-index: 4;
+    gap: 20px; 
+    align-items: center;
+    cursor: pointer;
+  }
+  
+
+/* ------------------------ Page One Desktop ------------------------*/
 
 body .page-one .text-title{
   position: absolute;
   width: 640px;
   height: 165px;
   left: 80px;
-  top: 106px;
+  top: 237px;
 
   font-weight: 600;
-  font-size: 44px;
-  line-height: 55px;
+  font-size: 28px;
+  line-height: normal;
 
   letter-spacing: 0.1px;
-  
-  color: #252940;
+  color: #FFF;
+}
+
+body .page-one .text-subtitle{
+  position: absolute;
+  width: 976px;
+  height: 107px;
+  left: 80px;
+  top: 279px;
+
+  font-weight: 600;
+  font-size: 40px;
+  line-height: normal;
+
+  letter-spacing: 0.1px;
+  color: #B7E49F; 
 }
 
 body .page-one .text-body{
   position: absolute;
-  width: 640px;
-  height: 148px;
+  width: 974px;
+  height: 93px;
   left: 80px;
-  top: 237px;
+  top: 404px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 30px;
   
   /* or 156% */
   letter-spacing: 0.1px;
   
-  color: #252940;
+  color: #FFF;
 }
 
-body .page-one .button-download-2{
+body .page-one .button-start{
   /* Auto layout */
   position: absolute;
   display: flex;
@@ -206,21 +200,21 @@ body .page-one .button-download-2{
   text-decoration: none;
 
   position: absolute;
-  width: 325px;
-  height: 40px;
+  width: 358px;
+  height: 48px;
   left: 80px;
-  top: 377px;;
+  top: 515px;;
 
-  /* BodeTech/Primary color/Laranja */
-  background: #F2AF5C;
+  background: #B7E49F;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 
-body .page-one .button-download-2:hover{
-  background: rgba(242, 175, 92, 0.82);
+body .page-one .button-start:hover{
+  background: #FFF;
 }
 
-body .page-one .button-download-2 h6{
+body .page-one .button-start h6{
  
  font-weight: 600;
  font-size: 14px;
@@ -230,724 +224,439 @@ body .page-one .button-download-2 h6{
  text-align: center;
  letter-spacing: 0.2px;
 
- color: #252940;
+ color: #1E1E1E;;
 }
 
-body .page-one .celular{
+body .page-one .folha{
   position: absolute;
-  width: 327px;
-  height: auto;
-  right: 360px;
-  top: 50px;
-}
-
-body .page-one .celular-2{
-  display: none;
-}
-
-body .page-one .bode-capa{
-  position: absolute;
-  width: 520px;
+  width: 500px;
   height: auto;
   right: 0px;
-  top: -16px;
+  top: 88px;
 }
 
-body .page-one .retangulo{
-  position: absolute;
-  width: 100vw;
-  max-width: 100%;
-  height: 652px;
-  left: 0px;
-  top: 6px;
 
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40.95%, #ffffff 100vw);
-  
-}
+
 
 /* ------------------------ Page Two Desktop --------------------------*/
 
-body .page-two .text-title {
+body .page-two{
   position: absolute;
-  width: 721px;
-  height: 136px;
-  left: calc(50% - 721px/2 + 0.5px);
-  top: 780px;
+  left: 0px;
+  top: 639px; 
+  flex-shrink: 0;
 
-  
-  font-weight: 600;
-  font-size: 44px;
-  line-height: 55px;
+  width: 100%;
+  height: 185px;
 
-  /* or 125% */
-  text-align: center;
-  letter-spacing: 0.1px;
-
-  color: #252940;
+  background: #FAFAFA;
 }
 
-body .page-two .card-1{
-  position: absolute;
-  width: 403px;
-  height: 265px;
-  left: 60px;
-  top: 980px;
-  
-  background: rgba(242, 175, 92, 0.15);
-  border-radius: 10px;
+body .page-two img{
+  margin-top: 60.5px;
+  margin-left: 81px;
+  align-items: center; 
 }
 
-
-body .page-two .card-2{
-  position: absolute;
-  width: 403px;
-  height: 265px;
-  left: 485px;
-  top: 980px;
-  
-  background: rgba(242, 175, 92, 0.15);
-  border-radius: 10px;
-}
-
-
-body .page-two .card-3{
-  position: absolute;
-  width: 403px;
-  height: 265px;
-  left: 910px;
-  top: 980px;
-  
-  background: rgba(242, 175, 92, 0.15);
-  border-radius: 10px;
-}
-
-body .page-two .card-4{
-  position: absolute;
-  width: 403px;
-  height: 265px;
-  left: 60px;
-  top: 1268px;
-  
-  background: rgba(242, 175, 92, 0.15);
-  border-radius: 10px;
-}
-
-
-body .page-two .card-5{
-  position: absolute;
-  width: 403px;
-  height: 265px;
-  left: 485px;
-  top: 1268px;
-  
-  background: rgba(242, 175, 92, 0.15);
-  border-radius: 10px;
-}
-
-
-body .page-two .card-6{
-  position: absolute;
-  width: 403px;
-  height: 265px;
-  left: 910px;
-  top: 1268px;
-  
-  background: rgba(242, 175, 92, 0.15);
-  border-radius: 10px;
-}
-
-body .page-two h3{
-  margin-top: 38px;
-  margin-left: 108px;
-  width: 272px;
-  height: 28px;
-
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 45px;
-  
-  /* or 225% */
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.1px;
-  
-  color: #252940;
-}
-
-body .page-two h4{
-  margin-top: 8px;
-  margin-left: 108px;
-  width: 272px;
-  height: 174px;
- 
-  
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
-
-  /* or 156% */
-  letter-spacing: 0.1px;
-
-  color: #252940;
-}
-
-body .page-two .ellipse{
-  position: absolute;
-  margin-top: 38px;
-  margin-left: 17px;
-}
 /* ----------------------- Page Three Desktop -------------------------*/
 
 body .page-three{
   position: absolute;
-  width: 100vw;
-  height: 651px;
+  width: 100%;
+  height: 722px;
   left: 0px;
-  top: 1646px;
+  top: 885px;
   }
 
-body .img-bodes{
-  width: 100%; 
-  height: 100%;
-}
-
-body .img-bodes-2, body .img-bodes-3{
-  display: none;
-  width: 100%; 
-  height: 100%;
-}
-
 body .page-three h1{
-  position: absolute;
-  width: 512px;
-  height: 88px;
-  left: calc(50% - 512px/2);
-  margin-top: -600px;
+  margin-top: 70px;
+  margin-left: 205px;
+  width: 1030px;
+  height: 113px;
+  flex-shrink: 0;
 
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 45px;
-
-  /* or 125% */
+  color: #0A531B;
   text-align: center;
-  letter-spacing: 0.1px;
-
-  color: #ffffff;  
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px; /* 125% */
 }
 
-body .page-three .container{
-  position: absolute;
-  width: 100vw;
+body .page-three .card-container {
   display: flex;
-  overflow: hidden;
-
-  left: 9.5%;
-  top: 32%;
-}
-
-body .page-three .transition-div {
-  flex: 0 0 5%;
-  display: none;
-  justify-content: space-between;
+  justify-content: space-between; /* Distribuição igual na horizontal */
+  padding: 20px; /* Espaçamento entre os cards */
+  margin-top: 57px;
+  }
   
-  align-items: flex-start;
-  padding: 50px 20px;
-
-  width: calc(522px*0.90);
-  height: calc(331px*0.90);
-  margin-left: 70px;
-
-
-  background: #FDF3E7;
-  border-radius: 10px;
-}
-
-body .page-three .transition-div.show {
-  display: block;
-}
-
-body .page-three .container h5{
-  width: 408px;
-  height: 226px;
-
-  font-style: italic;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 25px;
-
-  /* or 156% */
+body .page-three  .card {
+  width: calc(33.33% - 20px); /* Espaço igual para cada card (margem incluída) */
+  background-color: #FFF;
+  padding: 20px;
   text-align: center;
-  letter-spacing: 0.1px;
+  }
 
-  color: #252940;
-}
-
-body .page-three .container h6{
-  width: 408px;
-  height: 226px;
-
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 25px;
-  /* or 156% */
-  text-align: center;
-  letter-spacing: 0.1px;
-  margin-top: -30px;
-
-  color: #252940;
-}
-
-body .page-three .arrow-left{
-  position: absolute;
-  top: 50%; 
-  left: 80px;
-  cursor: pointer;
-}
-
-body .page-three .arrow-left:hover{
-  opacity: 0.5;
-}
-
-body .page-three .arrow-right{
-  position: absolute; 
-  top: 50%; 
-  right: 80px;
-  cursor: pointer;
-}
-
-body .page-three .arrow-right:hover{
-  opacity: 0.5;
-}
-
-body .page-three .scrollable-content {
-  position: absolute; 
-  bottom: 60px; 
-  left: 590px;
-  width: 800px; /* Largura ajustável conforme sua necessidade */
-  white-space: nowrap;
-}
-
-body .page-three .scrollable-content img {
-  margin: 2px;
-  height: auto;
-  display: inline-block;
-}
-
-/* ------------------------ Page Four Desktop ---------------------------*/
-
-body .page-four .bode-peso{
-  position: absolute;
-  left: -2px; 
-  top: 2297px;
-}
-
-body .page-four .pesando-bode{
-  position: absolute; 
-  left: 181px; 
-  top: 2310px;
-}
-
-body .page-four h1{
-  position: absolute;
-  width: 640px;
-  height: 165px;
-  left: 720px;
-  top: 2358px;
-
+body .page-three .card .card-content {
+  text-align: left; /* Alinhamento à esquerda para o conteúdo do card */
+  }
+  
+body .page-three .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 33px;
+  }
+  
+body .page-three  .card h2 {
+  flex-shrink: 0;
+  margin-bottom: 18px;
+  color: #0A531B;
+  font-size: 28px;
   font-weight: 600;
-  font-size: 44px;
-  line-height: 55px;
+  line-height: normal;
+  }
   
-  /* or 125% */
-  letter-spacing: 0.1px;
-  
-  color: #252940;  
-}
-
-body .page-four h5{
-  position: absolute;
-  width: 600px;
-  height: 124px;
-  left: 720px;
-  top: 2549px;
-
-  font-weight: 400;
+body .page-three  .card p {
+  flex-shrink: 0;  
+  color: #1E1E1E;
   font-size: 16px;
-  line-height: 25px;
-  
-  /* or 156% */
-  letter-spacing: 0.1px;
-  
-  color: #252940;
-}
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  }
 
-body .page-four .button-download{
+body .page-three .preencher-forms{
+  position: absolute;
+  top: calc(1630px - 885px);
+  width: 100%;
+  height: 70px;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 
-  position: absolute;
-  width: 325px;
-  height: 40px;
-  left: 715px;
-  top: 2699px;
-
-  background: rgba(242, 175, 92, 0.97);
-  border-radius: 5px;}
-
-  body .page-four .button-download:hover{
-    background: rgba(242, 175, 92, 0.82);
+  background-color: #0A531B;
   }
 
-  body .page-four .button-download h6{
- 
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
+  body .page-three .preencher-forms a{
+    text-decoration: none;
+  }
 
-  text-align: center;
-  letter-spacing: 0.2px;
+  body .page-three .preencher-forms p{
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+  }
 
-  /* BodeTech/Text/Primary */
-  color: #252940;
+  body .page-three .preencher-forms p:hover{
+    color: #B7E49F;
+  }
+
+/* ------------------------ Page Four Desktop ---------------------------*/
+
+body .page-four{
+  position: absolute;
+  width: 100%;
+  height: 722px;
+  left: 0px;
+  top: 1700px;
 }
 
+body .page-four .prato-bio{
+  position: absolute; 
+  box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.05) inset;
+}
+
+body .page-four .content{
+  position: absolute;
+  width: 542px;
+  top: calc(1741px - 1678px) ;
+  left: 758px;
+}
+
+body .page-four h2{
+  color: #1E1E1E;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 50px; /* 208.333% */
+}
+
+body .page-four h1{
+  margin-top: 6px;
+
+  color: #0A531B;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px; /* 125% */
+}
+
+body .page-four p{
+  margin-top: 32px;
+
+  color: #1E1E1E;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+
+body .page-four .container {
+  position: absolute;
+  margin-top: 549px;
+  height: 195px;
+  left: 670px;
+  width: 700px;
+  display: flex;
+}
+
+body .page-four .box {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+body .page-four .box a {
+  text-decoration: none;
+  display: flex; /* Tornar o link um flex container */
+  align-items: center; /* Alinhar itens verticalmente */
+}
+
+body .page-four .box p{
+  color: #1E1E1E;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: normal;
+  width: 150px;
+  text-align: left;
+}
+
+body .page-four .container .box img {
+  max-width: 100px; /* Limitar a largura da imagem */
+  height: auto;
+}
+
+body .page-four .container .box img:hover{
+  opacity: 0.5;
+}
+
+/* Alinhar texto verticalmente com a imagem */
+body .page-four .box a p {
+  margin: 0; /* Remover margem padrão */
+  display: inline; /* Tornar o parágrafo um elemento inline */
+  vertical-align: middle; /* Alinhar verticalmente com a imagem */
+  margin-left: 57px;
+  margin-right: 38px; /* Espaço entre imagem e texto */
+}
 
 /* ------------------------ Page Five Desktop --------------------------*/
 
 body .page-five{
   position: absolute;
   width: 100vw;
-  height: 1012px;
+  height: 1407px;
   left: 0px;
-  top: 2868px;
+  top: 2444px;
   
-  background: rgba(253, 243, 231, 0.97);
+  background: #FFF;
 }
 
 body .page-five h1{
-  position: absolute;
-  width: 721px;
-  height: 91px;
-  left: calc(50% - 721px/2 + 11.5px);
-  top: 106px;
-
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 45px;
-
+  margin-top: 70px;
+  color: #0A531B;
   text-align: center;
-  letter-spacing: 0.1px;
-
-  color: #252940;
-}
-
-body .page-five h2{
-  position: absolute;
-  width: 380px;
-  top: 38px;
-  margin-left: 33px;
-
+  font-size: 40px;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 30px;
-
-  letter-spacing: 0.1px;
-  color: #252940;
+  line-height: 50px; /* 125% */
 }
 
-body .page-five h5{
-  width: 305px;
-  height: 121px;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
-  letter-spacing: 0.1px;
-  
-  color: #252940;
-}
-
-body .page-five .cards{
-  position: absolute;
-  overflow: hidden;
+body .page-five .container {
+  padding: 20px 20px 20px 40px;
   display: flex;
-  left: 60px;
-  top: 242px;
+  flex-direction: column;
 }
 
-body .page-five .cards .transition-card{
-  justify-content: space-between;
-  margin-left: 18px;
-  width: 400px;
-  height: 642px;
-
-  background: #FFFFFF;
-  border-radius: 10px;
-}
-
-body .page-five .button-download{
+body .page-five .top, .page-five .bottom {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  text-decoration: none;
-  
-  position: absolute;
-  width: 325px;
-  height: 40px;
-  left: 558px;
-  margin-top: 929px;
-  
-  background: rgba(242, 175, 92, 0.97);
-  border-radius: 5px;
+  margin-top: 20px;
 }
 
-body .page-five .button-download:hover{
-  background: rgba(242, 175, 92, 0.82);
+body .page-five .left, .page-five .right {
+  flex: 1;
 }
 
-body .page-five .button-download h6{
- 
+body .page-five img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0px 5px 5px 0px;
+}
+
+body .page-five .text-block {
+  width: 630px;
+  height: 381px;
+  background-color: #f2f2f2;
+  border-radius: 0px 5px 5px 0px;
+  flex-shrink: 0;
+}
+
+body .page-five h2 {
+  padding: 73px 50px 0px 50px; /* Topo Direita Inferior Esquerda */
+  width: 630px;
+  font-size: 40px;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-
-  text-align: center;
-  letter-spacing: 0.2px;
-
-  color: #252940;
+  line-height: normal; 
+  color: #0A531B; 
 }
 
-body .page-five ul {
-  margin-top: 90px;
-  margin-left: 36px;
-}
-
-body .page-five ul li img {
-  vertical-align: middle;
-}
-
-body .page-five ul li {
-  list-style-type: none;
-  text-indent: -2.8em;
-
-  display: block;
-  text-align: left;
-  margin-left: 36px;
-}
-
-body .page-five .arrow-left, body .page-five .arrow-right, body .page-five .bar-scroll-1, body .page-five .bar-scroll-3,
-body .page-five .bar-scroll-4 {
-  display: none;
-}
-
-/* ----------------------- Page Five celular -------------------------*/
-
-@media screen and (max-width: 414px){
-  body .page-five{
-    height: 884px;
-    left: 0;
-    top: 3362px !important;
-    z-index: 3;
-  }
-  body .page-five h1{
-    width: 327px;
-    height: 76px;
-    left: calc(50% - 327px/2 - 0.5px);
-    top: 32px;
-    
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  body .page-five h2{
-    width: 267px !important;
-    top: 38px !important;
-
-    font-size: 20px !important;
-    line-height: 25px !important;
-  }
-  body .page-five h5{
-    width: 220px !important;
-
-    font-size: 13px !important;
-    line-height: 18px !important;
-  }
-  body .page-five ul {
-    margin-top: 110px !important;
-  }
-
-  body .page-five ul li {
-    margin-top: 15px !important;
-  }
-
-  body .page-five .cards{
-    width: 80vw !important;
-    left: 33px !important;
-    top: 170px !important;
-  }
-
-  body .page-five .cards .transition-card{
-    width: 327px !important;
-    height: 530px !important;
-    display: none !important;
-  }
-
-  body .page-five .cards .transition-card.show{
-    display: block !important;
-  }
-
-  body .page-five .arrow-left{
-    left: 10% !important;
-    top: 82% !important;
-  }
-  body .page-five .arrow-right{
-    right: 10% !important;
-    top: 82% !important;
-  }
-
-  body .page-five .scrollable-content-2 {
-    left: 28% !important;
-    top: 735px !important;
-  }
-
-  body .page-five .button-download{
-    width: 328px !important;
-    height: 40px !important;
-    left: 42px !important;
-    top: -120px !important;
-  }
+body .page-five p {
+  width: 630px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 16px 50px 209px 50px; /* Topo Direita Inferior Esquerda */
 }
 
 /* ------------------------ Page Six Desktop --------------------------*/
-
 body .page-six {
   position: absolute;
-  width: 1104px;
-  height: 402px;
-  left: 168px;
-  top: 3925px;
-
-  background: rgba(242, 175, 92, 0.97);
-  border-radius: 10px;
+  width: 100%;
+  height: 1251px;
+  left: 80px;
+  top: 3880px;
 }
 
 body .page-six h1{
-  position: absolute;
-  width: 481px;
-  height: 116px;
-  left: calc(730px - 168px);
-  top: calc(3972px - 3925px);
-
+  color: #0A531B;
+  text-align: center;
+  font-size: 40px;
   font-weight: 600;
-  font-size: 50px;
-  line-height: 56px;
+  line-height: 50px; /* 125% */
+  margin-top: 0px;
+  width: 1030px; 
+  margin-left: 70px;
 
-  letter-spacing: 0.1px;
-  color: #252940;
 }
 
-
-body .page-six h5{
-  position: absolute;
-  width: 481px;
-  height: 99px;
-  left: calc(730px - 168px);
-  top: calc(4114px - 3925px); 
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
-
-  letter-spacing: 0.1px;
-  color: #252940;
+body .page-six .food-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1281px;
 }
 
-body .page-six .button-download{
+body .page-six .food-panel .section {
+  flex-basis: calc(25% - 20px);
+  height: 428px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+body .page-six .food-panel .section .row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+body .page-six .food-panel .section .row .food-item {
+  flex: 1;
+  margin: 21px;
+}
+
+body .page-six .food-panel .section .row .food-item img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 5px 5px 0px 0px; 
+}
+
+body .page-six .food-panel .section .row .food-item h3 {
+  color: #1E1E1E;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 14px;
+}
+
+body .page-six .food-panel .section .row .food-item h4 {
+  color: #5F5D5D;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20px;
+}
+
+body .page-six  .food-panel .section .row .food-item .availability {
+  display: inline-flex;
+  padding: 6px 9px;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  
-  position: absolute;
-  width: 325px;
-  height: 40px;
-  left: 558px;
-  top: calc(4239px - 3925px);
-  
-  background: #FFFFFF;
+  gap: 10px;
+  margin-top: 14px;
   border-radius: 5px;
-}
+  background: #0A531B;
 
-body .page-six .button-download h6{
- 
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-
+  color: #FFF;
   text-align: center;
-  letter-spacing: 0.2px;
-
-  color: #252940;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
 }
 
-body .page-six .button-download h6:hover{
-  color: rgba(242, 175, 92, 0.97);
+body .page-six  .food-panel .section .row .food-item .preferred {
+  display: inline-flex;
+  padding: 6px 9px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  border-radius: 5px;
+  background: #BFECFF;
+
+  color: #1E1E1E;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
 }
 
-body .page-six .ellipse{
-  position: absolute; 
-  left: 0px; 
-  top: 8px;
-}
-
-body .page-six .ellipse3{
-  display: none;
-}
-
-body .page-six .bode-reader{
-  position: absolute; 
-  left: 0px; 
-  top: 0px;
-}
 
 /* ------------------------ Page Seven Desktop --------------------------*/
 
 body .page-seven {
   position: absolute;
-  width: 100vw;
-  height: 559px;
+  width: 100%;
+  height: 762px;
   left: 0px;
-  top: 4378px;
-
-  background: #F9F9F9;
+  top: 4800px;
+  background-color: #f2f2f2;
 }
 
 body .page-seven h1{
   position: absolute;
-  width: 492px;
-  height: 165px;
+  width: 542px;
+  height: 227px; 
   left: 80px;
   top: calc(4450px - 4378px);
 
   font-weight: 600;
-  font-size: 44px;
-  line-height: 55px;
+  font-size: 40px;
+  line-height: 50px;
 
   /* or 125% */
   letter-spacing: 0.1px;
 
-  color: #252940;
+  color: #0A531B;
 }
 
-body .page-seven h5{
+body .page-seven p{
   position: absolute;
-  width: 600px;
-  height: 102px;
+  width: 542px;
+  height: 227px; 
   left: 80px;
   top: calc(4590px - 4378px);
 
@@ -958,60 +667,41 @@ body .page-seven h5{
   /* or 156% */
   letter-spacing: 0.1px;
 
-  color: #252940;
+  color: #1E1E1E;
   }
 
-body .page-seven .text-email{
-  position: absolute;
-  width: 211px;
-  height: 26px;
-  left: 108px;
-  top: 4720px;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
-
-  /* or 156% */
-  letter-spacing: 0.1px;
-
-  color: #252940;
-  }
-
-  body .page-seven .container {
+  body .page-seven .container_form {
     position: absolute;
     flex-direction: column;
     left: 748px;
     top: 72px;
   }
-
   
-  
-  body .page-seven .container .first-name{
+  body .page-seven .container_form .first-name{
     position: absolute; 
     left: 0px; 
     top: 0px;
   }
 
-  body .page-seven .container .second-name{
+  body .page-seven .container_form .second-name{
     position: absolute; 
     left: 295px; 
     top:0px;
     }
 
-  body .page-seven .container .email2{
+  body .page-seven .container_form .email2{
     position: absolute; 
     left: 0px; 
     top:78px;
   }
 
-  body .page-seven .container .whatsapp{
+  body .page-seven .container_form .whatsapp{
     position: absolute; 
     left: 295px; 
     top:78px;
     }
 
-  body .page-seven .container .mensage{
+  body .page-seven .container_form .mensage{
     position: absolute; 
     left: 0px; 
     top:156px;
@@ -1139,7 +829,7 @@ body .page-seven .submit{
     border: none;
 
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
 
     /* identical to box height, or 129% */
@@ -1147,182 +837,194 @@ body .page-seven .submit{
     letter-spacing: 0.2px;
 
     /* BodeTech/Text/Primary */
-    color: #252940;
+    color: #1E1E1E;
 
     position: absolute;
-    width: 325px;
-    height: 40px;
+    width: 558px;
+    height: 56px; 
     left: 0px;
     top: 373px;
 
-    background: rgba(242, 175, 92, 0.97);
+    background: #B7E49F;
     border-radius: 5px;
+    transition: 0.3s;
+
   }
 
   body .page-seven .submit:hover{
-    background: rgba(242, 175, 92, 0.82);
+    background: #0A531B;
+    color: #FFF;
   }
 
-  body .page-seven .email{
-    position: absolute; 
-    left: 108px; 
+  body .page-seven .email {
+    position: absolute;
+    left: 108px;
     top: 342px;
     display: flex;
     align-items: center;
   }
-
-  body .page-seven .phone{
-    position: absolute; 
-    left: 108px; 
+  
+  body .page-seven .phone {
+    position: absolute;
+    left: 108px;
     top: 392px;
     display: flex;
     align-items: center;
+    list-style: none;
   }
+  
+  body .page-seven .contatos a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #1E1E1E;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Espaçamento vertical entre os contatos */
+    padding-left: 20px; /* Espaçamento da esquerda */
+    transition: color 0.3s ease;
+  }
+  
+  body .page-seven .contatos a img {
+    max-width: 20px; /* Ajuste o tamanho da imagem conforme necessário */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+  }
+  
+  body .page-seven .contatos a:hover {
+    color: #B7E49F;
+  }
+  
 
-/* ------------------------ Page Eight Desktop --------------------------*/
+/* ------------------------ Footer Desktop --------------------------*/
 
-body .page-eight h3{
-
+body .footer{ 
   position: absolute;
-  width: 235px;
-  height: 30px;
-  left: 84px;
-  top: 5014px;
+  width: 100vw;
+  height: 400px;
+  flex-shrink: 0;  
+  left: 0px;
+  top: 5395px;
+  background: #000326;
+}
 
-  font-weight: 600;
+body .footer .logo{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;  
+  padding-left: 90px;
+  margin-top: 68px;
+}
+
+body .footer .folhas{
+  position: absolute;
+  margin-left: 110px !important;
+  z-index: 1;
+}
+
+body .footer .menu {
+  float: left;
+  padding-left: 260px; /* Espaçamento da esquerda */
+}
+
+body .footer .contatos {
+  float: left;
+  padding-left: 80px; /* Espaçamento da esquerda */
+  text-align: left;
+}
+
+body .footer .menu-title,
+body .footer .contato-title {
   font-size: 20px;
-  line-height: 30px;
-
-  color: #252940;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+  margin-top: 70px;
 }
 
-body .page-eight h5{
-  position: absolute;
-  width: 570px;
-  height: 86px;
-  left: 84px;
-  top: 5070px;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-
-  color: #252940;
+body .footer .menu ul,
+body .footer .contatos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-body .page-eight .container {
-  position: absolute;
-  flex-direction: column;
-  left: 80px;
-  top: 5203px;
+body .footer .menu li,
+body .footer .contatos li {
+  margin-bottom: 15px;
 }
 
-body .page-eight .contatos{
-  position: absolute; 
-  display: flex;
-  top: 5279.44px; 
-  left: 66px;
-}
-
-body .page-eight .contatos a{
-  margin-left: 20px;
-}
-
-body .page-eight .menu-title{
-  position: absolute; 
-  top: 5014px; 
-  left: 750px;
-}
-
-body .page-eight .contato-title{
-  position: absolute; 
-  top: 5014px; 
-  left: 927px;
-}
-
-body .page-eight .baixe-app-title{
-  position: absolute; 
-  top: 5014px; 
-  left: 1154px;
-}
-
-body .page-eight .google-play{
-  position: absolute; 
-  top: 5068px; 
-  left: 1154px;
-}
-
-body .page-eight .apple-store{
-  position: absolute; 
-  top: 5132px; 
-  left: 1154px;
-}
-
-body .page-eight .topo{
-  position: absolute; 
-  top: 5267px; 
-  left: 1154px;
-}
-
-body .page-eight .contatos a:hover, body .page-eight .apple-store:hover, 
-body .page-eight .google-play:hover, body .page-eight .topo:hover{
-  opacity: 0.8;
-}
-
-body .page-eight .menu{
-  position: absolute;
-  flex-direction: column;
-  text-align: left;
-  display: grid;
-  top: 5048px;
-  left: 750px;
-}
-
-body .page-eight .menu a, body .page-eight .contato2 a{
-  margin-top: 23px;
-
+body .footer .menu a,
+body .footer .contatos a {
   text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+body .footer .menu a:hover,
+body .footer .contatos a:hover {
+  color: #B7E49F;
+}
+
+
+body .footer p{ 
+  position: absolute;
+  left: calc(50% - 270px/2);
+  bottom: 48px;
+  
   font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
-
-  color: #252940;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  
+  color: #FFF;  
 }
 
-body .page-eight .menu a:hover{
-  color: rgba(242, 175, 92, 0.97);
-}
-
-body .page-eight .contato2{
+body .footer hr{
   position: absolute;
-  flex-direction: column;
-  text-align: left;
-  display: grid;
-  top: 5048px;
-  left: 927px;
+  width: 1200px;
+  height: 1px;
+  left: 80px;
+  right: 80px;
+  bottom: 80px;
+  border: none;
+  background-color: #FFF;
 }
 
-body .page-eight .contatos a:hover{
-  color: rgba(242, 175, 92, 0.97);
+body .footer .sucesso{
+  position: absolute;
+  margin-top: 68px;
+  margin-left: 760px;
+  z-index: 2;
+  color: #FFF;
 }
 
+body .footer .forms{
+  position: absolute;
+  margin-top: 68px;
+  margin-left: 760px;
+  z-index: 2;
+}
 
-body .page-eight .label-email{
+body .footer .label-email{
 
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 
   /* or 114% */
   display: flex;
   align-items: center;
   letter-spacing: 0.1px;
 
-  color: #252940;
+  color: #FFF;
 }
 
-body .page-eight .submit{
+body .footer .submit{
   /* Auto layout */
   display: flex;
   flex-direction: row;
@@ -1339,23 +1041,24 @@ body .page-eight .submit{
   letter-spacing: 0.2px;
 
   /* BodeTech/Text/Primary */
-  color: #252940;
-  left: 347px;
-  top: 22px;
+  color: rgba(37, 41, 64, 1);
+  left: 345px;
+  top: 20px;
 
   position: absolute;
   width: 185px;
   height: 40px;
  
-  background: rgba(242, 175, 92, 0.97);
+  background:rgba(183, 228, 159, 1);
   border-radius: 5px;
 }
 
-body .page-eight .submit:hover{
-  background: rgba(242, 175, 92, 0.82);
+body .footer .submit:hover{
+  background: #0A531B;
+  color: #FFF;
 }
 
-body .page-eight .input-email{
+body .footer .input-email{
   
   box-sizing: border-box;
 
@@ -1376,493 +1079,187 @@ body .page-eight .input-email{
   border-radius: 5px;
 }
 
-body .page-eight h2{
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-
-  color: #252940;
-}
-
-body .page-eight h4{
+body .footer .midias {
   position: absolute;
-  width: 105px;
-  height: 14px;
-  left: 1214px;
-  top: 5285px;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  text-align: right;
-  text-decoration-line: none;
-
-  padding-bottom: 0.25rem;
-  color: #4AA6E1;
+  margin-left: 755px;
+  margin-top: 135px;
+  z-index: 2;
 }
 
-body .page-eight h4::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  transition: width 0.25s ease-out;
-  background-color: #4AA6E1;
-}
-  
-body .page-eight h4:hover::before{
-  width: 40%;
-}
-  
-
-body .footer{ 
-  position: absolute;
-  width: 100vw;
-  height: 195.51px;
-  left: 0px;
-  top: 5395px;
-  background: rgba(242, 175, 92, 0.97);
+body .footer .midias ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Aplica flexbox ao nível da lista */
 }
 
-body .footer p{ 
-  position: absolute;
-  left: calc(50% - 270px/2);
-  bottom: 30px;
-  
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  /* identical to box height */
-  text-align: center;
-  
-  color: #252940;  
+body .footer .midias ul li {
+  margin: 0 5px;
 }
 
-body .footer hr{
-  position: absolute;
-  width: 1200px;
-  height: 1px;
-  left: 80px;
-  right: 80px;
-  bottom: 69px;
-  border: none;
-  background-color: #252940;
+body .footer .midias a {
+  text-decoration: none;
+  display: block; /* Define o link como bloco para ocupar o espaço total do li */
 }
 
-body .footer img{
-  position: absolute;
-  width: 40px;
-  height: 34px;
-  left: 636px;
-  bottom: 106px;
+/* Estilo para as imagens dentro das âncoras */
+body .footer .midias a img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer; /* Define o cursor como ponteiro ao passar por cima da imagem */
 }
 
-body .footer h2{
-  position: absolute;
-  left: 691px;
-  bottom: 106px;
-
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  
-  color: #252940;
+body .footer .midias a:hover{
+  opacity: 0.5;
 }
 
-/* ------------------------ Navbar iPad --------------------------*/
-
-@media screen and (max-width: 744px){
-  .header .navbar-nav{
-    position: absolute;
-    width: 293px;
-    height: 398px;
-    left: 451px;
-    top: 106px;
-    z-index: 4;
-    align-items: start;
-    background: #FDF3E7F7;
-
-  }
-  .header .navbar-nav ul li{
-    display: block;
-    
-    text-align: left;
-
-    margin-left: 6px;
-    margin-top: 40px;
-  }
-  .header .navbar-nav ul li a{
-
-    
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    text-decoration: none;
-        
-    color: rgba(37, 41, 64, 0.97);
-  }
-  .header .navbar-nav ul li a::after{
-    content: '';
-    
-    position: absolute;
-    width: 283px;
-    height: 0px;
-    left: 0px;
-    margin-top: 40px;
-    /* BodeTech/Background/Dividers & Borders */
-    border: 1px solid #e4d6c4;
-
-  }
-  .header .menu-icon{
-    cursor: pointer;
-    display: block;
-  }
-  .header .menu-icon:hover{
-    opacity: 0.5;
-  }
-  .header .navbar-nav .button-download{
-    display: none;
-  }
-  #menuList{
-    overflow: hidden;
-    transition: 0.6s;
-  }
-}
 
 /* ------------------------ Navbar celular --------------------------*/
 
 @media screen and (max-width: 414px){
-  .header .navbar-nav{
-    left: 233px;
-    width: 181px;
-    top: 105px;
-    height: 224.5px;
-    background: #FDF3E7F7;
+  body .page-one { 
+    height: 708px;
+  
+    background-image: url('capa-2.svg');
+    background-size: cover;
   }
-  .header .navbar-nav ul li{
-    margin-top: 15px;
-  }
-  .header .navbar-nav ul li a::after{
-    margin-top: 28px;
-  }
-  .header .img{
-    left: 27px;
-  }
-  .header h1{
-    left: 76px;
-
-  }
-}
-
-
-/* ------------------------ Page One iPad --------------------------*/
-
-@media screen and (max-width: 744px){
-
-  body .page-one{
-    height: 400px;
-  }
-  body .page-one .text-title{
-    width: 381px;
-    height: 96px;
-    left: 32px;
-    top: 54px;
-
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 32px;
-  }
-  body .page-one .text-body{
-    width: 365px;
-    height: 178px;
-    left: 31px;
-    top: 130px;
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  body .page-one .button-download-2{
-    /* Button */
-    padding: 8px 117px;
-    gap: 10px;
-
-    width: 328px;
-    height: 40px;
-    left: 32px;
-    top: 285px;
-  }
-  body .page-one .bode-capa{
-    width: 319.09px;
-    height: auto;
-    right: 0px;
-    top: -6px;
-
-  }
-  body .page-one .celular{
-    width: 160px;
-    height: auto;
-    left: 403px;
-    top: 90px;
-  }
-  body .page-one .retangulo{
-    height: 360px;
-  }
-}
-
-/* ------------------------ Page One celular --------------------------*/
-
-@media screen and (max-width: 414px){
-  body .page-one{
-    height: 500px;
-  }
-  body .page-one .text-title{
-    width: 326px;
-    height: 76px;
-    left: 17px;
-    top: 24px;
-
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-  }
-  body .page-one .text-body{
-    width: 327px;
-    height: 121px;
-    left: 42px;
-    top: -240px;
-  }
-  body .page-one .button-download-2{
-    width: 326px;
-    height: 40px;
-    left: 17px;
-    top: -100px;    
-  }
-  body .page-one .bode-capa{
-    width: 255px;
-    right: 0px;
-    top: 300px;
-  }
-  body .page-one .celular{
-    width: 148px;
-    left: 57px;
-    top: 15px;
-    z-index: 2;
-  }
-  body .page-one .celular-2{
-    position: absolute;
-    display: block;
-
-    width: 95px;
-    height: auto;
-
-    left: 14px;
-    top: 50px;
-    z-index: 0;
-  }
-  body .page-one .retangulo{
-    height: 255px;
-    top: 340px;
-  }
-}
-
-/* ------------------------ Page Two iPad --------------------------*/
-
-@media screen and (max-width: 744px){
-  body .page-two .text-title {
-    width: 380px;
-    height: 76px;
-    left: calc(50% - 380px/2);
-    top: 520px;
-
-    font-size: 20px;
-    line-height: 25px;
-  }
-  body .page-two .card-1{
-    width: 330px;
-    height: 191px;
-    left: 32px;
-    top: 629px;
-  }
-  body .page-two .card-2{
-    width: 330px;
-    height: 191px;
-    left: 382px;
-    top: 629px;
-  }
-  body .page-two .card-3{
-    width: 330px;
-    height: 191px;
-    left: 32px;
-    top: 840px;
-  }
-  body .page-two .card-4{
-    width: 330px;
-    height: 191px;
-    left: 382px;
-    top: 840px;
-  }
-  body .page-two .card-5{
-    width: 330px;
-    height: 191px;
-    left: 32px;
-    top: 1051px;
-  }
-  body .page-two .card-6{
-    width: 330px;
-    height: 191px;
-    left: 382px;
-    top: 1051px;
-  }
-  body .page-two h3{
-    margin-top: 38px;
-    margin-left: 108px;
-    width: 222px;
-    height: 28px;
-    
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-  }
-  body .page-two h4{
-    margin-top: 8px;
-    margin-left: 108px;
-    width: 214px;
-    height: 80px;
-    
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-  }
-}
-
-/* ------------------------ Page Two celular --------------------------*/
-
-@media screen and (max-width: 414px){
-
-  body .page-two .text-title {
-    width: 327px;
-    height: 76px;
-    left: calc(50% - 327px/2 - 0.5px);
-    top: 754px;
-  }
-  body .page-two .card-1{
-    width: 327px;
-    height: 191px;
-    left: 42px;
-    top: 854px;
-  }
-  body .page-two .card-2{
-    width: 327px;
-    height: 176px;
-    left: 42px;
-    top: 1065px;
-  }
-  body .page-two .card-3{
-    width: 327.09px;
-    height: 191px;
-    left: 42px;
-    top: 1261px;
-  }
-  body .page-two .card-4{
-    width: 327.09px;
-    height: 191px;
-    left: 42px;
-    top: 1472px;
-  }
-  body .page-two .card-5{
-    width: 327.09px;
-    height: 191px;
-    left: 42px;
-    top: 1683px;
-  }
-  body .page-two .card-6{
-    width: 327.09px;
-    height: 191px;
-    left: 42px;
-    top: 1894px;
-  }
-  body .page-two h3{
-    margin-top: 38px;
-    margin-left: 108px;
-  }
-  body .page-two h4{
-    margin-top: 8px;
-    margin-left: 108px;
+  
+  body .page-one .navbar .logo{
+    left: 26px;
+    top: 20px;
   }
 
-}
-
-
-/* ------------------------ Page Three iPad --------------------------*/
-@media screen and (max-width: 744px){
-  body .page-three{
-    height: 497px;
-    top: 1320px;
+  body .page-one .navbar .navbar-nav{
+      position: absolute;
+      width: 414px;
+      height: 640px;
+      left: 0px;
+      top: 0px;
+      z-index: 2;
+      align-items: center;
+      background: rgba(0, 3, 38, 1);
   }
-  body .img-bodes-2{
-    display: block;
-  }
-  body .img-bodes{
+  
+  body .page-one .navbar .navbar-nav-2{
     display: none;
   }
-  body .page-three h1{
-    width: 288px;
-    height: 51px;
-    left: calc(50% - 288px/2);
-    margin-top: -450px;
 
+  body .page-one .navbar .navbar-nav ul{
+    top: -50px;
+
+  }
+  
+  body .page-one .navbar .navbar-nav ul li{
+    display: block;
+    text-align: center;
+    margin-left: 90px;
+    margin-top: 40px;
+  }
+  
+  body .page-one .navbar .navbar-nav ul li a{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  body .page-one .navbar .navbar-nav ul li a::after{
+    content: '';
+    
+    position: absolute;
+    width: 354px;
+    height: 0px;
+    left: 30px;
+    margin-top: 40px;
+    /* BodeTech/Background/Dividers & Borders */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+  }
+  
+  body .page-one .navbar .menu-icon{
+    display: flex;
+  }
+
+  body .page-one .navbar .menu-icon h2, body .page-one .navbar .fechar-menu h2 {
+    margin: 0; /* Remove as margens padrão do h2 */
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF;
+    line-height: normal;
+  }
+
+  body .page-one .navbar .fechar-menu:hover,
+  body .page-one .navbar .menu-icon:hover{
+    opacity: 0.5;
+    }
+    #menuList{
+      overflow: hidden;
+    }
+  }
+
+
+/* ------------------------ Page one celular --------------------------*/
+
+@media screen and (max-width: 414px){
+
+  body .page-one .text-title{
+    left: 26px;
+    top: 142px;
+  
     font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  body .page-three .container{
-    width: 70vw !important;
-    left: 10% !important;
-    top: 25% !important;
+    font-size: 22px;
   }
   
-  body .page-three .transition-div {
-    width: 506px;
-    height: 280px;
-  }
-
-  body .page-three h5{
-    font-size: 14px;
-    line-height: 22px;
-  }
-  body .page-three h6{
-    font-size: 14px;
-    line-height: 22px;
-  }
-  body .page-three .arrow-left{
-    left: 32px;
-  }
-  body .page-three .arrow-right{
-    right: 32px;
-  }
-
-  body .page-three .scrollable-content {
-    position: absolute; 
-    bottom: 45px; 
-    left: 260px;
-    width: 400px; /* Largura ajustável conforme sua necessidade */
-    white-space: nowrap;
+  body .page-one .text-subtitle{
+    width: 328px;
+    height: 197px;
+    left: 26px;
+    top: 184px;
+  
+    font-weight: 600;
+    font-size: 32px;
   }
   
-  body .page-three .scrollable-content img {
-    margin: 2px;
-    height: auto;
-    display: inline-block;
+  body .page-one .text-body{
+    width: 372px;
+    height: 201px;
+    left: 26px;
+    top: 399px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  body .page-one .button-start{
+    width: 372px;
+    height: 48px;
+    left: 26px;
+    top: 618px;;
+  }
+  
+  body .page-one .folha{
+    display: none;
+  }
+}
+
+/* ------------------------ Page two celular --------------------------*/
+
+@media screen and (max-width: 414px){
+  body .page-two {
+    top: 708px; 
+    height: 80px;
+    width: 414px;
+    position: relative; /* Adicione essa propriedade */
+  }
+  
+  body .page-two img {
+    width: 100%; /* Defina uma largura maior para aumentar o tamanho da imagem */
+    height: auto; 
+    position: absolute; /* Adicione essa propriedade */
+    transform: translate(-5%, -5%);
+    margin-top: 30.5px;
+    margin-left: 20px;
+    background-size: contain; /* Ajusta a imagem proporcionalmente */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
   }
 }
 
@@ -1871,676 +1268,593 @@ body .footer h2{
 @media (max-width: 414px){
 
   body .page-three{
-    height: 563px;
-    left: 0px;
-    top: 2125px;
-    z-index: 2;
-  }
-  body .img-bodes-2, body .img-bodes{
-    display: none;
-  }
-  body .img-bodes-3{
-    display: block;
-    z-index: 3;
-  }
+    height: 722px;
+    top: 788px;
+    }
+  
   body .page-three h1{
-    width: 288px;
-    height: 51px;
-    left: calc(50% - 288px/2);
-    margin-top: -510px;
-  }
-
-  body .page-three .container{
-    width: 100vw !important;
-    left: -12px !important;
-    top: 100px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 26px;
+    width: 374px;
+    text-align: left;
+  
+    font-weight: 600;
+    font-size: 28px;
+    line-height: normal;
   }
   
-  body .page-three .transition-div {
-    width: 306px;
-    height: 280px;
-  }
-
-  body .page-three .container h5{
-    width: 270px;
-    font-size: 13px;
-    line-height: 18px;
-  }
-  body .page-three .container h6{
-    width: 270px;
-    font-size: 13px;
-    line-height: 18px;
-    margin-top: -40px;
-
-  }
-  body .page-three .comment-2{
-    display: none;
-  }
-  body .page-three .arrow-left{
-    left: 10%;
-    top: 85%; 
-  }
-  body .page-three .arrow-right{
-    right: 10%;
-    top: 85%; 
-  }
-
-  body .page-three .scrollable-content {
-    position: absolute; 
-    left: 23.5%;
-    bottom: 9%; 
-    width: 800px; /* Largura ajustável conforme sua necessidade */
-    white-space: nowrap;
-  }
+  body .page-three .card-container {
+    display: block;
+    justify-content: space-between; /* Distribuição igual na horizontal */
+    padding: 10px; /* Espaçamento entre os cards */
+    margin-top: 0px;
+    margin-left: 26px;
+    }
+    
+  body .page-three  .card {
+    width: calc(100% - 20px); /* Espaço igual para cada card (margem incluída) */
+    background-color: #FFF;
+    padding: 10px;
+    text-align: center;
+    }
   
-  body .page-three .scrollable-content img {
-    margin: 2px;
-    height: auto;
-    display: inline-block;
-  }
-}
-
-/* ------------------------ Page Four iPad --------------------------*/
-@media screen and (max-width: 744px){
-  body .page-four h1{
-    width: 370px;
-    height: 96px;
-    left: 341px;
-    top: 1860px;
-
-    font-size: 26px;
-    line-height: 32px;
-  }
-  body .page-four h5{
-    width: 373px;
-    height: 140px;
-    left: 340px;
-    top: 1985px;
-
+  body .page-three .card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    
+  body .page-three  .card h2 {
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 22px;
+    }
+    
+  body .page-three  .card p {
+    font-size: 16px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  body .page-four .button-download{
-    width: 328px;
-    height: 40px;
-    left: 341px;
-    top: 2134px;
-  }
-  body .page-four .bode-peso{
-    width: 379px;
-    height: 405px;
-    left: -6px;
-    top: 1817px;
-  }
-  body .page-four .pesando-bode{
-    width: 278px;
-    height: auto;
-    left: 33px;
-    top: 1970px;
-  }
+    line-height: 25px; /* 187.5% */
+    }
+  
+  body .page-three .preencher-forms{
+    position: absolute;
+    top: 1450px;
+    width: 414px;
+    margin-left: 0px;
+    }
+  
+    body .page-three .preencher-forms p{
+      font-size: 16px;
+    }
 }
 
 /* ------------------------ Page Four celular --------------------------*/
 
 @media screen and (max-width: 414px){
-  body .page-four h1{
-    width: 340px;
-    left: 42px;
-    top: 2715px;
 
-    font-size: 19px;
-    line-height: 25px;
-  }
-  body .page-four h5{
-    width: 350px;
-    height: 160px;
-    left: 42px;
-    top: 2785px;
-  }
-  body .page-four .button-download{
-    width: 327px;
-    height: 40px;
-    left: 42px;
-    top: 2950px;
-  }
-  body .page-four .bode-peso{
-    width: 359px;
-    height: auto;
-    left: -6px;
-    top: 3020px;
-    z-index: 3;
-  }
-  body .page-four .pesando-bode{
-    width: 278px;
-    height: auto;
-    left: 97px;
-    top: 3111px;
-    z-index: 3;
-  }
-}
-
-/* ------------------------ Page Five iPad --------------------------*/
-@media screen and (max-width: 744px){
-
-  body .page-five{
-    height: 879px;
-    left: 0px;
-    top: 2222px;
-  }
-  body .page-five h1{
-    width: 380px;
-    height: 76px;
-    left: calc(50% - 380px/2);
-    top: calc(2334px - 2262px);
-
-    font-size: 26px;
-    line-height: 32px;
-  }
-
-  body .page-five .arrow-left{
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    left: 70px;
-    top: 50%;
-  }
-
-  body .page-five .arrow-left:hover{
-    opacity: 0.5;
+  body .page-four{
+    width: 100%;
+    height: 120px;
+    top: 2300px;
   }
   
-  body .page-five .arrow-right{
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    right: 70px;
-    top: 50%;
+  body .page-four .prato-bio{
+    width: 414px;
+    height: auto;
+    margin-left: 0px;
+    z-index: -1;
   }
-
-  body .page-five .arrow-right:hover{
-    opacity: 0.5;
+  
+  body .page-four .content{
+    width: 414px;
+    margin-top: 420px;
+    left: 26px;
+    margin-right: 20px;
   }
-
-  body .page-five h2{
-    width: 337px;
-    height: 30px;
-    margin-left: 33px;
-    top: 38px;
+  
+  body .page-four h3{
     font-size: 20px;
-    line-height: 25px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 8px;
   }
-
-  body .page-five h5{
-    width: 294px;
-    height: 80px;
-
+  
+  body .page-four h1{
+    margin-top: 0px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: normal; 
+    width: 362px;
+  }
+  
+  body .page-four p{
+    margin-top: 32px;
     font-size: 14px;
-    line-height: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 362px;
+  }
+  
+  body .page-four .container {
+    margin-top: 980px;
+    height: 195px;
+    left: 0px;
+    width: 414px;
+    display: block;
+  }
+  
+  body .page-four .box p{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+  }
     
-  }
+}
 
-  body .page-five .cards{
-    width: 53vw;
-    left: 176px;
-    top: 200px;
-  }
+/* ----------------------- Page Five celular -------------------------*/
 
-  body .page-five .cards .transition-card{
-    width: 413px;
-    height: 459px;
+@media screen and (max-width: 414px){
+  body .page-five{
+    height: 0px;
+    width: 0px;
+    display: none;
+  }
+  
+  /* 
+    body .page-five{
+    height: 0px;
+    width: 0px;
     display: none;
   }
 
-  body .page-five .cards .transition-card.show{
-    display: block;
-  }
-
-  body .page-five .button-download{
-    gap: 10px;
-
-    width: 328px;
-    height: 40px;
-    left: 208px;
-    top: calc(-160px);
-  }
-
-  body .page-five .scrollable-content-2 {
-    position: absolute; 
-    left: 281px;
-    top: 711px;
-    width: 800px; /* Largura ajustável conforme sua necessidade */
-    white-space: nowrap;
-  }
-  
-  body .page-five .scrollable-content-2 img {
-    margin: 2px;
-    height: auto;
-    display: inline-block;
-  }
-}
-
-/* ------------------------ Page Six iPad --------------------------*/
-@media screen and (max-width: 744px){
-  body .page-six {
-    width: 677px;
-    height: 279px;
-    left: 32px;
-    top: 3170px;
-  }
-  body .page-six h1{
-    width: 274px;
-    height: 63px;
-    left: calc(396px - 32px);
-    top: calc(3246px -  3210px);
-
+  body .page-five h1{
+    margin-top: 20px;
+    margin-left: 26px;
+    text-align: left;
+    font-size: 28px;
     font-weight: 600;
-    font-size: 26px;
-    line-height: 32px;
-  }
-  body .page-six h5{
-    position: absolute;
-    width: 289px;
-    height: 80px;
-    left: calc(396px - 32px);
-    top: calc(3325px -  3210px);
-
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-  }
-  body .page-six .button-download{
-    position: absolute;
-    width: 274px;
-    height: 40px;
-    left: calc(396px - 32px);
-    top: calc(3422px -  3210px);
-  }
-  body .page-six .ellipse{
-    position: absolute; 
-    width: 317.19px;
-    height: auto;
-    top: 36px;
-  }
-  body .page-six .bode-reader{
-    position: absolute; 
-    width: 324px;
-    height: auto;
-    left: 0px; 
-    top: 29px;
+    line-height: normal;
+    width: 362px;
   }
   
+  body .page-five .container {
+    padding: 20px 20px 20px 26px;
+    display: block;
+    flex-direction: column;
+  }
+  
+  body .page-five .top, .page-five .bottom {
+    display: block;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  body .page-five .left, .page-five .right {
+    flex: 1;
+  }
+  
+  body .page-five img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0px 5px 5px 0px;
+  }
+  
+  body .page-five .text-block {
+    width: 377px;
+    height: 224px;
+    border-radius: 0px 5px 5px 0px;
+    flex-shrink: 0;
+  }
+  
+  body .page-five h2 {
+    padding: 35px 26px 0px 26px; 
+    width: 377px;
+    font-size: 22px;
+    line-height: normal;
+    font-weight: 600;
+  }
+  
+  body .page-five p {
+    width: 377px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 16px 26px 100px 26px; 
+  }
+  */
 }
-
 /* ------------------------ Page Six celular ---------------------------*/
 
 @media screen and (max-width: 414px){
   body .page-six {
-    width: 327px;
-    height: 574px;
-    left: 42px;
-    top: 4270px;
+    width: 100%;
+    height: 2050px;
+    left: 26px;
+    top: 3500px;
   }
+  
   body .page-six h1{
-    width: 268px;
-    height: 51px;
-    left: calc(50% - 268px/2);
-    top: 25px;
-
-    text-align: center;
-    font-size: 20px;
-    line-height: 25px;
-  }
-  body .page-six h5{
-    width: 305px;
-    height: 119px;
-    left: calc(50% - 305px/2 + 0.5px);
-    top: 96px;
-
-    text-align: center;
-    font-size: 12px;
-    line-height: 16px;
-  }
-  body .page-six .button-download{
-    width: 274px;
-    height: 40px;
-    left: 28px;
-    top: 225px;
-  }
-  body .page-six .ellipse3{
-    position: absolute;
-    display: block;
-    width: 328px;
-    height: auto;
-    top: 291px;
-    left: 0px;
-  }
-  body .page-six .ellipse{
-    display: none;
-  }
-  body .page-six .bode-reader{
-    width: 324px;
-    height: auto;
-    left: 0px; 
-    top: 325px;
-  }
-}
-
-/* ------------------------ Page Seven iPad --------------------------*/
-@media screen and (max-width: 744px){
-  body .page-seven {
-    width: 745px;
-    height: 816px;
-    left: calc(50% - 745px/2 + 0.5px);
-    top: 3471px;
-  }
-  body .page-seven h1{
-    width: 365px;
-    height: 62px;
-    left: calc(745px/2 - 365px/2);
-    top: calc(3512px - 3471px);
-
+    text-align: left;
+    font-size: 30px;
     font-weight: 600;
-    font-size: 26px;
-    line-height: 32px;
-    text-align: center;
+    line-height: normal; /* 125% */
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 362px;   
   }
-  body .page-seven h5{
-    width: 542px;
-    height: 81px;
-    left: calc(745px/2 - 0.5px - 542px/2);
-    top: calc(3654px - 3514px);
-    
-    font-weight: 400;
+  
+  body .page-six .food-panel {
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 362px;
+  }
+  
+  body .page-six .food-panel .section {
+    flex-basis: calc(5% - 0px);
+    height: 1020px;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  body .page-six .food-panel .section .row {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  body .page-six .food-panel .section .row .food-item {
+    flex: 1;
+    margin: 20px -50px; /* Altere a margem horizontal aqui */
+  }
+  
+  body .page-six .food-panel .section .row .food-item img {
+    width: 371px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 5px 5px 0px 0px; 
+  }
+  
+  body .page-six .food-panel .section .row .food-item h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 14px;
+  }
+  
+  body .page-six .food-panel .section .row .food-item h4 {
     font-size: 14px;
+    font-weight: 200;
     line-height: 20px;
+  }
+  
+  body .page-six  .food-panel .section .row .food-item .availability {
+    display: inline-flex;
+    padding: 6px 9px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    border-radius: 5px;
+  
     text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px; /* 128.571% */
   }
-  body .page-seven .container{
-    left: 101px;
-    top: 267px;
-  }
-  body .page-seven .submit{
-    left: 109px;
-  }
-  body .page-seven .email{
-    left: 161px;
-    top: 723px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-  }
-  body .page-seven .phone{
-    left: 407px;
-    top: 723px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
+  
+  body .page-six  .food-panel .section .row .food-item .preferred {
+    display: inline-flex;
+    padding: 6px 9px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    border-radius: 5px;
+  
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px; /* 128.571% */
   }
 }
 
 /* ------------------------ Page Seven celular -------------------------*/
 
 @media screen and (max-width: 414px){
-  body .page-seven {
-    width: 415px;
-    height: 925px;
-    left: calc(50% - 415px/2 - 1.5px);
-    top: 4867px;
-  }
-  body .page-seven h1{
-    width: 268px;
-    height: 51px;
-    left: calc(50% - 268px/2);
-    top: 28px;
 
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: center;
-  }
-  body .page-seven h5{
-    width: 327px;
-    height: 118px;
-    left: calc(414px/2 + 1.0px - 327px/2);
-    top: 109px;
-  }
-  body .page-seven .container{
-    width: 328px;
-    left: 42px;
-    top: 258px;
+  
+body .page-seven {
+  width: 100%;
+  height: 400px;
+  left: 0px;
+  top: 5850px;
+  background-color: #FAFAFA;
+}
+
+body .page-seven h1{
+  width: 362px;
+  height: 227px; 
+  left: 26px;
+  top: 30px;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: normal;
+}
+
+body .page-seven p{
+  width: 362px;
+  height: 176px; 
+  left: 26px;
+  top: 128px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
   }
 
-  body .page-seven .container .first-name{
-    left: 6px; 
+  body .page-seven .email {
+    left: 35px;
+    top: 300px;
+  }
+  
+  body .page-seven .phone {
+    left: 35px;
+    top: 350px;
+  }
+
+  body .page-seven .container_form {
+    flex-direction: column;
+    left: 26px;
+    top: 430px;
+  }
+
+  body .page-seven .container_form .first-name{
+    left: 0px; 
     top: 0px;
   }
-  body .page-seven .container .second-name{
-    left: 6px; 
-    top: 78px;
-  }
-  body .page-seven .container .email2{
-    left: 6px; 
-    top: 156px;
-  }
-  body .page-seven .container .whatsapp{
-    left: 6px; 
-    top: 234px;
+
+  body .page-seven .container_form .second-name{
+    left: 0px; 
+    top: 70px;
+    }
+
+  body .page-seven .container_form .email2{
+    left: 0px; 
+    top: 140px;
   }
 
-  body .page-seven .container .mensage{
-    left: 6px; 
-    top: 312px;
+  body .page-seven .container_form .whatsapp{
+    left: 0px; 
+    top: 210px;
+    }
+
+  body .page-seven .container_form .mensage{
+    left: 0px; 
+    top: 280px;
   }
 
-  body .page-seven .input-mensagem, body .page-seven .input-whatsapp,
-  body .page-seven .input-email{
-    width: 326px;
-  }
+  body .page-seven .input-email {
 
-  body .page-seven .submit{
-    left: 6px;
-    top: 510px;
-    width: 326px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 9px 16px;
+    gap: 10px;
+  
+    width: 362px;
+    height: 40px;
   }
-  body .page-seven .email{
-    left: 122px;
-    top: 843px;
+  
+  body .page-seven .label-email{
+    width: 362px;
+    height: 16px;
+
     font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 16px;
   }
-  body .page-seven .phone{
-    left: 122px;
-    top: 873px;
+  
+  body .page-seven .input-whatsapp {
+  
+    box-sizing: border-box;
+  
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 9px 16px;
+    gap: 10px;
+  
+    width: 362px;
+    height: 40px;
+
+  }
+  
+  body .page-seven .label-whatsapp{
+    width: 362px;
+    height: 16px;
+
     font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-  }
-}
-
-/* ------------------------ Page Eight iPad --------------------------*/
-@media screen and (max-width: 744px){
-  body .page-eight h3{
-    left: 257px;
-    top: 4330px;
-    text-align: center;
-  }
-  body .page-eight h5{
-    width: 676px;
-    top: 4370px;
-    left: 32px;
-    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
   }
 
-  body .page-eight h2{
+  body .page-seven .input-mensagem {
+  
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 9px 16px;
+    gap: 10px;
+  
+    width: 362px;
+    height: 155px;
+  }
+  
+  ::placeholder {
+    width: 167px;
+    height: 21px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+body .page-seven .submit{
+
     font-weight: 600;
-    font-size: 20px;
-    line-height: 30px
-  }
+    font-size: 14px;
+    line-height: 18px;
 
-  body .page-eight .container {
-    left: 111px;
-    top: 4470px;
-  }
-  body .page-eight .contatos{
-    top: 4551px; 
-    left: 304px;
-  }
-
-  body .page-eight .menu-title{
-    top: 4630px;
-    left: 100px;
-  }
-  body .page-eight .contato-title{
-    top: 4630px;
-    left: 280px;
-  }
-  body .page-eight .baixe-app-title{
-    top: 4630px; 
-    left: 507px;
-  }
-  body .page-eight .menu{
-    top: 4650px;
-    left: 100px;
-  }
-  body .page-eight .contato2{
-    top: 4650px; 
-    left: 280px;
-  }
-  body .page-eight .google-play{
-    top: 4675px; 
-    left: 507px;
-  }
-  body .page-eight .apple-store{
-    top: 4739px; 
-    left: 507px;
-  }
-  body .page-eight .topo{
-    top: 4880px; 
-    left: 507px;
-  }
-  body .page-eight h4{
-    top: 4900px; 
-    left: 567px;
-  }
-  body .footer{ 
+    width: 362px;
+    height: 48px; 
     left: 0px;
-    height: 196px;
-    top: 5000px;
+    top: 480px;
   }
-  body .footer img{
-    left: 288px;
-    bottom: 100px;
-  }
-  body .footer h2{
-    left: 336px;
-    bottom: 100px;
-  }
-  body .footer hr{
-    width: 680px;
-    left: 32px;
-  }
-  body .footer p{ 
-    position: absolute;
-    left: calc(50% - 324px/2 - 0.5px);
-  }
+
 }
 
-/* -------------------- Page Eight celular ----------------------*/
+
+
+/* ------------------------ Footer celular --------------------------*/
 
 @media screen and (max-width: 414px){
-  body .page-eight h3{
-    left: 80px;
-    top: 5820px;
-  }
-  body .page-eight h5{
-    width: 328px;
-    top: 5860px;
-    left: 42px;
-  }
 
-  body .page-eight h2{
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    top: 2000px;
-  }
+body .footer{ 
+  width: 100vw;
+  height: 890px;
+  left: 0px;
+  top: 6850px;
+}
 
-  body .page-eight .container {
-    left: 42px;
-    top: 6020px;
-  }
-  body .page-eight .submit{
-    top: 82px; 
-    left: 0px;
-    width: 326px;
-  }
-  body .page-eight .contatos{
-    top: 6200px; 
-    left: 134px;
-  }
-  body .page-eight .menu-title{
-    top: 6269px;
-    left: 42px;
-  }
-  body .page-eight .contato-title{
-    top: 6269px;
-    left: 203px;
-  }
+body .footer .logo{
+  padding-left: 26px;
+  margin-top: 20px;
+}
 
-  body .page-eight .baixe-app-title{
-    top: 6398px;
-    left: 203px;
-  }
-  body .page-eight .menu{
-    top: 6290px;
-    left: 42px;
-  }
-  body .page-eight .contato2{
-    top: 6290px; 
-    left: 203px;
-  }
-  body .page-eight .google-play{
-    top: 6452px; 
-    left: 203px;
-  }
-  body .page-eight .apple-store{
-    top: 6522px; 
-    left: 203px;
-  }
-  body .page-eight .topo{
-    top: 6605px; 
-    left: 226px;
-  }
-  body .page-eight h4{
-    top: 6625px; 
-    left: 173px;
-  }
-  body .footer{ 
-    left: 0px;
-    height: 196px;
-    top: 6700px;
-  }
-  body .footer img{
-    left: 123px;
-    bottom: 110px;
-  }
-  body .footer h2{
-    left: 178px;
-    bottom: 110px;
-  }
-  body .footer hr{
-    width: 328px;
-    left: 42px;
-    bottom: 70px;
-  }
-  body .footer p{ 
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    left: calc(50% - 278px/2 - 2px);
-  }
+body .footer .folhas{
+  display: none;
+  width: 0px;
+}
+
+body .footer .menu {
+  margin-top: 40px;
+  padding-left: 26px; /* Espaçamento da esquerda */
+}
+
+body .footer .contatos {
+  position: absolute;
+  padding-left: 26px; /* Espaçamento da esquerda */
+  margin-top: 260px;
+}
+
+body .footer .menu-title,
+body .footer .contato-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+
+body .footer .menu li,
+body .footer .contatos li {
+  margin-bottom: 15px;
+}
+
+body .footer .menu a,
+body .footer .contatos a {
+  font-size: 16px;
+  display: block;
+  padding: 10px 0;
+}
+
+
+body .footer p{ 
+  left: 26px;
+  bottom: 50px;
+  width: 362px;
+  
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+body .footer hr{
+  width: 362px;
+  height: 1px;
+  left: 26px;
+  right: 26px;
+  bottom: 110px;
+}
+
+body .footer .sucesso{
+  width: 362px;
+  margin-top: 520px;
+  margin-left: 26px;
+}
+
+body .footer .forms{
+  width: 362px;
+  margin-top: 520px;
+  margin-left: 26px;
+}
+
+body .footer .label-email{
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 4px;
+
+  /* or 114% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1px;
+}
+
+body .footer .submit{
+  /* Auto layout */
+  display: flex;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+
+  left: 0px;
+  top: 80px;
+
+  width: 362px;
+  height: 40px;
+
+}
+
+
+body .footer .input-email{
+  
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 9px 16px;
+  gap: 10px;
+
+  width: 362px;
+  height: 40px;
+
+}
+
+body .footer .midias {
+  margin-left: 80px;
+  margin-top: 690px;
+}
+
+
+body .footer .midias ul li {
+  margin: 0 25px;
+}
 }

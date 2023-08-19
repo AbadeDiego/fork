@@ -7,11 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>{{ BodeTech }}</title>
-
-  <!-- Bootstrap -->
-  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />-->
-
+  <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
@@ -29,433 +25,292 @@
   <!-- CSS -->
   <link rel="stylesheet" href="{% static 'css/main.css' %}">
   <link rel="stylesheet" href="{% static 'css/header.css' %}">
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
 
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Header -->
-    <nav class="header" id="inicio" class="navbar navbar-light bg-light">
-        <a class="img">
-          <img src="{% static 'images/header/logo.png' %}" class="d-inline-block align-top" alt="logo">
+</head>
+<body>
+
+  <section class="page-one" id="app">
+
+    <!-- navbar -->
+    <nav class="navbar" id="inicio" class="navbar navbar-light bg-light">
+        <a class="logo">
+          <img src="{% static 'images/logo.png' %}" class="d-inline-block align-top" alt="logo">
         </a>
-        <h1> BodeTech</h1>
      
         <div class="navbar-nav" id="menuList">
           <ul>
-              <li><a class="app" class="nav-item nav-link" href="#app">Sobre o App </a></li>
-              <li><a class="vantagens" href="#vantagens">Vantagens </a></li>
-              <li><a class="depoimentos" href="#depoimentos">Depoimentos </a></li>
-              <li><a class="funcionalidades" href="#funcionalidades">Funcionalidades </a></li>
-              <li><a class="blog" href="#blog">Blog </a></li>
-              <li><a class="contato" href="#contato">Contato </a></li>
+              <li><a href="#exploraralimentos">Explorar Alimentos </a></li>
+              <li><a href="#sobre">Quem Somos </a></li>
+              <li><a href="#entraremcontato">Entrar em Contato </a></li>
           </ul>
-          <a class="button-download" href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
-            <h6>Baixe o App!</h6>
-          </a>
         </div>
 
-        <img src="{% static 'images/header/menu.png' %}" class="menu-icon" onclick="togglemenu()">
-    </nav>
-</head>
-<body>
-  
-  <section class="page-one" id="app">
-    
-    <img style="width:100%; height: 100%;" src="{% static 'images/body/bodyimage.png' %}" alt="fazenda"> 
+        <div class="navbar-nav-2" id="menuList-2">
+          <ul>
+              <li>
+                <a href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1"> <img src="{% static 'images/facebook.png' %}" class="d-inline-block align-top" alt="facebook"> </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sem.desperdicio/"> <img src="{% static 'images/instagram.png' %}" class="d-inline-block align-top" alt="instagram"> </a>
+              </li>
+              <li>
+                <a href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1"> <img src="{% static 'images/linkedin.png' %}" class="d-inline-block align-top" alt="linkedin"> </a>
+              </li>
+          </ul>
+        </div>
 
+        <div class="menu-icon" id="menuIcon">
+          <h2>Menu</h2>
+          <img src="{% static 'images/menu.svg' %}" onclick="togglemenu()">
+        </div>
+
+        <div class="fechar-menu" id="menuFechar">
+          <h2 style="color: rgba(183, 228, 159, 1);">Fechar menu</h2>
+          <img src="{% static 'images/close.svg' %}"  onclick="togglemenu()">
+        </div>
+    </nav>
+
+         
     <div class="text-title">
-      Maximize lucros com o nosso aplicativo!
+      Sem Desperdício
     </div>
 
-    <img class="bode-capa" src="{% static 'images/body/bode-1.png' %}" alt="fazenda"> 
+    <img class="folha" src="{% static 'images/group-leaf.png' %}" alt="folha"> 
   
-    <div class="retangulo">
+      <div class="text-subtitle">
+        Potencialize sua Indústria com Sustentabilidade: Conheça o Sem Desperdiço!
+      </div>
 
       <div class="text-body">
-        Nosso aplicativo simplifica e aprimora 
-        todas as etapas na criação de caprinos. Com acesso aos recursos de registro de dados,
-        controle financeiro, alertas personalizados e análises
-        inteligentes você terá total controle e visão geral sobre o desempenho da sua criação.
+        Junte-se à revolução da sustentabilidade! O Sem Desperdiço conecta indústrias, agricultores e 
+        consumidores para aproveitar produtos excedentes e desperdiçados. Faça parte desse movimento pela 
+        economia circular e construa um futuro mais verde e responsável.
       </div>
   
 
-      <a class="button-download-2" href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
-        <h6>Baixe o App!</h6>
+      <a class="button-start" href="#entraremcontato">
+        <h6>Comece Agora</h6>
       </a>
 
-      <img class="celular" src="{% static 'images/body/celular.png' %}" alt="celular"> 
-      <img class="celular-2" src="{% static 'images/body/celular-2.png' %}" alt="celular"> 
+  </section>
 
-    </div>
+  <section class="page-two" id="parceiros">
+    
+    <img src="{% static 'images/parceiros.png' %}" alt="parceiros">
 
   </section>
 
-  <section class="page-two" id="vantagens">
+  <section class="page-three" id="comofunciona">
 
-    <div class="text-title">
-      Tenha controle total com nosso app de gerenciamento 
+    <h1>Encontre as matérias-primas perfeitas para impulsionar sua produção eco-friendly!</h1>
+
+    <div class="card-container">
+      <div class="card">
+        <img src="{% static 'images/cassava.svg' %}" alt="1. Explore os Alimentos Excedentes">
+        <div class="card-content">
+          <h2>1. Explore os Alimentos Excedentes</h2>
+          <p>Explore as possibilidades de alimentos excedentes disponíveis, como frutas, vegetais, grãos, entre outros, que podem ser utilizados em suas produções.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/contato.svg' %}" alt="2. Preencha o Formulário de Contato">
+        <div class="card-content">
+          <h2>2. Preencha o Formulário de Contato</h2>
+          <p>Depois de encontrar alimentos excedentes que atendam às suas necessidades, você preenche o formulário de contato disponível no site.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/negociação.svg' %}" alt="3. Análise e Negociação Direta">
+        <div class="card-content">
+          <h2>3. Análise e Negociação Direta</h2>
+          <p>Nossa equipe recebe os formulários e entra em contato para discutir as demandas e negociar detalhes adicionais, como prazos de entrega e outras especificações.</p>
+        </div>
+      </div>
     </div>
 
-    <div class="card-1">
-      <img class="ellipse" src="{% static 'images/body/Ellipse1.png' %}" alt="Ellipse">
-      <img class="icone" style="position: absolute; margin-top: 56px; margin-left: 41.5px;" 
-      src="{% static 'images/body/controle.png' %}" alt="Icone">
-      <h3>Controle simplificado</h3> 
-      <h4>
-        Nosso aplicativo oferece uma interface intuitiva e fácil de usar, permitindo que 
-        você controle todas as informações do seu rebanho com apenas alguns cliques. 
-      </h4> 
-    </div>
-
-    <div class="card-2">
-      <img class="ellipse" src="{% static 'images/body/Ellipse1.png' %}" alt="Ellipse">
-      <img class="icone" style="position: absolute; margin-top: 56px; margin-left: 38.75px;" 
-      src="{% static 'images/body/registro.png' %}" alt="Icone">
-      <h3>Registro detalhado</h3>
-      <h4>
-        Mantenha um registro completo de cada animal, incluindo informações de saúde, reprodução, 
-        alimentação e histórico médico, facilitando a tomada de decisões informadas.
-      </h4>
-    </div>
-
-    <div class="card-3">
-      <img class="ellipse" src="{% static 'images/body/Ellipse1.png' %}" alt="Ellipse">
-      <img class="icone" style="position: absolute; margin-top: 56.7px; margin-left: 35.75px;"
-      src="{% static 'images/body/alerta.png' %}" alt="Icone"> 
-      <h3>Alertas personalizados</h3>
-      <h4>
-        Receba alertas de datas importantes, como vacinações, desmama, 
-        cobertura e outros eventos relevantes para garantir o cuidado adequado de seus animais.
-      </h4>
-    </div>
-
-    <div class="card-4">
-      <img class="ellipse" src="{% static 'images/body/Ellipse1.png' %}" alt="Ellipse">
-      <img class="icone" style="position: absolute; margin-top: 56px; margin-left: 34px;"
-      src="{% static 'images/body/analise.png' %}" alt="Icone"> 
-      <h3>Análises inteligentes</h3>
-      <h4>
-        Obtenha análises inteligentes que destacam tendências, padrões de 
-        desempenho e oportunidades de melhoria, permitindo otimizar seus recursos e maximizar os lucros.
-      </h4>
-    </div>
-
-    <div class="card-5">
-      <img class="ellipse" src="{% static 'images/body/Ellipse1.png' %}" alt="Ellipse">
-      <img class="icone" style="position: absolute; margin-top: 56px; margin-left: 35px;"
-      src="{% static 'images/body/suporte.png' %}" alt="Icone"> 
-      <h3>Suporte técnico</h3>
-      <h4>
-        Conte com nosso suporte técnico para resolver suas dúvidas e problemas. Estamos comprometidos em 
-        garantir sua experiência positiva com o aplicativo.
-      </h4>
-    </div>
-
-    <div class="card-6">
-      <img class="ellipse" src="{% static 'images/body/Ellipse1.png' %}" alt="Ellipse">
-      <img class="icone" style="position: absolute; margin-top: 56px; margin-left: 35px;"
-      src="{% static 'images/body/acesso.png' %}" alt="Icone"> 
-      <h3>Acesso offline</h3>
-      <h4>
-        Tenha acesso aos dados do seu rebanho a qualquer momento e em qualquer lugar, através do seu smartphone 
-        ou tablet, facilitando o gerenciamento mesmo quando estiver em movimento
-      </h4>
-    </div>
+    <div class="preencher-forms">
+      <a href="#exploraralimentos">
+        <p>Explorar alimentos excedentes</p>
+      </a>
+  </div>
 
   </section>
 
-  <section class="page-three" id="depoimentos">
+  <section class="page-four" id="sobre">
 
-    <img class="img-bodes" src="{% static 'images/body/bodes.png' %}" alt="bodes">
-    <img class="img-bodes-2" src="{% static 'images/body/bodes-2.png' %}" alt="bodes">
-    <img class="img-bodes-3" src="{% static 'images/body/bodes-3.png' %}" alt="bodes">
-
-
-    <h1>
-      O que nossos usuários estão dizendo... 
-    </h1>
+    <img class="prato-bio" src="{% static 'images/farinha-bio-2.svg' %}" alt="Produto biodegrádavel">
+    
+    <div class="content">   
+      <h3>Sem Desperdício</h3>
+      <h1>Transformando Alimentos Excedentes em Soluções Sustentáveis!</h1>
+      <p> 
+        Aqui no "Sem Desperdiço", acreditamos que cada alimento tem valor. Nossa missão é promover uma mudança
+        significativa na forma como enxergamos e utilizamos os alimentos, resgatando e aproveitando aqueles que,
+        de outra forma, seriam desperdiçados. Conectamos agricultores, indústrias e consumidores em 
+        busca de soluções sustentáveis que impulsionam uma economia circular vibrante e consciente.
+      </p>
+    </div>
 
     <div class="container">
-      <div id="div1" class="transition-div">
-        <h5>
-          “Desde que comecei a usar o aplicativo, tenho total controle sobre 
-          o desempenho do meu rebanho, consigo acompanhar a saúde de cada animal
-           e tomar decisões estratégicas com base em dados precisos. 
-          É uma ferramenta indispensável para qualquer criador!" 
-        </h5>
-        <h6> - João, criador de caprinos há 5 anos.</h6>
+      <div class="box" style="background-color: #B7E49F;">
+        <a href="#exploraralimentos">
+          <p>Explorar alimentos</p>
+          <img src="{% static 'images/arrow-solid.svg' %}" alt="Explorar alimentos">
+        </a>
       </div>
-      <div id="div2" class="transition-div">
-        <h5>
-          "Eu não imaginava que um aplicativo poderia facilitar tanto a minha vida. 
-          Com apenas alguns cliques, consigo registrar todas as informações essenciais do meu rebanho, receber 
-          alertas importantes e até mesmo compartilhar dados com meu veterinário de confiança."
-        </h5>
-        <h6> - Maria, criadora de caprinos há 6 anos.</h6>
-      </div>
-      <div id="div3" class="transition-div">
-        <h5>
-          "O aplicativo da BodeTech é simplesmente incrível! Com ele, consigo gerenciar 
-          meu rebanho de ovelhas de forma fácil e eficiente. Estou muito satisfeito com
-          as funcionalidades e a interface amigável. Parabéns à equipe da BodeTech pelo
-          excelente trabalho!"
-        </h5>
-        <h6> - Miguel, criador de caprinos há 3 anos.</h6>
-        
-      </div>
-      <div id="div4" class="transition-div">
-         <h5>
-          "A BodeTech revolucionou a forma como cuido do meu rebanho de ovelhas. 
-          Com o aplicativo, tenho todas as informações importantes na palma da minha mão. 
-          É um verdadeiro aliado para melhorar a produtividade e o bem-estar dos animais. 
-          Recomendo a todos os criadores."
-         </h5>
-        <h6> - José, criador de caprinos há 4 anos.</h6>
+      <div class="box" style="background-color: #0A531B;">
+        <a href="#entraremcontato">
+          <p style="color: #fff;">Entrar em contato</p>
+          <img src="{% static 'images/clarity-arrow.svg' %}" alt="Entrar em contato">
+        </a>
       </div>
     </div>
 
-    <button id="scroll-left-btn" onclick="prevDiv()">
-      <img class="arrow-left" src="{% static 'images/body/left-arrow.png' %}" alt="arrow-left">
-    </button>
-    <button id="scroll-right-btn" onclick="nextDiv()">
-      <img class="arrow-right" src="{% static 'images/body/right-arrow.png' %}" alt="arrow-right">
-    </button>
-
-    <div class="scrollable-content">
-      <img id="image1" class="bar-scroll-1" src="{% static 'images/body/bar-scroll-1.png' %}" alt="bar-1">
-      <img id="image2" class="bar-scroll-2" src="{% static 'images/body/bar-scroll-2.png' %}" alt="bar-2">
-      <img id="image3" class="bar-scroll-2" src="{% static 'images/body/bar-scroll-2.png' %}" alt="bar-2">
-      <img id="image4" class="bar-scroll-2" src="{% static 'images/body/bar-scroll-2.png' %}" alt="bar-2">
-    </div>
-
-  </section>
-
-  <section class="page-four">
-
-    <img class="bode-peso" src="{% static 'images/body/bode-peso.png' %}" alt="bode-peso">
-    <img class="pesando-bode" src="{% static 'images/body/maos-segurando-um-smartphone.png' %}" alt="pesando-bode">
-
-    <h1> Pesagem automática: Facilitando a gestão de peso com BodeTech!</h1>
-    <h5> 
-      Com apenas uma foto, nossa tecnologia realiza uma estimativa precisa do peso do seu animal, 
-      assim você pode pesar seus animais de forma rápida e sem complicações. 
-      Simplifique sua rotina com a Pesagem Automática da BodeTech e desfrute de um manejo inteligente e eficiente.
-    </h5>
-
-    <a class="button-download" href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
-      <h6>Experimentar grátis</h6>
-    </a>
 
   </section>
 
   <section class="page-five" id="funcionalidades">
 
-    <h1>Potencialize sua produção com nossas funcionalidades</h1>
+    <h1>Vantagens Sustentáveis para a sua Indústria</h1>
   
-    <div class="cards">
-
-      <div id="card1" class="transition-card">
-        <h2>Produção de ponta a ponta:</h2>
-
-        <ul>
-            <li>
-              <h5>
-                <img src="{% static 'images/body/check.png' %}" alt="check">
-                <span style="font-weight:600;">&ensp; Sequência de Manejos:</span>
-                <span> Registre e acompanhe todas as etapas 
-                  do manejo, desde alimentação até vacinação.</span>
-              </h5>
-            </li>
-            
-            <li>
-              <h5>
-                <img src="{% static 'images/body/check.png' %}" alt="check">
-                <span style="font-weight:600;">&ensp; Financeiro: </span>
-                <span> Controle completo dos custos e receitas para 
-                planejamento financeiro e análise de lucratividade.</span>
-              </h5>
-            </li>
-
-            <li>
-              <h5>
-                <img src="{% static 'images/body/check.png' %}" alt="check">
-                <span style="font-weight:600;">&ensp; Reprodução: </span>
-                <span>Registro de dados de cobertura, gestação e 
-                parto para monitorar desempenho reprodutivo.</span>
-              </h5>
-            </li>
-
-            <li>
-              <h5>
-                <img src="{% static 'images/body/check.png' %}" alt="check">
-                <span style="font-weight:600;">&ensp; Seleção de Rebanho:</span>
-                <span> Melhore seu plantel selecionando animais com critérios específicos.</span>
-              </h5>
-            </li>
-          </ul>
+    <div class="container">
+      <div class="top">
+        <div class="left">
+          <div class="text-block">
+            <h2>Matérias-Primas Sustentáveis</h2>
+            <p>Acesso a alimentos excedentes como matérias-primas para produção sustentável,
+              reduzindo o impacto ambiental e fortalecendo a imagem como uma empresa eco-friendly.</p>
+          </div>
+         </div>
+        <div class="right">
+          <img src="{% static 'images/alimentos01.svg' %}" alt="Imagem 1">
+        </div>
       </div>
-
-      <div id="card2" class="transition-card" class="card">
-        <h2>Gestão mais eficiente:</h2>
-          <ul>
-            <li>
-              <h5>
-                <img src="{% static 'images/body/check.png' %}" alt="check">
-                <span style="font-weight:600;">&ensp; Formação de Lotes:</span>
-                <span> Organize e separe animais com base
-                em características específicas, como idade, sexo ou finalidade.</span>
-              </h5>
-            </li>
-            
-            <li>
-              <h5>
-                <img src="{% static 'images/body/check.png' %}" alt="check">
-                <span style="font-weight:600;">&ensp; Ração personalizada:</span>
-                <span> Indicação de ração conforme 
-                as necessidades nutricionais do animal.</span>
-              </h5>
-            </li>
-
-            <li>
-              <h5>
-                <img src="{% static 'images/body/check.png' %}" alt="check">
-                <span style="font-weight:600;">&ensp; Ração personalizada:</span>
-                <span> Indicação de ração conforme 
-                as necessidades nutricionais do animal.</span>
-              </h5>
-            </li>
-
-            <li>
-              <h5>
-                <img src="{% static 'images/body/check.png' %}" alt="check">
-                <span style="font-weight:600;">&ensp; Desempenho do Rebanho:</span> 
-                <span> Monitore o desempenho do seu rebanho,
-                registrando indicadores como ganho de peso, produção de leite e fertilidade.</span>
-              </h5>
-              </h5>
-            </li>
-
-          </ul>
-        
+      <div class="bottom">
+        <div class="left">
+          <img src="{% static 'images/redução-de-custos.png' %}"alt="Imagem 2">
+        </div>
+        <div class="right">
+          <div class="text-block">
+            <h2>Redução de Custos e Eficiência</h2>
+            <p>Compra direta de produtos a preços acessíveis, otimizando os processos de produção e aumentando 
+              a eficiência, resultando em economia de recursos.</p>
+          </div>
+        </div>
       </div>
+      <div class="bottom">
+        <div class="left">
+          <div class="text-block">
+            <h2>Diferenciação e Responsabilidade Social</h2>
+            <p>Destaque no mercado por adotar práticas sustentáveis, atraindo consumidores conscientes e reforçando
+              a imagem de responsabilidade social da indústria.</p>
+          </div>
+        </div>
+        <div class="right">
+          <img src="{% static 'images/responsabilidade-social.svg' %}" alt="Imagem 3">
+        </div>
+      </div>
+    </div>
 
-      <div id="card3" class="transition-card" class="card">
-        <h2>Informações detalhadas:</h2>
+  </section>
+
+  <section class="page-six" id="exploraralimentos">
+
+    <h1>Descubra Nossos Tesouros Sustentáveis: Alimentos Excedentes Prontos para Transformar</h1>
+
+    <div class="food-panel">
+      <div class="section">
+        <div class="row">
+          <div class="food-item">
+            <img src="{% static 'images/mandioca.svg' %}" alt="farinha 1">
+            <div class="availability">Disponível</div>
+            <div class="preferred">Mais escolhido</div>
+            <h3>Mandioca</h3>
+            <h4>Juazeiro/BA</h4>
+          </div>
+          <div class="food-item">
+            <img src="{% static 'images/acerola.svg' %}" alt="acerola 2">
+            <div class="availability">Disponível</div>
+            <h3>Acerola</h3>
+            <h4>Juazeiro/BA</h4>
+          </div>
+          <div class="food-item">
+            <img src="{% static 'images/goiaba.svg' %}" alt="goiaba 3">
+            <div class="availability">Disponível</div>
+            <h3>Goiaba</h3>
+            <h4>Juazeiro/BA</h4>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <div class="food-item">
+            <img src="{% static 'images/banana.svg' %}" alt="banana 4">
+            <div class="availability">Disponível</div>
+            <h3>Banana</h3>
+            <h4>Juazeiro/BA</h4>
+          </div>
+          <div class="food-item">
+            <img src="{% static 'images/maracuja.svg' %}" alt="mamão 5">
+            <div class="availability">Disponível</div>
+            <h3>Maracujá</h3>
+            <h4>Juazeiro/BA</h4>
+          </div>
+          <div class="food-item">
+            <img src="{% static 'images/manga.svg' %}" alt="manga 6">
+            <div class="availability">Disponível</div>
+            <h3>Manga</h3>
+            <h4>Juazeiro/BA</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+  <section class="page-seven" id="entraremcontato">
+
+
+      <h1>Entre em contato com nossa equipe</h1>
+      <p>
+        Transforme o desperdício em oportunidade e crie um impacto duradouro. 
+        Junte-se a nós agora para um setor mais consciente e lucrativo. 
+        Sua mensagem marca o início desta jornada transformadora. 
+        Entre em contato hoje mesmo!
+      </p>
+
+       <div class="contatos">
         <ul>
-          <li>
-            <h5>
-              <img src="{% static 'images/body/check.png' %}" alt="check">
-              <span style="font-weight:600;">&ensp; Acompanhamento de Custos:</span> 
-              <span> Controle e acompanhe os gastos com alimentação dos seus bodes de forma precisa.</span>
-            </h5>
+          <li class="email">
+            <a href="mailto:semdesperdicio1@gmail.com">
+              <img src="{% static 'images/email.png' %}" alt="email">
+              <h5>&ensp; semdesperdicio1@gmail.com</h5>
+            </a>
           </li>
-          
-          <li>
-            <h5>
-              <img src="{% static 'images/body/check.png' %}" alt="check">
-              <span style="font-weight:600;">&ensp; Taxa de Conversão Alimentar:</span>
-              <span> Monitore a relação entre consumo de alimento e ganho de peso.</span>
-            </h5>
-          </li>
-
-          <li>
-            <h5>
-              <img src="{% static 'images/body/check.png' %}" alt="check">
-              <span style="font-weight:600;">&ensp; Informações em Tempo Real:</span>
-              <span> Acesse informações atualizadas do seu rebanho em tempo real.</span>
-            </h5>
-            </h5>
-          </li>
-
-          <li>
-            <h5>
-              <img src="{% static 'images/body/check.png' %}" alt="check">
-              <span style="font-weight:600;">&ensp; Desempenho por lote:</span>
-              <span> Analise o desempenho dos seus animais de acordo com as diferentes áreas de alojamento. </span> 
-            </h5>
+          <li class="phone">
+            <a href="https://wa.me//5587988758805/?text=Gostaria%20de%20saber%20mais%20sobre%20o%20Sem%20Desperdício.">
+              <img src="{% static 'images/phone.png' %}" alt="phone">
+              <h5>&ensp; +55 (87) 98805-8875</h5>
+            </a>
           </li>
         </ul>
       </div>
-
-    </div>
-
-
-    <div>
-      <div class="scrollable-content-2">
-        <img id="bar1" class="bar-scroll-1" src="{% static 'images/body/bar-scroll-1.png' %}" alt="bar-1">
-        <img id="bar2" class="bar-scroll-3" src="{% static 'images/body/bar-scroll-3.png' %}" alt="bar-2">
-        <img id="bar3" class="bar-scroll-4" src="{% static 'images/body/bar-scroll-3.png' %}" alt="bar-2">
-      </div>
-
-        <button id="scroll-left-btn-2" onclick="prevCard()">
-          <img class="arrow-left" src="{% static 'images/body/left-arrow-2.png' %}" alt="arrow-left">
-        </button>
-        
-        <button id="scroll-right-btn-2" onclick="nextCard()">
-          <img class="arrow-right" src="{% static 'images/body/right-arrow.png' %}" alt="arrow-right">
-        </button>
-
-        <a  class="button-download" href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
-          <h6>Baixar App agora!</h6>
-        </a>
-    </div>
-
-  </section>
-
-  <section class="page-six" id="blog">
-
-    <h1>Confira os artigos do nosso Blog!</h1>
-
-    <h5>
-        Descubra dicas, informações atualizadas e melhores práticas para otimizar
-        a gestão do seu rebanho em nosso blog. Esteja um passo à frente no 
-        cuidado e obtenha resultados excepcionais. Leia agora!
-    </h5>
-
-    <img class="ellipse" src="{% static 'images/body/Ellipse2.png' %}" alt="ellipse2">
-    <img class="ellipse3" src="{% static 'images/body/Ellipse3.png' %}" alt="ellipse2">
-    <img class="bode-reader" src="{% static 'images/body/bode-reader.png' %}" alt="bode-reader">
+      
     
-    <div>
-      <a  class="button-download" href="#">
-        <h6>Conferir artigos no Blog</h6>
-      </a>
-    </div>
+    <div class="container_form">
 
-  
-  </section>
-
-  <section class="page-seven" id="contato">
-
-    <h1>Entre em contato com nossa equipe</h1>
-    <h5>
-      Para obter mais informações sobre nosso aplicativo
-      entre em contato conosco. Preencha o formulário ou 
-      utilize nossos dados de contato. Estamos prontos para 
-      ajudar a potencializar o seu negócio.
-    </h5>
-
-    <div class="email">
-      <img src="{% static 'images/body/email.png' %}" alt="email">
-      <h6>&ensp; riseit.is@gmail.com</h6>
-    </div>
-
-    <div class="phone">
-      <img src="{% static 'images/body/phone.png' %}" alt="phone">
-      <h6>&ensp; +55 (87) 98805-8875</h6>
-    </div>
-
-    <div class="container">
-
-      <div class="success" id="success-message" style="display: none; font-weight: 400;
+      <div id="message" style="display: none; font-weight: 400; z-index: 3;
       font-size: 18px; line-height: 20px; color: #252940; margin-top: 150px; margin-right: 8%; text-align: center;">
         <h3>Mensagem enviada com sucesso! Em breve entraremos em contato.</h3>
       </div>
 
-      <form id="contact-form" action="/enviar-mensagem/" method="POST">
+      <form id="contact_form" action="/enviar-mensagem/" method="POST">
         {% csrf_token %}
           <div class="row">
             <div class="first-name">
@@ -487,31 +342,64 @@
     
    
   </section>
+
+  <div class="footer">
+
+    <div class="logo">
+      <img src="{% static 'images/logo.png' %}"  alt="logo">
+    </div>
+
+    <div class="menu">
+      <h2 class="menu-title">Menu</h2>
+      <ul>
+        <li><a href="#app">Explore os alimentos</a></li>
+        <li><a href="#vantagens">Quem somos</a></li>
+        <li><a href="#depoimentos">Contato</a></li>
+      </ul>
+    </div>
   
-  <section class="page-eight">
-
-    <h3>Um pouco sobre nós</h3>
-
-    <h5>
-      A BodeTech é uma equipe especializada em soluções para caprinocultura.
-      Nosso aplicativo facilita o dia-a-dia do criador, com
-      suporte personalizado e tecnologia para manejo. Junte-se agora a BodeTech e impulsione 
-      a sua produção.
-    </h5>
+    <div class="contatos">
+      <h2 class="contato-title">Contato</h2>
+      <ul>
+        <li><a href="https://wa.me//5587988758805/?text=Gostaria%20de%20saber%20mais%20sobre%20o%20Sem%20Desperdício.">+55 (87) 98875-8805</a></li>
+        <li><a  href="mailto:semdesperdicio1@gmail.com">semdesperdicio1@gmail.com</a></li>
+      </ul>
+    </div> 
 
     <div class="container" class="row">
+
+
+      <div class="midias" id="midias">
+        <ul>
+          <li>
+            <a href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
+              <img src="{% static 'images/facebook.png' %}" class="d-inline-block align-top" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/sem.desperdicio/">
+              <img src="{% static 'images/instagram.png' %}" class="d-inline-block align-top" alt="instagram">
+            </a>
+          </li>
+          <li>
+            <a href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
+              <img src="{% static 'images/linkedin.png' %}" class="d-inline-block align-top" alt="linkedin">
+            </a>
+          </li>
+        </ul>
+      </div>
+      
       {% if success_message %}
-      <div id="success">
+      <div class="sucesso" id="sucesso">
         <h2>{{ success_message }}</h2>
       </div>
       <script>
         // Rolar a página para a seção de sucesso
-        window.location.hash = 'success';
+        window.location.hash = 'sucesso';
       </script>
       {% else %}
 
-
-        <form method="POST" action="{% url 'index' %}">
+        <form class="forms" method="POST" action="{% url 'index' %}">
           {% csrf_token %}
                   <label class="label-email" for="email">Inscreva-se no site para receber as novidades</label>
                   <input class="input-email" type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
@@ -520,65 +408,11 @@
       {% endif %}
     </div>
 
-    <div class="contatos">
-        <a href="https://www.facebook.com/bodetechh">
-          <img src="{% static 'images/body/facebook.png' %}" alt="facebook">      
-        </a>
+    <img class="folhas" src="{% static 'images/folhas-3.png' %}"  alt="logo">
 
-        <a href="https://www.instagram.com/bodetechh/">
-          <img src="{% static 'images/body/instagram.png' %}" alt="instagram">
-        </a>
 
-        <a href="#">
-          <img src="{% static 'images/body/linkedin.png' %}" alt="linkedin">
-        </a>
-    </div>
-
-    <h2 class="menu-title">Menu </h2>
-
-    <div class="menu">
-      <a href="#app">Sobre o App </a>
-
-      <a href="#vantagens"> Vantagens </a>
-
-      <a href="#depoimentos"> Depoimentos </a>
-      
-      <a href="#funcionalidades"> Funcionalidades </a>
-      
-      <a href="#blog"> Blog </a>
-
-      <a href="#contado"> Contado </a>
-    </div>
-
-    <h2 class="contato-title">Contato </h2>
-
-    <div class="contato2">
-      <a>+55 (87) 98875-8805 </a>
-      <a> riseit.is@gmail.com </a>
-    </div>
-
-    <h2 class="baixe-app-title">Baixe o App </h2>
-
-    <a class="google-play" href="https://play.google.com/store/apps/details?id=com.bodetech&pli=1">
-      <img src="{% static 'images/body/googleplay.png' %}" alt="googleplay">
-    </a>
-
-    <a  class="apple-store" href="#">
-      <img src="{% static 'images/body/applestore.png' %}" alt="applestore">
-    </a>
-
-    <a href="#inicio">
-      <h4>Voltar</h4>
-      <img  class="topo" src="{% static 'images/body/up-arrow.png' %}" alt="applestore">
-    </a>
-
-  </section>
-
-  <div class="footer">
-    <img src="{% static 'images/header/logo.png' %}" class="d-inline-block align-top" alt="">
-    <h2> BodeTech</h2>
     <hr>
-    <p>© 2023 BodeTech. Todos os direitos reservados.</p>
+    <p>© 2023 Sem Desperdício. Todos os direitos reservados.</p>
   </div>
 
   <script src="{% static 'js/header.js' %}"></script>

@@ -8,13 +8,69 @@ function togglemenu(){
   if(menuList.style.maxHeight == "0px")
   {
     menuList.style.maxHeight = "400px";
+    document.getElementById('menuIcon').style.display = 'none';
+    document.getElementById('menuFechar').style.display = 'flex';
   }
   else
   {
     menuList.style.maxHeight = "0px";
+    document.getElementById('menuIcon').style.display = 'flex';
+    document.getElementById('menuFechar').style.display = 'none';
   }
 }
 
+
+// JavaScript para detectar a rolagem e aplicar a classe
+window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  if (window.scrollY > 0) {
+    navbar.classList.add('fixed');
+  } else {
+    navbar.classList.remove('fixed');
+  }
+});
+
+// --------------- Envio de Mensagem  ----------------- //
+
+document.getElementById('contact_form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', '/enviar-mensagem/');
+  xhr.setRequestHeader('X-CSRFToken', getCookie('csrftoken'));
+
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      console.log('response.success:', response.success);
+      if (response.success) {
+        document.getElementById('contact_form').style.display = 'none';
+        document.getElementById('message').style.display = 'block';
+      }
+    } else {
+      console.error('Erro ao processar a resposta:', xhr.status);
+    }
+  };
+
+  xhr.send(new FormData(this));
+});
+
+
+// Função para obter o valor do token CSRF do cookie
+function getCookie(name) {
+  var cookieValue = null;
+  if (document.cookie && document.cookie !== '') {
+      var cookies = document.cookie.split(';');
+      for (var i = 0; i < cookies.length; i++) {
+          var cookie = cookies[i].trim();
+          if (cookie.substring(0, name.length + 1) === (name + '=')) {
+              cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+              break;
+          }
+      }
+  }
+  return cookieValue;
+}
 // --------------- Comentários Criadores  ----------------- //
 
 var currentIndex = 0;
@@ -117,40 +173,3 @@ scrollRightBtn2.addEventListener("click", function () {
   }
 });
 
-// --------------- Envio de Mensagem  ----------------- //
-
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Impede o envio normal do formulário
-
-  var xhr = new XMLHttpRequest();
-  xhr.open('POST', '/enviar-mensagem/');
-  xhr.setRequestHeader('X-CSRFToken', getCookie('csrftoken')); // Inclui o token CSRF
-
-  xhr.onload = function() {
-    if (xhr.status === 200) {
-        var response = JSON.parse(xhr.responseText);
-        if (response.success) {
-            document.getElementById('contact-form').style.display = 'none';
-            document.getElementById('success-message').style.display = 'block';
-        }
-    }
-  };
-
-  xhr.send(new FormData(this));
-});
-
-// Função para obter o valor do token CSRF do cookie
-function getCookie(name) {
-  var cookieValue = null;
-  if (document.cookie && document.cookie !== '') {
-      var cookies = document.cookie.split(';');
-      for (var i = 0; i < cookies.length; i++) {
-          var cookie = cookies[i].trim();
-          if (cookie.substring(0, name.length + 1) === (name + '=')) {
-              cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-              break;
-          }
-      }
-  }
-  return cookieValue;
-}

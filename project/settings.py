@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-fv9@cv&b0toqy0ujxy$zl!7t$xssq#w*gs^ee5!8gmx)d)299&
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['bodetech.blog.br']
+CSRF_TRUSTED_ORIGINS = [' https://bodetech.blog.br']
 
 
 # Application definition
