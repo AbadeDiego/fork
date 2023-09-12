@@ -161,9 +161,3 @@ LOGIN_REDIRECT_URL = '/'
 
 
 DATE_INPUT_FORMATS = ['%m/%d/%Y']
-
-# import the staticfiles_urlpatterns
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-
-# below line have to be the last line of the file
-urlpatterns += staticfiles_urlpatterns()
